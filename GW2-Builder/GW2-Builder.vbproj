@@ -131,6 +131,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Licenses\COPYING.txt" />
+    <Content Include="Licenses\CPOL.htm" />
     <Content Include="main.ico" />
     <Content Include="Resources\engineer\Blowtorch.png" />
     <Content Include="Resources\engineer\Blunderbuss.png" />
