@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GW2-Builder", "GW2-Builder\GW2-Builder.vbproj", "{E8DF1E10-0163-4879-9223-16DB047D1E8C}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Control", "..\..\..\..\Desktop\Ai\Control\Control.vbproj", "{DB9B5181-1528-4647-ACE7-AC31F16BBCFA}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Control", "Control\Control.vbproj", "{DB9B5181-1528-4647-ACE7-AC31F16BBCFA}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Renderer", "..\..\..\..\Desktop\Ai\Renderer\Renderer.vbproj", "{C92CCA54-E306-4128-905E-2F40D3EDAD7E}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Renderer", "Renderer\Renderer.vbproj", "{C92CCA54-E306-4128-905E-2F40D3EDAD7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

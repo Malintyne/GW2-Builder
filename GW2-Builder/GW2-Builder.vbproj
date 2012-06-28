@@ -131,6 +131,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Licenses\COPYING.txt" />
+    <Content Include="Licenses\CPOL.htm" />
     <Content Include="main.ico" />
     <Content Include="Resources\engineer\Blowtorch.png" />
     <Content Include="Resources\engineer\Blunderbuss.png" />
@@ -388,7 +390,7 @@
     <Folder Include="Resources\elementalist\water\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\Ai\Control\Control.vbproj">
+    <ProjectReference Include="..\Control\Control.vbproj">
       <Project>{DB9B5181-1528-4647-ACE7-AC31F16BBCFA}</Project>
       <Name>Control</Name>
     </ProjectReference>

@@ -1,0 +1,16 @@
+h1. This is a simple Character Creator for the upcoming game: Guild Wars 2
+
+
+h1. Licenses
+
+The following directories and their contents are Copyright "red_moon(Member page on CodeProject.com)":http://www.codeproject.com/Members/red_moon . You may not reuse anything there in without the permission:
+
+* Control/
+* Renderer/
+
+The following directories and their contents are Copyright ArenaNet or NCsoft, as applicable. You may not change anything there in without the permission:
+
+* GW2-Builder/Resources/
+
+
+All other directories and files are WTFPL Licensed. Feel free to use code as you please. If you do use them, a link back to https://github.com/miracle091/GW2-Builder would be appreciated, but is not required.
