@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8DF1E10-0163-4879-9223-16DB047D1E8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GW2_Builder.My.MyApplication</StartupObject>
+    <RootNamespace>GW2_Builder</RootNamespace>
+    <AssemblyName>GW2-Builder</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RCls.vb" />
+    <Compile Include="Mainfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.Designer.vb">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.resx">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.ico" />
+    <Content Include="Resources\engineer\Blowtorch.png" />
+    <Content Include="Resources\engineer\Blunderbuss.png" />
+    <Content Include="Resources\engineer\Explosive Shot.png" />
+    <Content Include="Resources\engineer\Glue Shot.png" />
+    <Content Include="Resources\engineer\Hip Shot.png" />
+    <Content Include="Resources\engineer\Jump Shot.png" />
+    <Content Include="Resources\engineer\Magnetic Field.png" />
+    <Content Include="Resources\engineer\Net Shot.png" />
+    <Content Include="Resources\engineer\Overcharged Shot.png" />
+    <Content Include="Resources\engineer\Poison Dart Volley.png" />
+    <Content Include="Resources\engineer\Static Shield.png" />
+    <Content Include="Resources\engineer\Static Shot.png" />
+    <Content Include="Resources\guardian\Banish.png" />
+    <Content Include="Resources\guardian\Binding Blade.png" />
+    <Content Include="Resources\guardian\Chains of Light.png.jpg" />
+    <Content Include="Resources\guardian\Cleansing Flame.png.jpg" />
+    <Content Include="Resources\guardian\Faithful Strike.png" />
+    <Content Include="Resources\guardian\Flash of Light.png" />
+    <Content Include="Resources\guardian\Flashing Blade.png" />
+    <Content Include="Resources\guardian\Hammer Bash.png" />
+    <Content Include="Resources\guardian\Hammer Swing.png" />
+    <Content Include="Resources\guardian\Leap of Faith.png" />
+    <Content Include="Resources\guardian\Line of Warding.png" />
+    <Content Include="Resources\guardian\Martyr.png" />
+    <Content Include="Resources\guardian\Mighty Blow.png" />
+    <Content Include="Resources\guardian\Orb of Light.png" />
+    <Content Include="Resources\guardian\Orb of Wrath.png.jpg" />
+    <Content Include="Resources\guardian\Protector%27s Strike.png" />
+    <Content Include="Resources\guardian\Pure Strike.png" />
+    <Content Include="Resources\guardian\Ray of Judgment.png" />
+    <Content Include="Resources\guardian\Ring of Warding.png" />
+    <Content Include="Resources\guardian\Shield of Absorption.png.jpg" />
+    <Content Include="Resources\guardian\Shield of Judgment.png.jpg" />
+    <Content Include="Resources\guardian\Shield of Wrath.png" />
+    <Content Include="Resources\guardian\Smite.png.jpg" />
+    <Content Include="Resources\guardian\Strike.png" />
+    <Content Include="Resources\guardian\Sword Arc.png" />
+    <Content Include="Resources\guardian\Sword of Wrath.png" />
+    <Content Include="Resources\guardian\Sword Wave.png" />
+    <Content Include="Resources\guardian\Symbol of Faith.png" />
+    <Content Include="Resources\guardian\Symbol of Protection.png" />
+    <Content Include="Resources\guardian\Symbol of Swiftness.png" />
+    <Content Include="Resources\guardian\Symbol of Wrath.png" />
+    <Content Include="Resources\guardian\True Strike.png" />
+    <Content Include="Resources\guardian\Vengeful Strike.png" />
+    <Content Include="Resources\guardian\Wave of Wrath.png" />
+    <Content Include="Resources\guardian\Whirling Wrath.png" />
+    <Content Include="Resources\guardian\Wrathful Strike.png" />
+    <Content Include="Resources\guardian\Zealot%27s Defense.png" />
+    <Content Include="Resources\guardian\Zealot%27s Embrace.png" />
+    <Content Include="Resources\guardian\Zealot%27s Flame.png.jpg" />
+    <Content Include="Resources\guardian\Zealot_s_Fire.png" />
+    <Content Include="Resources\mesmer\Blurred Frenzy.png" />
+    <Content Include="Resources\mesmer\Chaos Armor.png" />
+    <Content Include="Resources\mesmer\Chaos Storm.png" />
+    <Content Include="Resources\mesmer\Confusing Images.png" />
+    <Content Include="Resources\mesmer\Ether Blast.png" />
+    <Content Include="Resources\mesmer\Ether Bolt.png" />
+    <Content Include="Resources\mesmer\Ether Clone.png" />
+    <Content Include="Resources\mesmer\Feigned Escape.png" />
+    <Content Include="Resources\mesmer\Illusionary Counter.png" />
+    <Content Include="Resources\mesmer\Illusionary Duelist.png" />
+    <Content Include="Resources\mesmer\Illusionary Leap.png" />
+    <Content Include="Resources\mesmer\Illusionary Mage.png" />
+    <Content Include="Resources\mesmer\Illusionary Riposte.png" />
+    <Content Include="Resources\mesmer\Illusionary Swordsman.png" />
+    <Content Include="Resources\mesmer\Illusionary Warden.png" />
+    <Content Include="Resources\mesmer\Illusionary Warlock.png" />
+    <Content Include="Resources\mesmer\Illusionary Wave.png" />
+    <Content Include="Resources\mesmer\Mind Gash.png" />
+    <Content Include="Resources\mesmer\Mind Slash.png" />
+    <Content Include="Resources\mesmer\Mind Stab-sword.png" />
+    <Content Include="Resources\mesmer\Mind Stab.png" />
+    <Content Include="Resources\mesmer\Mirror Blade.png" />
+    <Content Include="Resources\mesmer\Phantasmal Berserker.png" />
+    <Content Include="Resources\mesmer\Spatial Surge.png" />
+    <Content Include="Resources\mesmer\Temporal Curtain.png" />
+    <Content Include="Resources\mesmer\The Prestige.png" />
+    <Content Include="Resources\mesmer\Trick Shot.png" />
+    <Content Include="Resources\mesmer\Winds of Chaos.png" />
+    <Content Include="Resources\necromancer\Blood Curse.png" />
+    <Content Include="Resources\necromancer\Chillblains.png" />
+    <Content Include="Resources\necromancer\Dark Pact.png" />
+    <Content Include="Resources\necromancer\Deathly Swarm.png" />
+    <Content Include="Resources\necromancer\Enfeebling Blood.png" />
+    <Content Include="Resources\necromancer\Feast of Corruption.png" />
+    <Content Include="Resources\necromancer\Ghastly Claws.png" />
+    <Content Include="Resources\necromancer\Grasping Dead.png" />
+    <Content Include="Resources\necromancer\Life Siphon.png" />
+    <Content Include="Resources\necromancer\Locust Swarm.png" />
+    <Content Include="Resources\necromancer\Mark of Blood.png" />
+    <Content Include="Resources\necromancer\Necrotic Bite.png" />
+    <Content Include="Resources\necromancer\Necrotic Grasp.png" />
+    <Content Include="Resources\necromancer\Necrotic Slash.png" />
+    <Content Include="Resources\necromancer\Necrotic Stab.png" />
+    <Content Include="Resources\necromancer\Putrid Curse.png" />
+    <Content Include="Resources\necromancer\Putrid Mark.png" />
+    <Content Include="Resources\necromancer\Reaper%27s Mark.png" />
+    <Content Include="Resources\necromancer\Reaper%27s Touch.png" />
+    <Content Include="Resources\necromancer\Rending Claws.png" />
+    <Content Include="Resources\necromancer\Rending Curse.png" />
+    <Content Include="Resources\necromancer\Spinal Shivers.png" />
+    <Content Include="Resources\necromancer\Unholy Feast.png" />
+    <Content Include="Resources\necromancer\Wail of Doom.png" />
+    <Content Include="Resources\null.png" />
+    <Content Include="Resources\ranger\Barrage.png" />
+    <Content Include="Resources\ranger\Bonfire.png" />
+    <Content Include="Resources\ranger\Call of the Wild.png" />
+    <Content Include="Resources\ranger\Concussion Shot.png" />
+    <Content Include="Resources\ranger\Counterattack.png" />
+    <Content Include="Resources\ranger\Crippling Shot.png" />
+    <Content Include="Resources\ranger\Crippling Talon.png" />
+    <Content Include="Resources\ranger\Crippling Throw.png" />
+    <Content Include="Resources\ranger\Cross Fire.png" />
+    <Content Include="Resources\ranger\Hilt Bash.png" />
+    <Content Include="Resources\ranger\Hornet Sting.png" />
+    <Content Include="Resources\ranger\Hunter%27s Call.png" />
+    <Content Include="Resources\ranger\Hunter%27s Shot.png" />
+    <Content Include="Resources\ranger\Kick.png" />
+    <Content Include="Resources\ranger\Long Range Shot.png" />
+    <Content Include="Resources\ranger\Maul.png" />
+    <Content Include="Resources\ranger\Monarch%27s Leap.png" />
+    <Content Include="Resources\ranger\Path of Scars.png" />
+    <Content Include="Resources\ranger\Point Blank Shot.png" />
+    <Content Include="Resources\ranger\Poison Volley.png" />
+    <Content Include="Resources\ranger\Pounce.png" />
+    <Content Include="Resources\ranger\Power Stab.png" />
+    <Content Include="Resources\ranger\Quick Shot.png" />
+    <Content Include="Resources\ranger\Rapid Fire.png" />
+    <Content Include="Resources\ranger\Ricochet.png" />
+    <Content Include="Resources\ranger\Serpent%27s Strike.png" />
+    <Content Include="Resources\ranger\Slash.png" />
+    <Content Include="Resources\ranger\Slice.png" />
+    <Content Include="Resources\ranger\Splitblade.png" />
+    <Content Include="Resources\ranger\Stalker%27s Strike.png" />
+    <Content Include="Resources\ranger\Swoop.png" />
+    <Content Include="Resources\ranger\Throw Torch.png" />
+    <Content Include="Resources\ranger\Whirling Defense.png" />
+    <Content Include="Resources\ranger\Winter%27s Bite.png" />
+    <Content Include="Resources\thief\Backstab.png" />
+    <Content Include="Resources\thief\Black Powder.png" />
+    <Content Include="Resources\thief\Body Shot.png" />
+    <Content Include="Resources\thief\Choking Gas.png" />
+    <Content Include="Resources\thief\Cloak and Dagger.png" />
+    <Content Include="Resources\thief\Cluster Bomb.png" />
+    <Content Include="Resources\thief\Crippling Strike.png" />
+    <Content Include="Resources\thief\Dancing Dagger.png" />
+    <Content Include="Resources\thief\Death Blossom.png" />
+    <Content Include="Resources\thief\Detonate Cluster.png" />
+    <Content Include="Resources\thief\Disabling Shot.png" />
+    <Content Include="Resources\thief\Double Strike.png" />
+    <Content Include="Resources\thief\Flanking Strike.png" />
+    <Content Include="Resources\thief\Head Shot.png" />
+    <Content Include="Resources\thief\Heartseeker.png" />
+    <Content Include="Resources\thief\Infiltrator%27s Arrow.png" />
+    <Content Include="Resources\thief\Infiltrator%27s Strike.png" />
+    <Content Include="Resources\thief\Lotus Strike.png" />
+    <Content Include="Resources\thief\Pistol Whip.png" />
+    <Content Include="Resources\thief\Repeater.png" />
+    <Content Include="Resources\thief\Shadow Return.png" />
+    <Content Include="Resources\thief\Shadow Shot.png" />
+    <Content Include="Resources\thief\Shadow Strike.png" />
+    <Content Include="Resources\thief\Slash.png" />
+    <Content Include="Resources\thief\Slice.png" />
+    <Content Include="Resources\thief\Sneak Attack.png" />
+    <Content Include="Resources\thief\Stab.png" />
+    <Content Include="Resources\thief\Suprise Shot.png" />
+    <Content Include="Resources\thief\Tactical Strike.png" />
+    <Content Include="Resources\thief\Trick Shot.png" />
+    <Content Include="Resources\thief\Twisting Fangs.png" />
+    <Content Include="Resources\thief\Vital Shot.png" />
+    <Content Include="Resources\thief\Wild Strike.png" />
+    <Content Include="Resources\warrior\Aimed Shot.png.jpg" />
+    <Content Include="Resources\warrior\Arcing Arrow.png.jpg" />
+    <Content Include="Resources\warrior\Arcing Slice.png" />
+    <Content Include="Resources\warrior\Backbreaker.png" />
+    <Content Include="Resources\warrior\Bladetrail.png" />
+    <Content Include="Resources\warrior\Bleeding Shot.png.jpg" />
+    <Content Include="Resources\warrior\Brutal Shot.png.jpg" />
+    <Content Include="Resources\warrior\Brutal Strike.png" />
+    <Content Include="Resources\warrior\Call to Arms.png.jpg" />
+    <Content Include="Resources\warrior\Charge.png.jpg" />
+    <Content Include="Resources\warrior\Chop.png.jpg" />
+    <Content Include="Resources\warrior\Combustive Shot.png.jpg" />
+    <Content Include="Resources\warrior\Counter Blow.png.jpg" />
+    <Content Include="Resources\warrior\Crushing Blow.png" />
+    <Content Include="Resources\warrior\Cyclone Axe.png.jpg" />
+    <Content Include="Resources\warrior\Double Chop.png.jpg" />
+    <Content Include="Resources\warrior\Dual Shot.png.jpg" />
+    <Content Include="Resources\warrior\Dual Strike.png.jpg" />
+    <Content Include="Resources\warrior\Earthshaker.png" />
+    <Content Include="Resources\warrior\Eviscerate.png.jpg" />
+    <Content Include="Resources\warrior\Fan of Fire.png.jpg" />
+    <Content Include="Resources\warrior\Fierce Blow.png" />
+    <Content Include="Resources\warrior\Final Thrust.png.jpg" />
+    <Content Include="Resources\warrior\Flurry.png.jpg" />
+    <Content Include="Resources\warrior\Gash.png.jpg" />
+    <Content Include="Resources\warrior\Greatsword Slice.png" />
+    <Content Include="Resources\warrior\Greatsword Swing.png" />
+    <Content Include="Resources\warrior\Hammer Bash.png" />
+    <Content Include="Resources\warrior\Hammer Shock.png" />
+    <Content Include="Resources\warrior\Hammer Smash.png" />
+    <Content Include="Resources\warrior\Hammer Swing.png" />
+    <Content Include="Resources\warrior\Hamstring.png.jpg" />
+    <Content Include="Resources\warrior\Hundred Blades.png" />
+    <Content Include="Resources\warrior\Impale.png.jpg" />
+    <Content Include="Resources\warrior\Kill Shot.png.jpg" />
+    <Content Include="Resources\warrior\Mace Bash.png.jpg" />
+    <Content Include="Resources\warrior\Mace Smash.png.jpg" />
+    <Content Include="Resources\warrior\Pin Down.png.jpg" />
+    <Content Include="Resources\warrior\Pommel Bash.png.jpg" />
+    <Content Include="Resources\warrior\Pulverize.png.jpg" />
+    <Content Include="Resources\warrior\Rifle Butt.png.jpg" />
+    <Content Include="Resources\warrior\Riposte.png.jpg" />
+    <Content Include="Resources\warrior\Rush.png" />
+    <Content Include="Resources\warrior\Savage Leap.png.jpg" />
+    <Content Include="Resources\warrior\Sever Artery.png.jpg" />
+    <Content Include="Resources\warrior\Shield Bash.png.jpg" />
+    <Content Include="Resources\warrior\Shield Stance.png.jpg" />
+    <Content Include="Resources\warrior\Skull Crack.png.jpg" />
+    <Content Include="Resources\warrior\Smoldering Arrow.png.jpg" />
+    <Content Include="Resources\warrior\Staggering Blow.png" />
+    <Content Include="Resources\warrior\Throw Axe.png.jpg" />
+    <Content Include="Resources\warrior\Tremor.png.jpg" />
+    <Content Include="Resources\warrior\Triple Chop.png.jpg" />
+    <Content Include="Resources\warrior\Volley.png.jpg" />
+    <Content Include="Resources\warrior\Whirling Axe.png.jpg" />
+    <Content Include="Resources\warrior\Whirlwind Attack.png" />
+    <None Include="Resources\warrior_off.png" />
+    <None Include="Resources\warrior.png" />
+    <None Include="Resources\Unknown.png" />
+    <None Include="Resources\thief_off.png" />
+    <None Include="Resources\thief.png" />
+    <None Include="Resources\Switch.png" />
+    <None Include="Resources\ranger_off.png" />
+    <None Include="Resources\ranger.png" />
+    <None Include="Resources\range.png" />
+    <None Include="Resources\necromancer_off.png" />
+    <None Include="Resources\necromancer.png" />
+    <None Include="Resources\mesmer_off.png" />
+    <None Include="Resources\mesmer.png" />
+    <None Include="Resources\guardian_off.png" />
+    <None Include="Resources\guardian.png" />
+    <None Include="Resources\engineer_off.png" />
+    <None Include="Resources\engineer.png" />
+    <None Include="Resources\elementalist_off.png" />
+    <None Include="Resources\elementalist.png" />
+    <None Include="Resources\damage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\elementalist\air\" />
+    <Folder Include="Resources\elementalist\earth\" />
+    <Folder Include="Resources\elementalist\fire\" />
+    <Folder Include="Resources\elementalist\water\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Desktop\Ai\Control\Control.vbproj">
+      <Project>{DB9B5181-1528-4647-ACE7-AC31F16BBCFA}</Project>
+      <Name>Control</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
