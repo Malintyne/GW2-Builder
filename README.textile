@@ -2,7 +2,7 @@ h1. Simple Character Creator for the upcoming game: Guild Wars 2
 
 h2. Programming Language
 
-* "VB.NET(Page on Wikipedia)"http://en.wikipedia.org/wiki/Visual_Basic_.NET
+* "VB.NET(Page on Wikipedia)":http://en.wikipedia.org/wiki/Visual_Basic_.NET
 
 h2. Program to use for compile the project
 
