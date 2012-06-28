@@ -1,5 +1,9 @@
 h1. Simple Character Creator for the upcoming game: Guild Wars 2
 
+h2. Program to use for compile the project
+
+The entire project is compatible with Visual Studio 2010 and higher version, Sharpdevelop 4.0 and use Framework.NET 2.0, earlier versions of that programs is not supported and maybe is not compatible.
+
 h2. Licenses
 
 The following directories and their contents are Copyright "red_moon(Member page on CodeProject.com)":http://www.codeproject.com/Members/red_moon . You may not reuse anything there in without the permission:
