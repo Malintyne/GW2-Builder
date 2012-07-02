@@ -30,7 +30,6 @@ Partial Class About
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.ToolTip1 = New Ai.Control.ToolTip()
         Me.SuspendLayout()
         '
         'LinkLabel1
@@ -96,15 +95,10 @@ Partial Class About
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.Location = New System.Drawing.Point(172, 57)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(87, 13)
+        Me.LinkLabel2.Size = New System.Drawing.Size(69, 13)
         Me.LinkLabel2.TabIndex = 6
         Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "WTFPL License."
-        '
-        'ToolTip1
-        '
-        Me.ToolTip1.AnimationSpeed = 0
-        Me.ToolTip1.EnableAutoClose = False
+        Me.LinkLabel2.Text = "MIT License."
         '
         'About
         '

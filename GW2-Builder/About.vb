@@ -15,6 +15,6 @@
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Process.Start("http://sam.zoy.org/wtfpl/")
+        Process.Start("http://en.wikipedia.org/wiki/MIT_License")
     End Sub
 End Class
