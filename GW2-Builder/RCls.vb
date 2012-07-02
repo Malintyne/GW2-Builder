@@ -1760,6 +1760,56 @@
                                 & "back foes." & vbCrLf & "Damage: 61" & vbCrLf & "Knockback: 300")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Electrify your shield, preparing to throw it at foes. If you are hit, the shield" _
                                 & "discharges, Stunning your nearby attacker." & vbCrLf & "Stun: 3 seconds")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox3.Text = "Dagger" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Stalker_s_Strike
+            Mainfrm.PictureBox13.Image = My.Resources.Crippling_Talon
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "Stalker's Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "Crippling Talon")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Stab your foe, Poisons them and Evading attacks." & vbCrLf & "Damage: 102" _
+                                & vbCrLf & "Poison(10s): -970 health, -33% reduce healing" & vbCrLf & "Range: 270")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Throw a dagger to Bleed and Cripple your foe." & vbCrLf & "Damage: 381" _
+                                & vbCrLf & "Cripple(6s): -50% speed" & vbCrLf & "Blleding(8s): -1152 damage over time" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox3.Text = "Axe" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Path_of_Scars
+            Mainfrm.PictureBox13.Image = My.Resources.Whirling_Defense
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "Path of Scars")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "Whirling Defense")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Boomerang a axe in a line, striking foes each way." & vbCrLf & "Damage: 542" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Block projectiles while damaging nearby foes." _
+                                & vbCrLf & "Damage: 81" & vbCrLf & "Duration: 5 seconds" & vbCrLf & "Combo Finisher: Whirl")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox3.Text = "Warhorn" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Hunter_s_Call
+            Mainfrm.PictureBox13.Image = My.Resources.Call_of_the_Wild
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "Hunter's Call")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "Call of the Wild")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Call hawks to swarm your foe." & vbCrLf & "Damage: 880" _
+                                & vbCrLf & "Damafe if Traited: 1110" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Grant Fury, Might and Swiftness to yoursellf and nearby allies." _
+                                & vbCrLf & "Fury(15s): +20% Critical" & vbCrLf & "Might(15s): +5-35 Power" & vbCrLf & "Swiftness(15s): +33% movement speed" _
+                                & vbCrLf & "Range: 900")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox3.Text = "Torch" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Throw_Torch
+            Mainfrm.PictureBox13.Image = My.Resources.Bonfire
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "Throw Torch")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "Bonfire")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Throw your torch and burn your foe." & vbCrLf & "Damage: 229" _
+                                & vbCrLf & "Burning(3s): -1086 health" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Set a fire around you, Burning foes." _
+                                & vbCrLf & "Damage: 49" & vbCrLf & "Burning(1s): -362 health" & vbCrLf & "Combo Field: Fire")
         End If
     End Sub
 #End Region
@@ -1896,6 +1946,56 @@
                                 & "back foes." & vbCrLf & "Damage: 61" & vbCrLf & "Knockback: 300")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Electrify your shield, preparing to throw it at foes. If you are hit, the shield" _
                                 & "discharges, Stunning your nearby attacker." & vbCrLf & "Stun: 3 seconds")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox4.Text = "Dagger" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Stalker_s_Strike
+            Mainfrm.PictureBox25.Image = My.Resources.Crippling_Talon
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "Stalker's Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "Crippling Talon")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, Mainfrm.PictureBox26.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, Mainfrm.PictureBox25.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Stab your foe, Poisons them and Evading attacks." & vbCrLf & "Damage: 102" _
+                                & vbCrLf & "Poison(10s): -970 health, -33% reduce healing" & vbCrLf & "Range: 270")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Throw a dagger to Bleed and Cripple your foe." & vbCrLf & "Damage: 381" _
+                                & vbCrLf & "Cripple(6s): -50% speed" & vbCrLf & "Blleding(8s): -1152 damage over time" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox4.Text = "Axe" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Path_of_Scars
+            Mainfrm.PictureBox25.Image = My.Resources.Whirling_Defense
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "Path of Scars")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "Whirling Defense")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, Mainfrm.PictureBox26.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, Mainfrm.PictureBox25.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Boomerang a axe in a line, striking foes each way." & vbCrLf & "Damage: 542" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Block projectiles while damaging nearby foes." _
+                                & vbCrLf & "Damage: 81" & vbCrLf & "Duration: 5 seconds" & vbCrLf & "Combo Finisher: Whirl")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox4.Text = "Warhorn" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Hunter_s_Call
+            Mainfrm.PictureBox25.Image = My.Resources.Call_of_the_Wild
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "Hunter's Call")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "Call of the Wild")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, Mainfrm.PictureBox26.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, Mainfrm.PictureBox25.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Call hawks to swarm your foe." & vbCrLf & "Damage: 880" _
+                                & vbCrLf & "Damafe if Traited: 1110" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Grant Fury, Might and Swiftness to yoursellf and nearby allies." _
+                                & vbCrLf & "Fury(15s): +20% Critical" & vbCrLf & "Might(15s): +5-35 Power" & vbCrLf & "Swiftness(15s): +33% movement speed" _
+                                & vbCrLf & "Range: 900")
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox4.Text = "Torch" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Throw_Torch
+            Mainfrm.PictureBox25.Image = My.Resources.Bonfire
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "Throw Torch")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "Bonfire")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, Mainfrm.PictureBox26.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, Mainfrm.PictureBox25.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Throw your torch and burn your foe." & vbCrLf & "Damage: 229" _
+                                & vbCrLf & "Burning(3s): -1086 health" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Set a fire around you, Burning foes." _
+                                & vbCrLf & "Damage: 49" & vbCrLf & "Burning(1s): -362 health" & vbCrLf & "Combo Field: Fire")
         End If
     End Sub
 #End Region
