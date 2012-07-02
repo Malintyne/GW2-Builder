@@ -280,14 +280,14 @@
         ComboBox4.Text = "Off Hand"
 
         ComboBox1.Items.Insert(0, "Shortbow") 'Shortbow - Two Hand #1
-        ComboBox1.Items.Insert(1, "Dagger") 'Dagger - One Hand #1
-        ComboBox1.Items.Insert(2, "Pistol") 'Pistol - One Hand #1
-        ComboBox1.Items.Insert(3, "Sword") 'Sword - One Hand #1
+        ComboBox1.Items.Insert(1, "Sword") 'Sword - One Hand #1
+        ComboBox1.Items.Insert(2, "Dagger") 'Dagger - One Hand #1
+        ComboBox1.Items.Insert(3, "Pistol") 'Pistol - One Hand #1
 
         ComboBox2.Items.Insert(0, "Shortbow") 'Shortbow - Two Hand #2
-        ComboBox2.Items.Insert(1, "Dagger") 'Dagger - One Hand #2
-        ComboBox2.Items.Insert(2, "Pistol") 'Pistol - One Hand #2
-        ComboBox2.Items.Insert(3, "Sword") 'Sword - One Hand #2
+        ComboBox2.Items.Insert(1, "Sword") 'Sword - One Hand #2
+        ComboBox2.Items.Insert(2, "Dagger") 'Dagger - One Hand #2
+        ComboBox2.Items.Insert(3, "Pistol") 'Pistol - One Hand #2
 
         ComboBox3.Items.Insert(0, "Dagger") 'Dagger - One Hand #3
         ComboBox3.Items.Insert(1, "Pistol") 'Pistol - One Hand #3

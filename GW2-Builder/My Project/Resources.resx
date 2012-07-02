@@ -505,7 +505,6 @@
   <data name="Whirlwind_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\warrior\whirlwind attack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Barrage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\ranger\barrage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -607,5 +606,105 @@
   </data>
   <data name="Winter_s_Bite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\ranger\winter's bite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Backstab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\backstab.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\black powder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Body_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\body shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Choking_Gas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\choking gas.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cloak_and_Dagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\cloak and dagger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cluster_Bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\cluster bomb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crippling_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\crippling strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dancing_Dagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\dancing dagger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Death_Blossom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\death blossom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detonate_Cluster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\detonate cluster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Disabling_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\disabling shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Double_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\double strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flanking_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\flanking strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Head_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\head shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Heartseeker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\heartseeker.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Infiltrator_s_Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\infiltrator's arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Infiltrator_s_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\infiltrator's strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lotus_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\lotus strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pistol_Whip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\pistol whip.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Repeater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\repeater.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shadow_Return" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\shadow return.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shadow_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\shadow shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shadow_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\shadow strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\slash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\slice.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sneak_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\sneak attack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\stab.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Suprise_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\suprise shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tactical_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\tactical strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trick_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\trick shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twisting_Fangs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\twisting fangs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vital_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\vital shot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wild_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thief\wild strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

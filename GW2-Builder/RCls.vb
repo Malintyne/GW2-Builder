@@ -521,12 +521,50 @@
                                 & vbCrLf & "Poison(2s): -194 health, -33% reduce healing" & vbCrLf & "Range: 1200")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox11, "Fire a quick shot in an Evasive retreat. Gain Swiftness if the shot hits." _
                                 & "This can be used while retreating." & vbCrLf & "Damage: 178" & vbCrLf & "Swiftness(3s): +33% Movement Speed" _
-                                & vbCrLf & "Combo Finisher: Physical projectile" & vbCrLf & "Range: 1200")
+                                & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 1200")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Shatter your foe's dreams of becoming an adventurer with a single arrow to the knee." _
                                 & "Your pet's next three attacks inflict Bleeding." & vbCrLf & "Damage: 178" & vbCrLf & "Cripple(3s): -50% Speed" _
                                 & vbCrLf & "Bleeding(6s): -288 damage over time" & vbCrLf & "Combo Finisher: Physical Projetile" & vbCrLf & "Range: 1200")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Daze your foe with an arrow. Stun them if you hit from behind or from the side." & vbCrLf & "Damage: 178" _
                                 & vbCrLf & "Daze: 1 second" & vbCrLf & "Stun: 1 second" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 1200")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Shortbow" Then '#two hand
+            Mainfrm.ComboBox3.Enabled = False
+            Mainfrm.ComboBox3.Text = "Off Hand"
+            Mainfrm.PictureBox30.Visible = False
+            Mainfrm.PictureBox31.Visible = False
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = True
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox9.Image = My.Resources.Trick_Shot
+            Mainfrm.PictureBox10.Image = My.Resources.Cluster_Bomb
+            Mainfrm.PictureBox36.Image = My.Resources.Detonate_Cluster
+            Mainfrm.PictureBox11.Image = My.Resources.Disabling_Shot
+            Mainfrm.PictureBox12.Image = My.Resources.Choking_Gas
+            Mainfrm.PictureBox13.Image = My.Resources.Concussion_Shot
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox9, "Trick Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox10, "Cluster Bomb")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox36, "Detonate Cluster")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox11, "Disabling Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "Choking Gas")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "Infiltrator's Arrow")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox36, Mainfrm.PictureBox36.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox9, "Bounce an arrow off multiple nearby foes." & vbCrLf & "Damage: 272" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox10, "Fire a cluster bomb at the target area. Detonate in midair for multiple explosions" _
+                                & vbCrLf & "Large explosion: 715" & vbCrLf & "Small explosion: 246" & vbCrLf & "Bleeding(4s): -576 damage over time" _
+                                & vbCrLf & "Combo Finisher: Blast")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox36, "Detonate cluster bomb in midair.")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox11, "Do an Evasive leap away from your foe while firing a Crippling shot." _
+                                & vbCrLf & "Damage: 246" & vbCrLf & "Cripple(2s): -50% speed" & vbCrLf & "Combo Finisher: Physical Projectile")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Fire an arrow that fills the target area with a Poisonus cloud." _
+                                & vbCrLf & "Poison(5s): -480 health, -33% reduce healing" & vbCrLf & "Combo Field: Poison")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Fire an arrow and shadowstep to the target area, Blinding nearby enemies." _
+                                & vbCrLf & "Blindness(5s): Next outgoing attack misses")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
             Mainfrm.PictureBox30.Visible = True
@@ -856,6 +894,118 @@
                                 & vbCrLf & "Bleed(6s): -288 damage over time" & vbCrLf & "Combo Finisher: Physical projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox11, "Throw an axe to Chill your foe. Your pet's next attacks inflicts Weakness." & vbCrLf & "Damage: 254" _
                                 & vbCrLf & "Chilled(3s): -66% speed/recharge" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Select a off hand or a two hand weapon")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
+            Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.PictureBox30.Visible = True
+            Mainfrm.PictureBox31.Visible = True
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = True
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox9.Image = My.Resources.Slice1
+            Mainfrm.PictureBox30.Image = My.Resources.Slash1
+            Mainfrm.PictureBox31.Image = My.Resources.Crippling_Strike
+            Mainfrm.PictureBox10.Image = My.Resources.Infiltrator_s_Strike
+            Mainfrm.PictureBox36.Image = My.Resources.Shadow_Return
+            Mainfrm.PictureBox11.Image = My.Resources.Stab
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox9, "Slice")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox30, "Slash")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox31, "Crippling Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox10, "Infiltrator's Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox36, "Shadow Return")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox11, "Stab")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox36, Mainfrm.PictureBox36.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox9, "Chain. Slice your foe." & vbCrLf & "Damage: 394" & vbCrLf & "Range: 130" _
+                                & vbCrLf & "Skill Chain:" & vbCrLf & "Slice > Slash > Crippling Strike")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox30, "Chain. Slash your foe again." & vbCrLf & "Damage: 394" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox31, "Chain. Cripple your foe with a final strike." & vbCrLf & "Damage: 702" _
+                                & vbCrLf & "Cripple(2s): -50% movement speed" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox10, "Chain. Shadowstep to your target, striking them. Use Shadow Return to shadowstep" _
+                                & "back and lose one condition." & vbCrLf & "Damage: 370" & vbCrLf & "Range: 600" _
+                                & vbCrLf & "Skill Chain:" & vbCrLf & "Infiltrator's Strike > Shadow Return")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox36, "Chain. Return to your original location." & vbCrLf & "Break Stun" & vbCrLf & "Range: 1200")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox11, "Stab your foe." & vbCrLf & "Damage: 493" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Select a off hand or a two hand weapon")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Dagger" Then '#one hand
+            Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.PictureBox30.Visible = True
+            Mainfrm.PictureBox31.Visible = True
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = False
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox9.Image = My.Resources.Double_Strike
+            Mainfrm.PictureBox30.Image = My.Resources.Wild_Strike
+            Mainfrm.PictureBox31.Image = My.Resources.Lotus_Strike
+            Mainfrm.PictureBox10.Image = My.Resources.Heartseeker
+            Mainfrm.PictureBox11.Image = My.Resources.Twisting_Fangs
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox9, "Double Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox30, "Wild Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox31, "Lotus Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox10, "Heartseeker")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox11, "Twisting Fangs")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox9, "Chain. Strike your foe twice." & vbCrLf & "Damage: 279" & vbCrLf & "Range: 130" _
+                                & vbCrLf & "Skill Chain:" & vbCrLf & "Double Strike > Wild Strike > Lotus Strike")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox30, "Chain. Strike your foe again." & vbCrLf & "Damage: 325" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox31, "Chain. Strike your foe with an 80% chance to cause Weakness." & vbCrLf & "Damage: 325" & vbCrLf _
+                                & vbCrLf & "Weakness(3s): -50% Endurance Regeneration, 50% Fumble" & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox10, "Leap and strike your foe. The less health your target has, the more damage you cause." _
+                                & vbCrLf & "Above 66%: 493" & vbCrLf & "Below 66%: 739" & vbCrLf & "Below 33%: 985" & vbCrLf & "Combo Finisher: Leap")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox11, "Spin in place, hitting nearby enemies. Each hit causes Bleeding." & vbCrLf & "Damage: 148" _
+                                & vbCrLf & "Bleeding(10s): -480 damage over time" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Select a off hand or a two hand weapon")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Pistol" Then '#one hand
+            Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.PictureBox30.Visible = False
+            Mainfrm.PictureBox31.Visible = False
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = False
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox9.Image = My.Resources.Vital_Shot
+            Mainfrm.PictureBox10.Image = My.Resources.Body_Shot
+            Mainfrm.PictureBox11.Image = My.Resources.Repeater
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox9, "Vital Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox10, "Body Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox11, "Repeater")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox12, "")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox13, "")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox12, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox13, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox9, "Bleed your foe with a shot to the vitals." & vbCrLf & "Damage: 179" _
+                                & vbCrLf & "Bleeding(3s): -192 damage over time" & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox10, "Make your foe Vulnerable with a body shot." & vbCrLf & "Damage: 246" _
+                                & vbCrLf & "Vulnerability(8s): -30 defense" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox11, "Blast your foe with rapid fire from your pistol." & vbCrLf & "Damage: 590" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox12, "Select a off hand or a two hand weapon")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         End If
@@ -1294,6 +1444,44 @@
                                 & vbCrLf & "Bleeding(6s): -288 damage over time" & vbCrLf & "Combo Finisher: Physical Projetile" & vbCrLf & "Range: 1200")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Daze your foe with an arrow. Stun them if you hit from behind or from the side." & vbCrLf & "Damage: 178" _
                                 & vbCrLf & "Daze: 1 second" & vbCrLf & "Stun: 1 second" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 1200")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Shortbow" Then '#two hand
+            Mainfrm.ComboBox4.Enabled = False
+            Mainfrm.ComboBox4.Text = "Off Hand"
+            Mainfrm.PictureBox32.Visible = False
+            Mainfrm.PictureBox33.Visible = False
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = True
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox29.Image = My.Resources.Trick_Shot
+            Mainfrm.PictureBox28.Image = My.Resources.Cluster_Bomb
+            Mainfrm.PictureBox37.Image = My.Resources.Detonate_Cluster
+            Mainfrm.PictureBox27.Image = My.Resources.Disabling_Shot
+            Mainfrm.PictureBox26.Image = My.Resources.Choking_Gas
+            Mainfrm.PictureBox25.Image = My.Resources.Concussion_Shot
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox29, "Trick Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox28, "Cluster Bomb")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox37, "Detonate Cluster")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox27, "Disabling Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "Choking Gas")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "Infiltrator's Arrow")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox29, Mainfrm.PictureBox29.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox28, Mainfrm.PictureBox28.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox37, Mainfrm.PictureBox37.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox27, Mainfrm.PictureBox27.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, Mainfrm.PictureBox26.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, Mainfrm.PictureBox25.Image)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox29, "Bounce an arrow off multiple nearby foes." & vbCrLf & "Damage: 272" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox28, "Fire a cluster bomb at the target area. Detonate in midair for multiple explosions" _
+                                & vbCrLf & "Large explosion: 715" & vbCrLf & "Small explosion: 246" & vbCrLf & "Bleeding(4s): -576 damage over time" _
+                                & vbCrLf & "Combo Finisher: Blast")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox37, "Detonate cluster bomb in midair.")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox27, "Do an Evasive leap away from your foe while firing a Crippling shot." _
+                                & vbCrLf & "Damage: 246" & vbCrLf & "Cripple(2s): -50% speed" & vbCrLf & "Combo Finisher: Physical Projectile")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Fire an arrow that fills the target area with a Poisonus cloud." _
+                                & vbCrLf & "Poison(5s): -480 health, -33% reduce healing" & vbCrLf & "Combo Field: Poison")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Fire an arrow and shadowstep to the target area, Blinding nearby enemies." _
+                                & vbCrLf & "Blindness(5s): Next outgoing attack misses")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
             Mainfrm.PictureBox32.Visible = True
@@ -1622,6 +1810,118 @@
                                 & vbCrLf & "Bleed(6s): -288 damage over time" & vbCrLf & "Combo Finisher: Physical projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox27, "Throw an axe to Chill your foe. Your pet's next attacks inflicts Weakness." & vbCrLf & "Damage: 254" _
                                 & vbCrLf & "Chilled(3s): -66% speed/recharge" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Select a off hand or a two hand weapon")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
+            Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.PictureBox32.Visible = True
+            Mainfrm.PictureBox33.Visible = True
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = True
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox29.Image = My.Resources.Slice1
+            Mainfrm.PictureBox32.Image = My.Resources.Slash1
+            Mainfrm.PictureBox33.Image = My.Resources.Crippling_Strike
+            Mainfrm.PictureBox28.Image = My.Resources.Infiltrator_s_Strike
+            Mainfrm.PictureBox37.Image = My.Resources.Shadow_Return
+            Mainfrm.PictureBox27.Image = My.Resources.Stab
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox29, "Slice")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox32, "Slash")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox33, "Crippling Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox28, "Infiltrator's Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox37, "Shadow Return")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox27, "Stab")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox29, Mainfrm.PictureBox29.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox32, Mainfrm.PictureBox32.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox33, Mainfrm.PictureBox33.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox28, Mainfrm.PictureBox28.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox37, Mainfrm.PictureBox37.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox27, Mainfrm.PictureBox27.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox29, "Chain. Slice your foe." & vbCrLf & "Damage: 394" & vbCrLf & "Range: 130" _
+                                & vbCrLf & "Skill Chain:" & vbCrLf & "Slice > Slash > Crippling Strike")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox32, "Chain. Slash your foe again." & vbCrLf & "Damage: 394" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox33, "Chain. Cripple your foe with a final strike." & vbCrLf & "Damage: 702" _
+                                & vbCrLf & "Cripple(2s): -50% movement speed" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox28, "Chain. Shadowstep to your target, striking them. Use Shadow Return to shadowstep" _
+                                & "back and lose one condition." & vbCrLf & "Damage: 370" & vbCrLf & "Range: 600" _
+                                & vbCrLf & "Skill Chain:" & vbCrLf & "Infiltrator's Strike > Shadow Return")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox37, "Chain. Return to your original location." & vbCrLf & "Break Stun" & vbCrLf & "Range: 1200")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox27, "Stab your foe." & vbCrLf & "Damage: 493" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Select a off hand or a two hand weapon")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Dagger" Then '#one hand
+            Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.PictureBox32.Visible = True
+            Mainfrm.PictureBox33.Visible = True
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = False
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox29.Image = My.Resources.Double_Strike
+            Mainfrm.PictureBox32.Image = My.Resources.Wild_Strike
+            Mainfrm.PictureBox33.Image = My.Resources.Lotus_Strike
+            Mainfrm.PictureBox28.Image = My.Resources.Heartseeker
+            Mainfrm.PictureBox27.Image = My.Resources.Twisting_Fangs
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox29, "Double Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox32, "Wild Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox33, "Lotus Strike")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox28, "Heartseeker")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox27, "Twisting Fangs")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox29, Mainfrm.PictureBox29.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox32, Mainfrm.PictureBox32.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox33, Mainfrm.PictureBox33.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox28, Mainfrm.PictureBox28.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox27, Mainfrm.PictureBox27.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox29, "Chain. Strike your foe twice." & vbCrLf & "Damage: 279" & vbCrLf & "Range: 130" _
+                                & vbCrLf & "Skill Chain:" & vbCrLf & "Double Strike > Wild Strike > Lotus Strike")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox32, "Chain. Strike your foe again." & vbCrLf & "Damage: 325" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox33, "Chain. Strike your foe with an 80% chance to cause Weakness." & vbCrLf & "Damage: 325" & vbCrLf _
+                                & vbCrLf & "Weakness(3s): -50% Endurance Regeneration, 50% Fumble" & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox28, "Leap and strike your foe. The less health your target has, the more damage you cause." _
+                                & vbCrLf & "Above 66%: 493" & vbCrLf & "Below 66%: 739" & vbCrLf & "Below 33%: 985" & vbCrLf & "Combo Finisher: Leap")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox27, "Spin in place, hitting nearby enemies. Each hit causes Bleeding." & vbCrLf & "Damage: 148" _
+                                & vbCrLf & "Bleeding(10s): -480 damage over time" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Select a off hand or a two hand weapon")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Pistol" Then '#one hand
+            Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.PictureBox32.Visible = False
+            Mainfrm.PictureBox33.Visible = False
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = False
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox29.Image = My.Resources.Vital_Shot
+            Mainfrm.PictureBox28.Image = My.Resources.Body_Shot
+            Mainfrm.PictureBox27.Image = My.Resources.Repeater
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox29, "Vital Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox28, "Body Shot")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox27, "Repeater")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox26, "")
+            Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox25, "")
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox29, Mainfrm.PictureBox29.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox28, Mainfrm.PictureBox28.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox27, Mainfrm.PictureBox27.Image)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox26, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTipImage(Mainfrm.PictureBox25, My.Resources.null)
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox29, "Bleed your foe with a shot to the vitals." & vbCrLf & "Damage: 179" _
+                                & vbCrLf & "Bleeding(3s): -192 damage over time" & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox28, "Make your foe Vulnerable with a body shot." & vbCrLf & "Damage: 246" _
+                                & vbCrLf & "Vulnerability(8s): -30 defense" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox27, "Blast your foe with rapid fire from your pistol." & vbCrLf & "Damage: 590" _
+                                & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox26, "Select a off hand or a two hand weapon")
             Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         End If
