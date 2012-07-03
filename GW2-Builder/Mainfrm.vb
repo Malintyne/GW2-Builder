@@ -212,6 +212,12 @@
 
         cls.ResetImage()
 
+		PictureBox44.Image = My.Resources.Explosives___Engineer
+        PictureBox45.Image = My.Resources.Firearms___Engineer
+        PictureBox46.Image = My.Resources.Inventions___Engineer
+        PictureBox47.Image = My.Resources.Alchemy___Engineer
+        PictureBox48.Image = My.Resources.Tools___Engineer
+		
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -254,6 +260,12 @@
 
         cls.ResetImage()
 
+		PictureBox44.Image = My.Resources.Marksmanship___Ranger
+        PictureBox45.Image = My.Resources.Shirmishing___Ranger
+        PictureBox46.Image = My.Resources.Wildnerness___Ranger
+        PictureBox47.Image = My.Resources.Nature___Ranger
+        PictureBox48.Image = My.Resources.Beastmastery___Ranger	
+		
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -306,6 +318,12 @@
 
         cls.ResetImage()
 
+		PictureBox44.Image = My.Resources.Deadly___Thief
+        PictureBox45.Image = My.Resources.Critical___Thief
+        PictureBox46.Image = My.Resources.Shadow___Thief
+        PictureBox47.Image = My.Resources.Acrobatics___Thief
+        PictureBox48.Image = My.Resources.Trickery___Thief	
+		
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -351,6 +369,39 @@
         PictureBox8.Image = My.Resources.necromancer_off
 
         cls.ResetImage()
+		
+        PictureBox40.Visible = True
+        PictureBox41.Visible = True
+        PictureBox42.Visible = True
+        PictureBox43.Visible = True
+
+        PictureBox40.Image = My.Resources.Fire
+        PictureBox41.Image = My.Resources.Water
+        PictureBox42.Image = My.Resources.Air
+        PictureBox43.Image = My.Resources.Earth
+
+		PictureBox44.Image = My.Resources.Fire___Elementalist
+        PictureBox45.Image = My.Resources.Air___Elementalist
+        PictureBox46.Image = My.Resources.Earth___Elementalist
+        PictureBox47.Image = My.Resources.Water___Elementalist
+        PictureBox48.Image = My.Resources.Arcane___Elementalist	
+		
+        ToolTip2.SetToolTipTitle(PictureBox40, "Fire")
+        ToolTip2.SetToolTipTitle(PictureBox41, "Water")
+        ToolTip2.SetToolTipTitle(PictureBox42, "Air")
+        ToolTip2.SetToolTipTitle(PictureBox43, "Earth")
+
+        ToolTip2.SetToolTipImage(PictureBox40, PictureBox40.Image)
+        ToolTip2.SetToolTipImage(PictureBox41, PictureBox41.Image)
+        ToolTip2.SetToolTipImage(PictureBox42, PictureBox42.Image)
+        ToolTip2.SetToolTipImage(PictureBox43, PictureBox43.Image)
+
+        ToolTip2.SetToolTip(PictureBox40, "Virtue: Burn foes with every fifth attacks." & vbCrLf & "Activate: Grant Burning to you and nearby allies next attack." _
+                            & vbCrLf & "Burning (passive effect)(1s): 4 damage" & vbCrLf & "Burning (active effect)(5s): 4 damage")
+        ToolTip2.SetToolTip(PictureBox41, "Virtue: Regenerate health." & vbCrLf & "Activate: Heal yourself and nearby allies." _
+                            & vbCrLf & "Passive Renegeration: 3 seconds" & vbCrLf & "Healing: 25")
+        ToolTip2.SetToolTip(PictureBox42, "Virtue: Grants Aegis every 40 seconds." & vbCrLf & "Activate: Grant Aegis to yourself and nearby allies." _
+                            & vbCrLf & "Aegis(5s): Block the next incoming attack")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -396,6 +447,12 @@
 
         cls.ResetImage()
 
+		PictureBox44.Image = My.Resources.Domination___Mesmer
+        PictureBox45.Image = My.Resources.Dueling___Mesmer
+        PictureBox46.Image = My.Resources.Chaos___Mesmer
+        PictureBox47.Image = My.Resources.Inspiration___Mesmer
+        PictureBox48.Image = My.Resources.Illusions___Mesmer
+		
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -446,6 +503,12 @@
 
         cls.ResetImage()
 
+		PictureBox44.Image = My.Resources.Spite___Necromancer
+        PictureBox45.Image = My.Resources.Curses___Necromancer
+        PictureBox46.Image = My.Resources.Death___Necromancer
+        PictureBox47.Image = My.Resources.Blood___Necromancer
+        PictureBox48.Image = My.Resources.Soul___Necromancer
+		
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()

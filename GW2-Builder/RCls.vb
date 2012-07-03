@@ -90,6 +90,10 @@
         Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox27, vbNullString)
         Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox28, vbNullString)
         Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox29, vbNullString)
+        Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, vbNullString)
+        Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox41, vbNullString)
+        Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox42, vbNullString)
+        Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox43, vbNullString)
 
         Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, My.Resources.null)
         Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox10, My.Resources.null)

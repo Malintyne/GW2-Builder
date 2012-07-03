@@ -67,6 +67,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Air() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Air", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Arc_Lightning() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Arc_Lightning", resourceCulture)
@@ -494,6 +501,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Earth() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Earth", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Earthquake() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Earthquake", resourceCulture)
@@ -581,6 +595,13 @@ Namespace My.Resources
         Public ReadOnly Property Final_Thrust_png() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Final_Thrust_png", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Fire() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Fire", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1841,6 +1862,13 @@ Namespace My.Resources
         Public ReadOnly Property warrior_off() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("warrior_off", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Water() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Water", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

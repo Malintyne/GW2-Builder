@@ -199,6 +199,10 @@
     <None Include="Resources\elementalist\water\Vapor Blade.png" />
     <None Include="Resources\elementalist\water\Water Blast.png" />
     <None Include="Resources\elementalist\water\Water Trident.png" />
+    <None Include="Resources\elementalist\Air.png" />
+    <None Include="Resources\elementalist\Earth.png" />
+    <None Include="Resources\elementalist\Fire.png" />
+    <None Include="Resources\elementalist\Water.png" />
     <Content Include="Resources\engineer\Blowtorch.png" />
     <Content Include="Resources\engineer\Blunderbuss.png" />
     <Content Include="Resources\engineer\Explosive Shot.png" />
