@@ -132,6 +132,12 @@
         ComboBox4.Items.Insert(0, "Shield") 'Shield - Off Hand #4
         ComboBox4.Items.Insert(1, "Focus") 'Focus - Off Hand #4
         ComboBox4.Items.Insert(2, "Torch") 'Torch - Off Hand #4
+
+        Label10.Text = "Zeal"
+        Label11.Text = "Radiance"
+        Label12.Text = "Valor"
+        Label13.Text = "Honor"
+        Label14.Text = "Virtues"
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -196,6 +202,12 @@
         ComboBox4.Items.Insert(2, "Axe") 'Axe - One Hand #4
         ComboBox4.Items.Insert(3, "Warhorn") 'Warhorn - Off Hand #4
         ComboBox4.Items.Insert(4, "Mace") 'Mace - One Hand #4
+
+        Label10.Text = "Strength"
+        Label11.Text = "Arms"
+        Label12.Text = "Defense"
+        Label13.Text = "Tactics"
+        Label14.Text = "Discipline"
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
@@ -244,6 +256,12 @@
 
         ComboBox4.Items.Insert(0, "Shield") 'Shield - One Hand #4
         ComboBox4.Items.Insert(1, "Pistol") 'Pistol - One Hand #4
+
+        Label10.Text = "Explosives"
+        Label11.Text = "Firearms"
+        Label12.Text = "Inventions"
+        Label13.Text = "Alchemy"
+        Label14.Text = "Tools"
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
@@ -302,6 +320,13 @@
         ComboBox4.Items.Insert(1, "Axe") 'Axe - One Hand #4
         ComboBox4.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #4
         ComboBox4.Items.Insert(3, "Torch") 'Torch - One Hand #4
+
+        Label10.Text = "Marksmanship"
+        Label11.Text = "Skirmishing"
+        Label12.Text = "Wilderness Survival"
+        Label13.Text = "Nature Magic"
+        Label14.Text = "Beastmastery"
+
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
@@ -354,6 +379,13 @@
 
         ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
         ComboBox4.Items.Insert(1, "Pistol") 'Pistol - One Hand #4
+
+        Label10.Text = "Deadly Arts"
+        Label11.Text = "Critical Strikes"
+        Label12.Text = "Shadow Arts"
+        Label13.Text = "Acrobatics"
+        Label14.Text = "Trickery"
+
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
@@ -386,22 +418,20 @@
         PictureBox47.Image = My.Resources.Water___Elementalist
         PictureBox48.Image = My.Resources.Arcane___Elementalist	
 		
-        ToolTip2.SetToolTipTitle(PictureBox40, "Fire")
-        ToolTip2.SetToolTipTitle(PictureBox41, "Water")
-        ToolTip2.SetToolTipTitle(PictureBox42, "Air")
-        ToolTip2.SetToolTipTitle(PictureBox43, "Earth")
+        ToolTip2.SetToolTipTitle(PictureBox40, "Fire Attunement")
+        ToolTip2.SetToolTipTitle(PictureBox41, "Water Attunement")
+        ToolTip2.SetToolTipTitle(PictureBox42, "Air Attunement")
+        ToolTip2.SetToolTipTitle(PictureBox43, "Earth Attunement")
 
         ToolTip2.SetToolTipImage(PictureBox40, PictureBox40.Image)
         ToolTip2.SetToolTipImage(PictureBox41, PictureBox41.Image)
         ToolTip2.SetToolTipImage(PictureBox42, PictureBox42.Image)
         ToolTip2.SetToolTipImage(PictureBox43, PictureBox43.Image)
 
-        ToolTip2.SetToolTip(PictureBox40, "Virtue: Burn foes with every fifth attacks." & vbCrLf & "Activate: Grant Burning to you and nearby allies next attack." _
-                            & vbCrLf & "Burning (passive effect)(1s): 4 damage" & vbCrLf & "Burning (active effect)(5s): 4 damage")
-        ToolTip2.SetToolTip(PictureBox41, "Virtue: Regenerate health." & vbCrLf & "Activate: Heal yourself and nearby allies." _
-                            & vbCrLf & "Passive Renegeration: 3 seconds" & vbCrLf & "Healing: 25")
-        ToolTip2.SetToolTip(PictureBox42, "Virtue: Grants Aegis every 40 seconds." & vbCrLf & "Activate: Grant Aegis to yourself and nearby allies." _
-                            & vbCrLf & "Aegis(5s): Block the next incoming attack")
+        ToolTip2.SetToolTip(PictureBox40, "Attune to fire, gaining heavy damage and Burning abilities.")
+        ToolTip2.SetToolTip(PictureBox41, "Attune to water, gaining superior support and healing abilities.")
+        ToolTip2.SetToolTip(PictureBox42, "Attune to air, gaining heavy damage and control abilities.")
+        ToolTip2.SetToolTip(PictureBox43, "Attune to earth, gaining superior damage over time and defensive abilities.")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -431,6 +461,13 @@
 
         ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
         ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
+
+        Label10.Text = "Fire Magic"
+        Label11.Text = "Air Magic"
+        Label12.Text = "Earth Magic"
+        Label13.Text = "Water Magic"
+        Label14.Text = "Arcane Power"
+
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
@@ -487,6 +524,13 @@
         ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
         ComboBox4.Items.Insert(2, "Pistol") 'Pistol - One Hand #4
         ComboBox4.Items.Insert(3, "Torch") 'Torch - One Hand #4
+
+        Label10.Text = "Domination"
+        Label11.Text = "Dueling"
+        Label12.Text = "Chaos"
+        Label13.Text = "Inspiration"
+        Label14.Text = "Illusions"
+
     End Sub
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
@@ -541,6 +585,13 @@
         ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
         ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
         ComboBox4.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #4
+
+        Label10.Text = "Spite"
+        Label11.Text = "Curses"
+        Label12.Text = "Death Magic"
+        Label13.Text = "Blood Magic"
+        Label14.Text = "Soul Reaping"
+
     End Sub
 
     Private Sub PictureBox19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox19.Click

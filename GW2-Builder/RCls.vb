@@ -1088,6 +1088,43 @@
                                 & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox12, "Select a off hand or a two hand weapon")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox1.Text = "Greatsword" Then '#two hand
+            Mainfrm.ComboBox3.Enabled = False
+            Mainfrm.ComboBox3.Text = "Off Hand"
+            Mainfrm.PictureBox30.Visible = False
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = False
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox9.Image = My.Resources.Spatial_Surge
+            Mainfrm.PictureBox10.Image = My.Resources.Mirror_Blade
+            Mainfrm.PictureBox11.Image = My.Resources.Mind_Stab
+            Mainfrm.PictureBox12.Image = My.Resources.Phantasmal_Berserker
+            Mainfrm.PictureBox13.Image = My.Resources.Illusionary_Wave
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Spatial Surge")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox10, "Mirror Blade")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Mind Stab")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Phantasmal Berserker")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Illusionary Wave")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Shoot a beam at your foe. The farther away they are, the more damage you deal." _
+                                        & vbCrLf & "Range: 1,200")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox10, "Throw an illusionary greatsword that bounces between targets, damaging enemies" _
+                                & vbCrLf & "and giving might to allies. It creates a clone at it's final target." & vbCrLf & "Damage: 296" & vbCrLf _
+                                & "Might(5s):+5-35 Power" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox11, "Thrust your greatsword into the ground, creating a powerful attack that damages and applies Vulnerability." _
+                                & vbCrLf & "Vulnerability(6s):-30 Defense" & vbCrLf & "Damage: 593" & vbCrLf & "Range: 1,200")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox12, "Create a phantasm that uses a whirling attack to damage and Cripple foes." & vbCrLf & "Cripple(2s):-50% Movement Speed" & vbCrLf _
+                                & "Range: 1,200")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Push back all foes in front of you with a wave of magical energy." _
+                                & vbCrLf & "Damage: 178" & vbCrLf & "Range: 425")
         End If
     End Sub
 #End Region
@@ -1577,6 +1614,7 @@
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
             Mainfrm.PictureBox32.Visible = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = False
@@ -1619,6 +1657,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox2.Text = "Scepter" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = False
             Mainfrm.PictureBox33.Visible = False
             Mainfrm.PictureBox35.Visible = False
@@ -1650,6 +1689,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox2.Text = "Mace" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -1695,6 +1735,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -1735,6 +1776,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox2.Text = "Axe" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -1773,6 +1815,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox2.Text = "Mace" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -1812,6 +1855,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "en" And Mainfrm.ComboBox2.Text = "Pistol" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = False
             Mainfrm.PictureBox33.Visible = False
             Mainfrm.PictureBox35.Visible = False
@@ -1843,6 +1887,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -1888,6 +1933,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox2.Text = "Axe" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = False
             Mainfrm.PictureBox33.Visible = False
             Mainfrm.PictureBox35.Visible = False
@@ -1918,6 +1964,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -1961,6 +2008,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Dagger" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = True
             Mainfrm.PictureBox33.Visible = True
             Mainfrm.PictureBox35.Visible = False
@@ -2000,6 +2048,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox2.Text = "Pistol" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
             Mainfrm.PictureBox32.Visible = False
             Mainfrm.PictureBox33.Visible = False
             Mainfrm.PictureBox35.Visible = False
@@ -2028,6 +2077,43 @@
                                 & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox26, "Select a off hand or a two hand weapon")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a off hand or a two hand weapon")
+        ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox1.Text = "Greatsword" Then '#two hand
+            Mainfrm.ComboBox4.Enabled = False
+            Mainfrm.ComboBox4.Text = "Off Hand"
+            Mainfrm.PictureBox32.Visible = False
+            Mainfrm.PictureBox33.Visible = False
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = False
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox29.Image = My.Resources.Spatial_Surge
+            Mainfrm.PictureBox28.Image = My.Resources.Mirror_Blade
+            Mainfrm.PictureBox27.Image = My.Resources.Mind_Stab
+            Mainfrm.PictureBox26.Image = My.Resources.Phantasmal_Berserker
+            Mainfrm.PictureBox25.Image = My.Resources.Illusionary_Wave
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox29, "Spatial Surge")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox28, "Mirror Blade")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox27, "Mind Stab")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox26, "Phantasmal Berserker")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox25, "Illusionary Wave")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox29, Mainfrm.PictureBox9.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox28, Mainfrm.PictureBox10.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox27, Mainfrm.PictureBox11.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox26, Mainfrm.PictureBox12.Image)
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox25, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox29, "Shoot a beam at your foe. The farther away they are, the more damage you deal." _
+                                        & vbCrLf & "Range: 1,200")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox28, "Throw an illusionary greatsword that bounces between targets, damaging enemies" _
+                                & vbCrLf & "and giving might to allies. It creates a clone at it's final target." & vbCrLf & "Damage: 296" & vbCrLf _
+                                & "Might(5s):+5-35 Power" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 900")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox27, "Thrust your greatsword into the ground, creating a powerful attack that damages and applies Vulnerability." _
+                                & vbCrLf & "Vulnerability(6s):-30 Defense" & vbCrLf & "Damage: 593" & vbCrLf & "Range: 1,200")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox26, "Create a phantasm that uses a whirling attack to damage and Cripple foes." & vbCrLf & "Cripple(2s):-50% Movement Speed" & vbCrLf _
+                                & "Range: 1,200")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Push back all foes in front of you with a wave of magical energy." _
+                                & vbCrLf & "Damage: 178" & vbCrLf & "Range: 425")
         End If
     End Sub
 #End Region
@@ -2247,16 +2333,16 @@
             End If
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox3.Text = "Pistol" Then
             Mainfrm.PictureBox34.Visible = False
-            Mainfrm.PictureBox12.Image = My.Resources.Black_Powder
-            Mainfrm.PictureBox13.Image = My.Resources.Head_Shot
-            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Black Powder")
-            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Head Shot")
+            Mainfrm.PictureBox12.Image = My.Resources.Head_Shot
+            Mainfrm.PictureBox13.Image = My.Resources.Black_Powder
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Head Shot")
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Black Powder")
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
-            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox12, "Throw a dagger that Cripples nearby foes and returns to you." & vbCrLf & "Damage: 493" _
-                                & vbCrLf & "Crippled(5s):-50% Movement Speed" & vbCrLf & "Combo Finisher: Physical Projectile")
-            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Stab your foe and vanish in Stealth, leaving them Vulnerable." _
-                                & vbCrLf & "Damage: 793" & vbCrLf & "Vulnerability(5s):-30 Defense")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox12, "Daze your foe with a headshot." & vbCrLf & "Damage: 138" _
+                                & vbCrLf & "Daze(0.25s): Unable to use skills" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLF & "Range: 900")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Fire a shot with black powder, creating a smoke cloud that Blinds nearby enemies." _
+                                & vbCrLf & "Damage: 138" & vbCrLf & "Combo Field: Smoke" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLF & "Range: 900")
             If Mainfrm.ComboBox1.Text = "Sword" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Pistol_Whip
                 Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Pistol Whip")
