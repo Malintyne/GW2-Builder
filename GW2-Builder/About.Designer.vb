@@ -86,7 +86,7 @@ Partial Class About
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(354, 179)
+        Me.TextBox1.Size = New System.Drawing.Size(354, 153)
         Me.TextBox1.TabIndex = 5
         Me.TextBox1.Text = resources.GetString("TextBox1.Text")
         '
@@ -104,7 +104,7 @@ Partial Class About
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(381, 267)
+        Me.ClientSize = New System.Drawing.Size(381, 244)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label4)

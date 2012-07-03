@@ -931,7 +931,6 @@
   <data name="Windborne_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elementalist\air\Windborne Speed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Air" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elementalist\Air.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -943,5 +942,126 @@
   </data>
   <data name="Water" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elementalist\Water.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Acrobatics___Thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\acrobatics - thief.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Air___Elementalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\air - elementalist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alchemy___Engineer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\alchemy - engineer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arcane___Elementalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\arcane - elementalist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arms___Warrior1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\arms - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beastmastery___Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\beastmastery - ranger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blood___Necromancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\blood - necromancer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chaos___Mesmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\chaos - mesmer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Critical___Thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\critical - thief.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curses___Necromancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\curses - necromancer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deadly___Thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\deadly - thief.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Death___Necromancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\death - necromancer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Defense___Warrior1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\defense - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Discipline___Warrior1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\discipline - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Domination___Mesmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\domination - mesmer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dueling___Mesmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\dueling - mesmer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Earth___Elementalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\earth - elementalist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Explosives___Engineer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\explosives - engineer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Firearms___Engineer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\firearms - engineer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fire___Elementalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\fire - elementalist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Honor___Guardian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\honor - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Illusions___Mesmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\illusions - mesmer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Inspiration___Mesmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\inspiration - mesmer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Inventions___Engineer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\inventions - engineer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Markmanship___Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\markmanship - ranger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nature___Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\nature - ranger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Radiance___Guardian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\radiance - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shadow__Thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\shadow -thief.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skirmishing___Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\skirmishing - ranger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soul___Necromancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\soul - necromancer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spite___Necromancer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\spite - necromancer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strength___Warrior1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\strength - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tactics___Warrior1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\tactics - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tools___Engineer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\tools - engineer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trickery___Thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\trickery - thief.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Valor___Guardian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\valor - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Virtues___Guardian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\virtues - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Water___Elementalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\water - elementalist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wildnerness___Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\wildnerness - ranger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeal___Guardian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\zeal - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

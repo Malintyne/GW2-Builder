@@ -212,7 +212,7 @@
 
         cls.ResetImage()
 
-		PictureBox44.Image = My.Resources.Explosives___Engineer
+        PictureBox44.Image = My.Resources.Explosives___Engineer
         PictureBox45.Image = My.Resources.Firearms___Engineer
         PictureBox46.Image = My.Resources.Inventions___Engineer
         PictureBox47.Image = My.Resources.Alchemy___Engineer
@@ -260,8 +260,8 @@
 
         cls.ResetImage()
 
-		PictureBox44.Image = My.Resources.Marksmanship___Ranger
-        PictureBox45.Image = My.Resources.Shirmishing___Ranger
+        PictureBox44.Image = My.Resources.Markmanship___Ranger
+        PictureBox45.Image = My.Resources.Skirmishing___Ranger
         PictureBox46.Image = My.Resources.Wildnerness___Ranger
         PictureBox47.Image = My.Resources.Nature___Ranger
         PictureBox48.Image = My.Resources.Beastmastery___Ranger	
@@ -320,7 +320,7 @@
 
 		PictureBox44.Image = My.Resources.Deadly___Thief
         PictureBox45.Image = My.Resources.Critical___Thief
-        PictureBox46.Image = My.Resources.Shadow___Thief
+        PictureBox46.Image = My.Resources.Shadow__Thief
         PictureBox47.Image = My.Resources.Acrobatics___Thief
         PictureBox48.Image = My.Resources.Trickery___Thief	
 		
