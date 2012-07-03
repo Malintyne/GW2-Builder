@@ -197,7 +197,7 @@ Partial Class Mainfrm
         Me.TabPage1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.TabPage1.Size = New System.Drawing.Size(860, 385)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Abilities"
@@ -592,7 +592,7 @@ Partial Class Mainfrm
         Me.TabPage2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.TabPage2.Size = New System.Drawing.Size(860, 385)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Traits"
@@ -705,6 +705,11 @@ Partial Class Mainfrm
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.AnimationSpeed = 0
+        Me.ToolTip2.EnableAutoClose = False
         '
         'Mainfrm
         '

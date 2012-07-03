@@ -64,6 +64,8 @@
         PictureBox7.Image = My.Resources.mesmer_off
         PictureBox8.Image = My.Resources.necromancer_off
 
+        cls.ResetImage()
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -433,5 +435,9 @@
         ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
         ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
         ComboBox4.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #4
+    End Sub
+
+    Private Sub PictureBox19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox19.Click
+
     End Sub
 End Class
