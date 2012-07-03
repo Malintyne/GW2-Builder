@@ -25,6 +25,10 @@
         Mainfrm.PictureBox37.Visible = False
         Mainfrm.PictureBox38.Visible = False
         Mainfrm.PictureBox39.Visible = False
+        Mainfrm.PictureBox40.Visible = False
+        Mainfrm.PictureBox41.Visible = False
+        Mainfrm.PictureBox42.Visible = False
+        Mainfrm.PictureBox43.Visible = False
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label8, "Information")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label2, "Minimize")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label1, "Close")
@@ -51,6 +55,10 @@
         Mainfrm.PictureBox37.Visible = False
         Mainfrm.PictureBox38.Visible = False
         Mainfrm.PictureBox39.Visible = False
+        Mainfrm.PictureBox40.Visible = False
+        Mainfrm.PictureBox41.Visible = False
+        Mainfrm.PictureBox42.Visible = False
+        Mainfrm.PictureBox43.Visible = False
         Mainfrm.PictureBox9.Image = My.Resources.Unknown
         Mainfrm.PictureBox10.Image = My.Resources.Unknown
         Mainfrm.PictureBox11.Image = My.Resources.Unknown
@@ -128,6 +136,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox9.Image = My.Resources.Hammer_Swing
             Mainfrm.PictureBox30.Image = My.Resources.Hammer_Bash
             Mainfrm.PictureBox31.Image = My.Resources.Symbol_of_Protection
@@ -170,6 +182,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = True
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox9.Image = My.Resources.Wave_of_Wrath
             Mainfrm.PictureBox10.Image = My.Resources.Orb_of_Light
             Mainfrm.PictureBox36.Image = My.Resources.Flash_of_Light
@@ -211,6 +227,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox9.Image = My.Resources.Strike
             Mainfrm.PictureBox30.Image = My.Resources.Vengeful_Strike
             Mainfrm.PictureBox31.Image = My.Resources.Wrathful_Strike
@@ -255,6 +275,11 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Earthshaker
             Mainfrm.PictureBox9.Image = My.Resources.Hammer_Swing1
             Mainfrm.PictureBox30.Image = My.Resources.Hammer_Bash1
             Mainfrm.PictureBox31.Image = My.Resources.Hammer_Smash
@@ -262,6 +287,7 @@
             Mainfrm.PictureBox11.Image = My.Resources.Hammer_Shock
             Mainfrm.PictureBox12.Image = My.Resources.Staggering_Blow
             Mainfrm.PictureBox13.Image = My.Resources.Backbreaker
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Earthshaker")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Hammer Swing")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox30, "Hammer Bash")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox31, "Hammer Smash")
@@ -269,6 +295,7 @@
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Hammer Shock")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Staggering Blow")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Backbreaker")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
@@ -276,6 +303,9 @@
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Burst. Jump to the targeted location and slam your hammer down, damaging ans Stunning foes." _
+                                & vbCrLf & "Damage: 244" & vbCrLf & "Level 1 Stun: 1 second" & vbCrLf & "Level 2 Stun: 1,5 second" _
+                                & vbCrLf & "Level 3 Stun: 2 seconds" & vbCrLf & "Combo Finisher: Blast" & vbCrLf & "Range: 600")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Chain. Bash your foe." & vbCrLf & "Damage: 586" & vbCrLf & "Range: 130" _
                                 & vbCrLf & "Skill Chain:" & vbCrLf & "Hammer Swing > Hammer Bash > Hammer Blow")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox30, "Chain. Bash your foe again." & vbCrLf & "Damage: 586" & vbCrLf & "Range: 130")
@@ -594,6 +624,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox9.Image = My.Resources.Sword_of_Wrath
             Mainfrm.PictureBox30.Image = My.Resources.Sword_Arc
             Mainfrm.PictureBox31.Image = My.Resources.Sword_Wave
@@ -633,6 +667,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox9.Image = My.Resources.Orb_of_Wrath_png
             Mainfrm.PictureBox10.Image = My.Resources.Smite_png
             Mainfrm.PictureBox11.Image = My.Resources.Chains_of_Light_png
@@ -661,6 +699,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox9.Image = My.Resources.True_Strike
             Mainfrm.PictureBox30.Image = My.Resources.Pure_Strike
             Mainfrm.PictureBox31.Image = My.Resources.Faithful_Strike
@@ -1044,6 +1086,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = False
             Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox29.Image = My.Resources.Hammer_Swing
             Mainfrm.PictureBox32.Image = My.Resources.Hammer_Bash
             Mainfrm.PictureBox33.Image = My.Resources.Symbol_of_Protection
@@ -1086,6 +1132,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = True
             Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox29.Image = My.Resources.Wave_of_Wrath
             Mainfrm.PictureBox28.Image = My.Resources.Orb_of_Light
             Mainfrm.PictureBox37.Image = My.Resources.Flash_of_Light
@@ -1127,6 +1177,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = False
             Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox29.Image = My.Resources.Strike
             Mainfrm.PictureBox32.Image = My.Resources.Vengeful_Strike
             Mainfrm.PictureBox33.Image = My.Resources.Wrathful_Strike
@@ -1511,6 +1565,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = False
             Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox29.Image = My.Resources.Sword_of_Wrath
             Mainfrm.PictureBox32.Image = My.Resources.Sword_Arc
             Mainfrm.PictureBox33.Image = My.Resources.Sword_Wave
@@ -1550,6 +1608,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = False
             Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox29.Image = My.Resources.Orb_of_Wrath_png
             Mainfrm.PictureBox28.Image = My.Resources.Smite_png
             Mainfrm.PictureBox27.Image = My.Resources.Chains_of_Light_png
@@ -1577,6 +1639,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox37.Visible = False
             Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = False
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
             Mainfrm.PictureBox29.Image = My.Resources.True_Strike
             Mainfrm.PictureBox32.Image = My.Resources.Pure_Strike
             Mainfrm.PictureBox33.Image = My.Resources.Faithful_Strike

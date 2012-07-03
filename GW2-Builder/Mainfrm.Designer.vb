@@ -79,6 +79,10 @@ Partial Class Mainfrm
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolTip2 = New Ai.Control.ToolTip()
+        Me.PictureBox40 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox42 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox43 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,6 +124,10 @@ Partial Class Mainfrm
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -155,6 +163,10 @@ Partial Class Mainfrm
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.SystemColors.Control
+        Me.TabPage1.Controls.Add(Me.PictureBox43)
+        Me.TabPage1.Controls.Add(Me.PictureBox42)
+        Me.TabPage1.Controls.Add(Me.PictureBox41)
+        Me.TabPage1.Controls.Add(Me.PictureBox40)
         Me.TabPage1.Controls.Add(Me.PictureBox39)
         Me.TabPage1.Controls.Add(Me.PictureBox38)
         Me.TabPage1.Controls.Add(Me.PictureBox37)
@@ -711,6 +723,46 @@ Partial Class Mainfrm
         Me.ToolTip2.AnimationSpeed = 0
         Me.ToolTip2.EnableAutoClose = False
         '
+        'PictureBox40
+        '
+        Me.PictureBox40.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox40.Location = New System.Drawing.Point(321, 50)
+        Me.PictureBox40.Name = "PictureBox40"
+        Me.PictureBox40.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox40.TabIndex = 44
+        Me.PictureBox40.TabStop = False
+        '
+        'PictureBox41
+        '
+        Me.PictureBox41.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox41.Location = New System.Drawing.Point(391, 50)
+        Me.PictureBox41.Name = "PictureBox41"
+        Me.PictureBox41.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox41.TabIndex = 45
+        Me.PictureBox41.TabStop = False
+        '
+        'PictureBox42
+        '
+        Me.PictureBox42.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox42.Location = New System.Drawing.Point(461, 50)
+        Me.PictureBox42.Name = "PictureBox42"
+        Me.PictureBox42.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox42.TabIndex = 46
+        Me.PictureBox42.TabStop = False
+        '
+        'PictureBox43
+        '
+        Me.PictureBox43.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox43.Location = New System.Drawing.Point(531, 50)
+        Me.PictureBox43.Name = "PictureBox43"
+        Me.PictureBox43.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox43.TabIndex = 47
+        Me.PictureBox43.TabStop = False
+        '
         'Mainfrm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -777,6 +829,10 @@ Partial Class Mainfrm
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -838,5 +894,9 @@ Partial Class Mainfrm
     Friend WithEvents PictureBox39 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox38 As System.Windows.Forms.PictureBox
     Friend WithEvents ToolTip2 As Ai.Control.ToolTip
+    Friend WithEvents PictureBox43 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox42 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox41 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox40 As System.Windows.Forms.PictureBox
 
 End Class

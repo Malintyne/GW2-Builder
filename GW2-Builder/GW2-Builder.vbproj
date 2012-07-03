@@ -183,6 +183,9 @@
     <Content Include="Resources\guardian\Symbol of Wrath.png" />
     <Content Include="Resources\guardian\True Strike.png" />
     <Content Include="Resources\guardian\Vengeful Strike.png" />
+    <Content Include="Resources\guardian\Virtue of Courage.png" />
+    <Content Include="Resources\guardian\Virtue of Justice.png" />
+    <Content Include="Resources\guardian\Virtue of Resolve.png" />
     <Content Include="Resources\guardian\Wave of Wrath.png" />
     <Content Include="Resources\guardian\Whirling Wrath.png" />
     <Content Include="Resources\guardian\Wrathful Strike.png" />

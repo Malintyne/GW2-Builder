@@ -55,6 +55,7 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Label9.Text = "g"
+
         PictureBox1.Image = My.Resources.guardian
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer_off
@@ -65,6 +66,30 @@
         PictureBox8.Image = My.Resources.necromancer_off
 
         cls.ResetImage()
+
+        PictureBox40.Visible = True
+        PictureBox41.Visible = True
+        PictureBox42.Visible = True
+        PictureBox43.Visible = False
+
+        PictureBox40.Image = My.Resources.Virtue_of_Justice
+        PictureBox41.Image = My.Resources.Virtue_of_Resolve
+        PictureBox42.Image = My.Resources.Virtue_of_Courage
+
+        ToolTip2.SetToolTipTitle(PictureBox40, "Virtue of Justice")
+        ToolTip2.SetToolTipTitle(PictureBox41, "Virtue of Resolve")
+        ToolTip2.SetToolTipTitle(PictureBox42, "Virtue of Courage")
+
+        ToolTip2.SetToolTipImage(PictureBox40, PictureBox40.Image)
+        ToolTip2.SetToolTipImage(PictureBox41, PictureBox41.Image)
+        ToolTip2.SetToolTipImage(PictureBox42, PictureBox42.Image)
+
+        ToolTip2.SetToolTip(PictureBox40, "Virtue: Burn foes with every fifth attacks." & vbCrLf & "Activate: Grant Burning to you and nearby allies next attack." _
+                            & vbCrLf & "Burning (passive effect)(1s): 4 damage" & vbCrLf & "Burning (active effect)(5s): 4 damage")
+        ToolTip2.SetToolTip(PictureBox41, "Virtue: Regenerate health." & vbCrLf & "Activate: Heal yourself and nearby allies." _
+                            & vbCrLf & "Passive Renegeration: 3 seconds" & vbCrLf & "Healing: 25")
+        ToolTip2.SetToolTip(PictureBox42, "Virtue: Grants Aegis every 40 seconds." & vbCrLf & "Activate: Grant Aegis to yourself and nearby allies." _
+                            & vbCrLf & "Aegis(5s): Block the next incoming attack")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -106,6 +131,7 @@
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Label9.Text = "w"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior
         PictureBox3.Image = My.Resources.engineer_off
@@ -163,6 +189,7 @@
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Label9.Text = "en"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer
@@ -204,6 +231,7 @@
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Label9.Text = "r"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer_off
@@ -255,6 +283,7 @@
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
         Label9.Text = "t"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer_off
@@ -300,6 +329,7 @@
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
         Label9.Text = "el"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer_off
@@ -343,6 +373,7 @@
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
         Label9.Text = "m"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer_off
@@ -392,6 +423,7 @@
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
         Label9.Text = "n"
+
         PictureBox1.Image = My.Resources.guardian_off
         PictureBox2.Image = My.Resources.warrior_off
         PictureBox3.Image = My.Resources.engineer_off
