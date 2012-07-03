@@ -25,6 +25,16 @@
         Mainfrm.Label17.Visible = False
         Mainfrm.Label18.Visible = False
         Mainfrm.Label19.Visible = False
+        Mainfrm.Label20.Visible = False
+        Mainfrm.Label21.Visible = False
+        Mainfrm.Label22.Visible = False
+        Mainfrm.Label23.Visible = False
+        Mainfrm.Label24.Visible = False
+        Mainfrm.Label25.Visible = False
+        Mainfrm.Label26.Visible = False
+        Mainfrm.Label27.Visible = False
+        Mainfrm.Label28.Visible = False
+        Mainfrm.Label29.Visible = False
         Mainfrm.PictureBox30.Visible = False
         Mainfrm.PictureBox31.Visible = False
         Mainfrm.PictureBox32.Visible = False

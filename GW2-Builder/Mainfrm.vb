@@ -138,6 +138,17 @@
         ToolTip2.SetToolTip(PictureBox42, "Virtue: Grants Aegis every 40 seconds." & vbCrLf & "Activate: Grant Aegis to yourself and nearby allies." _
                             & vbCrLf & "Aegis(5s): Block the next incoming attack")
 
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases boon duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases condition duration by " + Label23.Text + "%")
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases critical damage by " + Label25.Text)
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases healing by " + Label27.Text)
+        ToolTip2.SetToolTip(PictureBox68, "Increases condition damage by " + Label28.Text + "%")
+        ToolTip2.SetToolTip(PictureBox67, "Increases Virtues Recharge rate by " + Label29.Text + "%")
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -206,6 +217,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox49.Visible = True
         PictureBox50.Visible = True
@@ -244,6 +265,17 @@
         PictureBox65.Image = My.Resources.Concentration
         PictureBox68.Image = My.Resources.Prowess
         PictureBox67.Image = My.Resources.Brawn
+
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases condition damage by " + Label23.Text + "%")
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases healing by " + Label25.Text)
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases boon duration by " + Label27.Text + "%")
+        ToolTip2.SetToolTip(PictureBox68, "Increases critical damage by " + Label28.Text)
+        ToolTip2.SetToolTip(PictureBox67, "Increases Burst Skill damage by " + Label29.Text)
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -319,6 +351,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox49.Visible = True
         PictureBox50.Visible = True
@@ -357,6 +399,17 @@
         PictureBox65.Image = My.Resources.Concentration
         PictureBox68.Image = My.Resources.Prowess
         PictureBox67.Image = My.Resources.Ingenuity
+
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases condition damage by " + Label23.Text + "%")
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases healing by " + Label25.Text)
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases boon duration by " + Label27.Text + "%")
+        ToolTip2.SetToolTip(PictureBox68, "Increases critical damage by " + Label28.Text)
+        ToolTip2.SetToolTip(PictureBox67, "Increases recharge rate of Tool Belt skills by " + Label29.Text + "%")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -416,6 +469,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox49.Visible = True
         PictureBox50.Visible = True
@@ -454,6 +517,17 @@
         PictureBox65.Image = My.Resources.Concentration
         PictureBox68.Image = My.Resources.Compassion
         PictureBox67.Image = My.Resources.Empathy
+
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases critical damage by " + Label23.Text)
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases condition damage by " + Label25.Text + "%")
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases boon duration by " + Label27.Text + "%")
+        ToolTip2.SetToolTip(PictureBox68, "Increases healing by " + Label28.Text)
+        ToolTip2.SetToolTip(PictureBox67, "Increases Pet Attributes by " + Label29.Text + "%")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -524,6 +598,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox49.Visible = True
         PictureBox50.Visible = True
@@ -562,6 +646,17 @@
         PictureBox65.Image = My.Resources.Concentration
         PictureBox68.Image = My.Resources.Malice
         PictureBox67.Image = My.Resources.Cunning
+
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition damage by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases critical damage by " + Label23.Text)
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases healing by " + Label25.Text)
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases boon duration by " + Label27.Text + "%")
+        ToolTip2.SetToolTip(PictureBox68, "Increases condition damage by " + Label28.Text + "%")
+        ToolTip2.SetToolTip(PictureBox67, "Increases Steal recharge rate by " + Label29.Text + "%")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -626,6 +721,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox40.Visible = True
         PictureBox41.Visible = True
@@ -689,6 +794,17 @@
         ToolTip2.SetToolTip(PictureBox42, "Attune to air, gaining heavy damage and control abilities.")
         ToolTip2.SetToolTip(PictureBox43, "Attune to earth, gaining superior damage over time and defensive abilities.")
 
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases critical damage by " + Label23.Text)
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases condition damage by " + Label25.Text + "%")
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases healing by " + Label27.Text)
+        ToolTip2.SetToolTip(PictureBox68, "Increases boon duration by " + Label28.Text + "%")
+        ToolTip2.SetToolTip(PictureBox67, "Increases Attunement recharge rate by " + Label29.Text + "%")
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -750,6 +866,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox49.Visible = True
         PictureBox50.Visible = True
@@ -788,6 +914,17 @@
         PictureBox65.Image = My.Resources.Compassion
         PictureBox68.Image = My.Resources.Malice
         PictureBox67.Image = My.Resources.Guile
+
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases critical damage by " + Label23.Text)
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases boon duration by " + Label25.Text + "%")
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases healing by " + Label27.Text + "%")
+        ToolTip2.SetToolTip(PictureBox68, "Increases condition damage by " + Label28.Text + "%")
+        ToolTip2.SetToolTip(PictureBox67, "Increases the recharge rate of Shutter skills by " + Label29.Text + "%")
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -856,6 +993,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox49.Visible = True
         PictureBox50.Visible = True
@@ -894,6 +1041,17 @@
         PictureBox65.Image = My.Resources.Compassion
         PictureBox68.Image = My.Resources.Prowess
         PictureBox67.Image = My.Resources.Hunger
+
+        ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
+        ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
+        ToolTip2.SetToolTip(PictureBox62, "Increases precision by " + Label22.Text)
+        ToolTip2.SetToolTip(PictureBox61, "Increases condition damage by " + Label23.Text + "%")
+        ToolTip2.SetToolTip(PictureBox64, "Increases toughness by " + Label24.Text)
+        ToolTip2.SetToolTip(PictureBox63, "Increases boon duration by " + Label25.Text + "%")
+        ToolTip2.SetToolTip(PictureBox66, "Increases vitality by " + Label26.Text)
+        ToolTip2.SetToolTip(PictureBox65, "Increases healing by " + Label27.Text)
+        ToolTip2.SetToolTip(PictureBox68, "Increases critical damage by " + Label28.Text)
+        ToolTip2.SetToolTip(PictureBox67, "Increases the size of your Life Force pool by " + Label29.Text)
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
