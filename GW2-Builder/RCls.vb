@@ -15,6 +15,16 @@
         Mainfrm.ComboBox2.Enabled = False
         Mainfrm.ComboBox3.Enabled = False
         Mainfrm.ComboBox4.Enabled = False
+        Mainfrm.Label10.Visible = False
+        Mainfrm.Label11.Visible = False
+        Mainfrm.Label12.Visible = False
+        Mainfrm.Label13.Visible = False
+        Mainfrm.Label14.Visible = False
+        Mainfrm.Label15.Visible = False
+        Mainfrm.Label16.Visible = False
+        Mainfrm.Label17.Visible = False
+        Mainfrm.Label18.Visible = False
+        Mainfrm.Label19.Visible = False
         Mainfrm.PictureBox30.Visible = False
         Mainfrm.PictureBox31.Visible = False
         Mainfrm.PictureBox32.Visible = False
@@ -29,6 +39,26 @@
         Mainfrm.PictureBox41.Visible = False
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
+        Mainfrm.PictureBox49.Visible = False
+        Mainfrm.PictureBox50.Visible = False
+        Mainfrm.PictureBox51.Visible = False
+        Mainfrm.PictureBox52.Visible = False
+        Mainfrm.PictureBox53.Visible = False
+        Mainfrm.PictureBox54.Visible = False
+        Mainfrm.PictureBox55.Visible = False
+        Mainfrm.PictureBox56.Visible = False
+        Mainfrm.PictureBox57.Visible = False
+        Mainfrm.PictureBox58.Visible = False
+        Mainfrm.PictureBox59.Visible = False
+        Mainfrm.PictureBox60.Visible = False
+        Mainfrm.PictureBox61.Visible = False
+        Mainfrm.PictureBox62.Visible = False
+        Mainfrm.PictureBox63.Visible = False
+        Mainfrm.PictureBox64.Visible = False
+        Mainfrm.PictureBox65.Visible = False
+        Mainfrm.PictureBox66.Visible = False
+        Mainfrm.PictureBox67.Visible = False
+        Mainfrm.PictureBox68.Visible = False
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label8, "Information")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label2, "Minimize")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label1, "Close")

@@ -67,10 +67,41 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
         PictureBox40.Visible = True
         PictureBox41.Visible = True
         PictureBox42.Visible = True
         PictureBox43.Visible = False
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
 
         PictureBox40.Image = My.Resources.Virtue_of_Justice
         PictureBox41.Image = My.Resources.Virtue_of_Resolve
@@ -80,6 +111,17 @@
         PictureBox46.Image = My.Resources.Valor___Guardian
         PictureBox47.Image = My.Resources.Honor___Guardian
         PictureBox48.Image = My.Resources.Virtues___Guardian
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Concentration
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Expertise
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Prowess
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Compassion
+        PictureBox68.Image = My.Resources.Malice
+        PictureBox67.Image = My.Resources.Willpower
 
         ToolTip2.SetToolTipTitle(PictureBox40, "Virtue of Justice")
         ToolTip2.SetToolTipTitle(PictureBox41, "Virtue of Resolve")
@@ -154,11 +196,54 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
+
         PictureBox44.Image = My.Resources.Strength___Warrior
         PictureBox45.Image = My.Resources.Arms___Warrior
         PictureBox46.Image = My.Resources.Defense___Warrior
         PictureBox47.Image = My.Resources.Tactics___Warrior
         PictureBox48.Image = My.Resources.Discipline___Warrior
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Malice
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Compassion
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Concentration
+        PictureBox68.Image = My.Resources.Prowess
+        PictureBox67.Image = My.Resources.Brawn
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
@@ -224,12 +309,55 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
+
         PictureBox44.Image = My.Resources.Explosives___Engineer
         PictureBox45.Image = My.Resources.Firearms___Engineer
         PictureBox46.Image = My.Resources.Inventions___Engineer
         PictureBox47.Image = My.Resources.Alchemy___Engineer
         PictureBox48.Image = My.Resources.Tools___Engineer
-		
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Malice
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Compassion
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Concentration
+        PictureBox68.Image = My.Resources.Prowess
+        PictureBox67.Image = My.Resources.Ingenuity
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -278,12 +406,55 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
+
         PictureBox44.Image = My.Resources.Markmanship___Ranger
         PictureBox45.Image = My.Resources.Skirmishing___Ranger
         PictureBox46.Image = My.Resources.Wildnerness___Ranger
         PictureBox47.Image = My.Resources.Nature___Ranger
         PictureBox48.Image = My.Resources.Beastmastery___Ranger	
-		
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Concentration
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Malice
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Concentration
+        PictureBox68.Image = My.Resources.Compassion
+        PictureBox67.Image = My.Resources.Empathy
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -343,12 +514,55 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
+
 		PictureBox44.Image = My.Resources.Deadly___Thief
         PictureBox45.Image = My.Resources.Critical___Thief
         PictureBox46.Image = My.Resources.Shadow__Thief
         PictureBox47.Image = My.Resources.Acrobatics___Thief
         PictureBox48.Image = My.Resources.Trickery___Thief	
-		
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Prowess
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Compassion
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Concentration
+        PictureBox68.Image = My.Resources.Malice
+        PictureBox67.Image = My.Resources.Cunning
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -401,11 +615,42 @@
         PictureBox8.Image = My.Resources.necromancer_off
 
         cls.ResetImage()
-		
+
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
         PictureBox40.Visible = True
         PictureBox41.Visible = True
         PictureBox42.Visible = True
         PictureBox43.Visible = True
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
 
         PictureBox40.Image = My.Resources.Fire
         PictureBox41.Image = My.Resources.Water
@@ -417,7 +662,18 @@
         PictureBox46.Image = My.Resources.Earth___Elementalist
         PictureBox47.Image = My.Resources.Water___Elementalist
         PictureBox48.Image = My.Resources.Arcane___Elementalist	
-		
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Prowess
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Malice
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Compassion
+        PictureBox68.Image = My.Resources.Concentration
+        PictureBox67.Image = My.Resources.Intelligence
+
         ToolTip2.SetToolTipTitle(PictureBox40, "Fire Attunement")
         ToolTip2.SetToolTipTitle(PictureBox41, "Water Attunement")
         ToolTip2.SetToolTipTitle(PictureBox42, "Air Attunement")
@@ -484,12 +740,55 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
+
 		PictureBox44.Image = My.Resources.Domination___Mesmer
         PictureBox45.Image = My.Resources.Dueling___Mesmer
         PictureBox46.Image = My.Resources.Chaos___Mesmer
         PictureBox47.Image = My.Resources.Inspiration___Mesmer
         PictureBox48.Image = My.Resources.Illusions___Mesmer
-		
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Prowess
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Concentration
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Compassion
+        PictureBox68.Image = My.Resources.Malice
+        PictureBox67.Image = My.Resources.Guile
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -547,12 +846,55 @@
 
         cls.ResetImage()
 
+        Label10.Visible = True
+        Label11.Visible = True
+        Label12.Visible = True
+        Label13.Visible = True
+        Label14.Visible = True
+        Label15.Visible = True
+        Label16.Visible = True
+        Label17.Visible = True
+        Label18.Visible = True
+        Label19.Visible = True
+
+        PictureBox49.Visible = True
+        PictureBox50.Visible = True
+        PictureBox51.Visible = True
+        PictureBox52.Visible = True
+        PictureBox53.Visible = True
+        PictureBox54.Visible = True
+        PictureBox55.Visible = True
+        PictureBox56.Visible = True
+        PictureBox57.Visible = True
+        PictureBox58.Visible = True
+        PictureBox59.Visible = True
+        PictureBox60.Visible = True
+        PictureBox61.Visible = True
+        PictureBox62.Visible = True
+        PictureBox63.Visible = True
+        PictureBox64.Visible = True
+        PictureBox65.Visible = True
+        PictureBox66.Visible = True
+        PictureBox67.Visible = True
+        PictureBox68.Visible = True
+
 		PictureBox44.Image = My.Resources.Spite___Necromancer
         PictureBox45.Image = My.Resources.Curses___Necromancer
         PictureBox46.Image = My.Resources.Death___Necromancer
         PictureBox47.Image = My.Resources.Blood___Necromancer
         PictureBox48.Image = My.Resources.Soul___Necromancer
-		
+
+        PictureBox59.Image = My.Resources.Power
+        PictureBox60.Image = My.Resources.Expertise
+        PictureBox62.Image = My.Resources.Precision
+        PictureBox61.Image = My.Resources.Malice
+        PictureBox64.Image = My.Resources.Toughness
+        PictureBox63.Image = My.Resources.Concentration
+        PictureBox66.Image = My.Resources.Vitality
+        PictureBox65.Image = My.Resources.Compassion
+        PictureBox68.Image = My.Resources.Prowess
+        PictureBox67.Image = My.Resources.Hunger
+
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -591,10 +933,9 @@
         Label12.Text = "Death Magic"
         Label13.Text = "Blood Magic"
         Label14.Text = "Soul Reaping"
-
     End Sub
 
-    Private Sub PictureBox19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox19.Click
+    Private Sub PictureBox19_Click(ByVal sender As Object, ByVal e As EventArgs) Handles PictureBox19.Click
 
     End Sub
 End Class

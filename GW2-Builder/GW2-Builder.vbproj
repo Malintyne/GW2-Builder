@@ -423,6 +423,7 @@
     <Content Include="Resources\traits\Illusions - Mesmer.png" />
     <None Include="Resources\traits\Ingenuity.png" />
     <Content Include="Resources\traits\Inspiration - Mesmer.png" />
+    <Content Include="Resources\traits\Intelligence.png" />
     <Content Include="Resources\traits\Inventions - Engineer.png" />
     <None Include="Resources\traits\locked.png" />
     <None Include="Resources\traits\Malice.png" />
@@ -441,6 +442,7 @@
     <Content Include="Resources\traits\Strength - Warrior.png" />
     <Content Include="Resources\traits\Tactics - Warrior.png" />
     <Content Include="Resources\traits\Tools - Engineer.png" />
+    <Content Include="Resources\traits\Toughness.png" />
     <Content Include="Resources\traits\Trickery - Thief.png" />
     <Content Include="Resources\traits\Valor - Guardian.png" />
     <Content Include="Resources\traits\Virtues - Guardian.png" />
