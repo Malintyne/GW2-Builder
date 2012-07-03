@@ -619,6 +619,7 @@
                                 & vbCrLf & "Blindness(5s): Next outgoing attack misses")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -662,6 +663,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox1.Text = "Scepter" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = False
             Mainfrm.PictureBox31.Visible = False
             Mainfrm.PictureBox34.Visible = False
@@ -694,6 +696,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox1.Text = "Mace" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -739,6 +742,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -779,6 +783,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox1.Text = "Axe" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -817,6 +822,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox1.Text = "Mace" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -856,6 +862,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "en" And Mainfrm.ComboBox1.Text = "Pistol" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = False
             Mainfrm.PictureBox31.Visible = False
             Mainfrm.PictureBox34.Visible = False
@@ -887,6 +894,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -932,6 +940,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox1.Text = "Axe" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = False
             Mainfrm.PictureBox31.Visible = False
             Mainfrm.PictureBox34.Visible = False
@@ -962,6 +971,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -1005,6 +1015,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Dagger" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = True
             Mainfrm.PictureBox31.Visible = True
             Mainfrm.PictureBox34.Visible = False
@@ -1044,6 +1055,7 @@
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox13, "Select a off hand or a two hand weapon")
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox1.Text = "Pistol" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
             Mainfrm.PictureBox30.Visible = False
             Mainfrm.PictureBox31.Visible = False
             Mainfrm.PictureBox34.Visible = False

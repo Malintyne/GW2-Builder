@@ -75,6 +75,11 @@
         PictureBox40.Image = My.Resources.Virtue_of_Justice
         PictureBox41.Image = My.Resources.Virtue_of_Resolve
         PictureBox42.Image = My.Resources.Virtue_of_Courage
+        PictureBox44.Image = My.Resources.Zeal___Guardian
+        PictureBox45.Image = My.Resources.Radiance___Guardian
+        PictureBox46.Image = My.Resources.Valor___Guardian
+        PictureBox47.Image = My.Resources.Honor___Guardian
+        PictureBox48.Image = My.Resources.Virtues___Guardian
 
         ToolTip2.SetToolTipTitle(PictureBox40, "Virtue of Justice")
         ToolTip2.SetToolTipTitle(PictureBox41, "Virtue of Resolve")
@@ -142,6 +147,12 @@
         PictureBox8.Image = My.Resources.necromancer_off
 
         cls.ResetImage()
+
+        PictureBox44.Image = My.Resources.Strength___Warrior
+        PictureBox45.Image = My.Resources.Arms___Warrior
+        PictureBox46.Image = My.Resources.Defense___Warrior
+        PictureBox47.Image = My.Resources.Tactics___Warrior
+        PictureBox48.Image = My.Resources.Discipline___Warrior
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()

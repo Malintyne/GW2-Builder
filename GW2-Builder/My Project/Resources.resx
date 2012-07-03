@@ -709,7 +709,6 @@
   <data name="Unload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thief\Unload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Virtue_of_Courage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\guardian\virtue of courage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -718,5 +717,219 @@
   </data>
   <data name="Virtue_of_Resolve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\guardian\virtue of resolve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arms___Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\arms - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Defense___Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\defense - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Discipline___Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\discipline - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Honor___Guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\honor - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Radiance___Guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\radiance - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strength___Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\strength - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tactics___Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\tactics - warrior.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Valor___Guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\valor - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Virtues___Guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\virtues - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeal___Guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\traits\zeal - guardian.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Arc_Lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Arc Lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blinding_Flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Blinding Flash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Burning_Retreat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Burning Retreat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Burning_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Burning Speed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chain_Lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Chain Lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Churning_Earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Churning Earth.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cleansing_Wave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Cleansing Wave.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Comet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Comet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cone_of_Cold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Cone of Cold.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dragon_s_Claw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Dragon's Claw.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dragon_s_Tooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Dragon's Tooth.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Drake_s_Breath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Drake's Breath.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dust_Devil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Dust Devil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Earthquake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Earthquake.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eruption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Eruption.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Fireball.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fire_Grab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Fire Grab.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fire_Shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Fire Shield.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flamestrike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Flamestrike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flamewall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Flamewall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flame_Burst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Flame Burst.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Freezing_Gust" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Freezing Gust.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Frost_Aura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Frost Aura.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Frozen_Burst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Frozen Burst.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Frozen_Ground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Frozen Ground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Gale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Geyser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Geyser.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gust" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Gust.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healing_Rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Healing Rain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hurl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Hurl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ice_Shards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Ice Shards.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ice_Spike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Ice Spike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Impale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Impale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lava_Font" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Lava Font.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lightning_Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Lightning Strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lightning_Surge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Lightning Surge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lightning_Touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Lightning Touch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lightning_Whip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Lightning Whip.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magnetic_Aura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Magnetic Aura.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magnetic_Grasp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Magnetic Grasp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magnetic_Wave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Magnetic Wave.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Meteor_Shower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Meteor Shower.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Obsidian_Flesh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Obsidian Flesh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phoenix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Phoenix.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ride_the_Lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Ride the Lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ring_of_Earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Ring of Earth.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ring_of_Fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\fire\Ring of Fire.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rock_Barrier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Rock Barrier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shatterstone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Shatterstone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shocking_Aura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Shocking Aura.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shockwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Shockwave.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Static_Field" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Static Field.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stone_Shards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Stone Shards.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stoning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Stoning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Swirling_Winds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Swirling Winds.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unsteady_Ground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\earth\Unsteady Ground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Updraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Updraft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vapor_Blade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Vapor Blade.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Water_Blast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Water Blast.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Water_Trident" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\water\Water Trident.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windborne_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elementalist\air\Windborne Speed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
