@@ -30,6 +30,7 @@ Partial Class About
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.SuspendLayout()
         '
         'LinkLabel1
@@ -100,6 +101,11 @@ Partial Class About
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "MIT License."
         '
+        'ToolTip2
+        '
+        Me.ToolTip2.AnimationSpeed = 0
+        Me.ToolTip2.EnableAutoClose = False
+        '
         'About
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -128,4 +134,5 @@ Partial Class About
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents ToolTip1 As Ai.Control.ToolTip
+    Friend WithEvents ToolTip2 As Ai.Control.ToolTip
 End Class
