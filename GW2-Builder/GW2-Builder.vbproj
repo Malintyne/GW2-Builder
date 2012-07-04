@@ -462,7 +462,7 @@
     <Content Include="Resources\warrior\Call to Arms.png.jpg" />
     <Content Include="Resources\warrior\Charge.png.jpg" />
     <Content Include="Resources\warrior\Chop.png.jpg" />
-    <Content Include="Resources\warrior\Combustive Shot.png.jpg" />
+    <Content Include="Resources\warrior\Combustive Shot.png" />
     <Content Include="Resources\warrior\Counter Blow.png.jpg" />
     <Content Include="Resources\warrior\Crushing Blow.png" />
     <Content Include="Resources\warrior\Cyclone Axe.png.jpg" />
@@ -485,7 +485,7 @@
     <Content Include="Resources\warrior\Hamstring.png.jpg" />
     <Content Include="Resources\warrior\Hundred Blades.png" />
     <Content Include="Resources\warrior\Impale.png.jpg" />
-    <Content Include="Resources\warrior\Kill Shot.png.jpg" />
+    <Content Include="Resources\warrior\Kill Shot.png" />
     <Content Include="Resources\warrior\Mace Bash.png.jpg" />
     <Content Include="Resources\warrior\Mace Smash.png.jpg" />
     <Content Include="Resources\warrior\Pin Down.png.jpg" />

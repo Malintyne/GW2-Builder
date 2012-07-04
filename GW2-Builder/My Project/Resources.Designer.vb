@@ -207,6 +207,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Arcing_Slice1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Arcing_Slice1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Arms___Warrior() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Arms___Warrior", resourceCulture)
@@ -473,9 +480,16 @@ Namespace My.Resources
             End Get
         End Property
         
-        Public ReadOnly Property Combustive_Shot_png() As System.Drawing.Bitmap
+        Public ReadOnly Property Combustive_Shot() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Combustive_Shot_png", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Combustive_Shot", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Combustive_Shot1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Combustive_Shot1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1390,9 +1404,9 @@ Namespace My.Resources
             End Get
         End Property
         
-        Public ReadOnly Property Kill_Shot_png() As System.Drawing.Bitmap
+        Public ReadOnly Property Kill_Shot() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Kill_Shot_png", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Kill_Shot", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

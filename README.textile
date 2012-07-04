@@ -1,4 +1,4 @@
-h1. Simple Character Creator for the upcoming game: Guild Wars 2
+h1. Simple Character Creator for Guild Wars 2
 
 h2. Programming Language
 

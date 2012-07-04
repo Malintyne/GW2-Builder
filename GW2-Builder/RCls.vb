@@ -4,17 +4,21 @@
 
     Public Sub MfrmLoad()
         ResetImage()
+
         Mainfrm.Text = ver
         Mainfrm.TopMost = False
         Mainfrm.Label6.Text = ver
+
         Mainfrm.ComboBox1.Text = "Main Hand"
         Mainfrm.ComboBox2.Text = "Main Hand"
         Mainfrm.ComboBox3.Text = "Off Hand"
         Mainfrm.ComboBox4.Text = "Off Hand"
+
         Mainfrm.ComboBox1.Enabled = False
         Mainfrm.ComboBox2.Enabled = False
         Mainfrm.ComboBox3.Enabled = False
         Mainfrm.ComboBox4.Enabled = False
+
         Mainfrm.Label10.Visible = False
         Mainfrm.Label11.Visible = False
         Mainfrm.Label12.Visible = False
@@ -35,6 +39,18 @@
         Mainfrm.Label27.Visible = False
         Mainfrm.Label28.Visible = False
         Mainfrm.Label29.Visible = False
+
+        Mainfrm.Label20.Text = "0"
+        Mainfrm.Label21.Text = "0"
+        Mainfrm.Label22.Text = "0"
+        Mainfrm.Label23.Text = "0"
+        Mainfrm.Label24.Text = "0"
+        Mainfrm.Label25.Text = "0"
+        Mainfrm.Label26.Text = "0"
+        Mainfrm.Label27.Text = "0"
+        Mainfrm.Label28.Text = "0"
+        Mainfrm.Label29.Text = "0"
+
         Mainfrm.PictureBox30.Visible = False
         Mainfrm.PictureBox31.Visible = False
         Mainfrm.PictureBox32.Visible = False
@@ -69,6 +85,7 @@
         Mainfrm.PictureBox66.Visible = False
         Mainfrm.PictureBox67.Visible = False
         Mainfrm.PictureBox68.Visible = False
+
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label8, "Information")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label2, "Minimize")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label1, "Close")
@@ -99,6 +116,7 @@
         Mainfrm.PictureBox41.Visible = False
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
+
         Mainfrm.PictureBox9.Image = My.Resources.Unknown
         Mainfrm.PictureBox10.Image = My.Resources.Unknown
         Mainfrm.PictureBox11.Image = My.Resources.Unknown
@@ -145,6 +163,7 @@
         Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox27, My.Resources.null)
         Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox26, My.Resources.null)
         Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox25, My.Resources.null)
+
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Select a one hand or a two hand weapon first")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox10, "Select a one hand or a two hand weapon first")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox11, "Select a one hand or a two hand weapon first")
@@ -371,6 +390,11 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Arcing_Slice
             Mainfrm.PictureBox9.Image = My.Resources.Greatsword_Swing
             Mainfrm.PictureBox30.Image = My.Resources.Greatsword_Slice
             Mainfrm.PictureBox31.Image = My.Resources.Brutal_Strike
@@ -378,6 +402,7 @@
             Mainfrm.PictureBox11.Image = My.Resources.Whirlwind_Attack
             Mainfrm.PictureBox12.Image = My.Resources.Bladetrail
             Mainfrm.PictureBox13.Image = My.Resources.Rush
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Arcing Slice")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Greatsword Swing")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox30, "Greatsword Slice")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox31, "Brutal Strike")
@@ -385,6 +410,7 @@
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Whirlwind Attack")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Bladetrail")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Rush")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
@@ -392,12 +418,14 @@
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Strike your foe with an uppercut that grants Might." & vbCrLf & "Damage: 816" _
+                                & vbCrLf & "Level 1 Sdrenaline(15s): +5-35 Power" & vbCrLf & "Level 2 Sdrenaline(15s): +5-35 Power" _
+                                & vbCrLf & "Level 3 Sdrenaline(15s): +5-35 Power" & vbCrLf & "Range: 150")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Chain. Slash your foe." & vbCrLf & "Damage: 373" & vbCrLf & "Vulnerability(8s): -30 defense" _
                                 & vbCrLf & "Range: 130" & vbCrLf & "Skill Chain:" & vbCrLf & "Greatsword Swing > Greatosword Slice > Brutal Strike")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox30, "Chain. Slice your foe." & vbCrLf & "Damage: 373" & vbCrLf & "Vulnerability(8s): -30 defense" _
                                 & vbCrLf & "Range: 130")
-            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox31, "Chain. Hit your foes with a final brutal strike." _
-                                & vbCrLf & "Damage: 480" & vbCrLf & "Range: 130")
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox31, "Chain. Hit your foes with a final brutal strike." & vbCrLf & "Damage: 480" & vbCrLf & "Range: 130")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox10, "Repeatedly strike multiple foes. The last stike does extra damage." & vbCrLf & "Damage: 2756" & vbCrLf _
                                 & "Final Strike Damage: 644" & vbCrLf & "Range: 130")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox11, "Whirl in a target's direction, slashing foes along your path." _
@@ -414,21 +442,31 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Combustive_Shot
             Mainfrm.PictureBox9.Image = My.Resources.Dual_Shot_png
             Mainfrm.PictureBox10.Image = My.Resources.Fan_of_Fire_png
             Mainfrm.PictureBox11.Image = My.Resources.Arcing_Arrow_png
             Mainfrm.PictureBox12.Image = My.Resources.Smoldering_Arrow_png
             Mainfrm.PictureBox13.Image = My.Resources.Pin_Down_png
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Combustive Shot")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Dual Shot")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox10, "Fan of Fire")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Arcing Arrow")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Smoldering Arrow")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Pin Down")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Ignite target area, Burning nearby foes. Effect increases with adrenaline level." _
+                                & vbCrLf & "Burning(2s): -690 health" & vbCrLf & "Duration: 4 seconds" & vbCrLf & "Area of Effect: Circle 240 feet" _
+                                & vbCrLf & "Combo Field: Fire" & vbCrLf & "Range: 1200")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Shot a pair of arrows at your foe." & vbCrLf & "Damage: 284" _
                                 & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 900")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox10, "Fire a spread of three flaming arrows, Burning foes." & vbCrLf & "Damage: 168" _
@@ -447,21 +485,30 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Kill_Shot
             Mainfrm.PictureBox9.Image = My.Resources.Bleeding_Shot_png
             Mainfrm.PictureBox10.Image = My.Resources.Aimed_Shot_png
             Mainfrm.PictureBox11.Image = My.Resources.Volley_png
             Mainfrm.PictureBox12.Image = My.Resources.Brutal_Shot_png
             Mainfrm.PictureBox13.Image = My.Resources.Rifle_Butt_png
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Kill Shot")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Bleeding Shot")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox10, "Aimed Shot")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Volley")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "Brutal Shot")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "Rifle Butt")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox10, Mainfrm.PictureBox10.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, Mainfrm.PictureBox12.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, Mainfrm.PictureBox13.Image)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Fire a powerful shot. Damage increases with adrenaline level." & vbCrLf & "Level 1 Damage: 698" _
+                    & vbCrLf & "Level 2 Damage: 997" & vbCrLf & "Level 3 Damage: 1256" & vbCrLf & "Combo Finisher: Physical Projectile" & vbCrLf & "Range: 5000")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Fire a shot that Bleeds your target." & vbCrLf & "Damage: 213" _
                                 & vbCrLf & "Bleeding(6s): -270 damage over time" & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)" & vbCrLf & "Range: 1200")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox10, "Fire a precise shot that Cripples your foe." & vbCrLf & "Damage: 186" _
@@ -792,6 +839,11 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Flurry_png
             Mainfrm.PictureBox9.Image = My.Resources.Sever_Artery_png
             Mainfrm.PictureBox30.Image = My.Resources.Gash_png
             Mainfrm.PictureBox31.Image = My.Resources.Final_Thrust_png
@@ -799,6 +851,7 @@
             Mainfrm.PictureBox11.Image = My.Resources.Hamstring_png
             Mainfrm.PictureBox12.Image = My.Resources.Unknown
             Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Flurry")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Sever Artery")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox30, "Gash")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox31, "Final Thrust")
@@ -806,6 +859,7 @@
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Hamstring")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
@@ -813,6 +867,9 @@
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, My.Resources.null)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, My.Resources.null)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Immobilize your foes with a flurry of strikes. Effect increases with adrenaline level." _
+                                & vbCrLf & "Damage: 2982" & vbCrLf & "Level 1 Immobilize(2s): Unable to move" & vbCrLf & "Level 2 Immobilize(3s): Unable to move" _
+                                & vbCrLf & "Level 3 Immobilize(4s): Unable to move" & vbCrLf & "Range: 130")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Chain. Bleed your foe with a slash." & vbCrLf & "Damage: 320" _
                                 & vbCrLf & "Bleedind(8s): -360 damage over time" & vbCrLf & "Range: 130" & vbCrLf & _
                                 "Skill Chain:" & vbCrLf & "Sever Artery > Gash > Final Thrust")
@@ -833,6 +890,11 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Eviscerate_png
             Mainfrm.PictureBox9.Image = My.Resources.Chop_png
             Mainfrm.PictureBox30.Image = My.Resources.Double_Chop_png
             Mainfrm.PictureBox31.Image = My.Resources.Triple_Chop_png
@@ -840,6 +902,7 @@
             Mainfrm.PictureBox11.Image = My.Resources.Throw_Axe_png
             Mainfrm.PictureBox12.Image = My.Resources.Unknown
             Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Eviscarate")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Chop")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox30, "Double Chop")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox31, "Triple Chop")
@@ -847,6 +910,7 @@
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Throw Axe")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
@@ -854,6 +918,9 @@
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, My.Resources.null)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, My.Resources.null)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Leap at your foe with a devastating attack. Effect increases with adrenaline level." _
+                                & vbCrLf & "Level 1 Damage: 1066" & vbCrLf & "Level 2 Damage: 1332" & vbCrLf & "Level 3 Damage: 1598" & vbCrLf & "Combo Finisher: Leap" _
+                                & vbCrLf & "Range: 300")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Chain. Chop your foe." & vbCrLf & "Damage: 453" & vbCrLf & "Range: 130" & vbCrLf & _
                                 "Skill Chain:" & vbCrLf & "Chop > Double Chop > Triple Chop")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox30, "Chain. Chop your foe twice." & vbCrLf & "Damage: 906" & vbCrLf & "Range: 130")
@@ -872,6 +939,11 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox36.Visible = False
             Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = False
+            Mainfrm.PictureBox42.Visible = False
+            Mainfrm.PictureBox43.Visible = False
+            Mainfrm.PictureBox40.Image = My.Resources.Skull_Crack_png
             Mainfrm.PictureBox9.Image = My.Resources.Mace_Smash_png
             Mainfrm.PictureBox30.Image = My.Resources.Mace_Smash_png
             Mainfrm.PictureBox31.Image = My.Resources.Pulverize_png
@@ -879,6 +951,7 @@
             Mainfrm.PictureBox11.Image = My.Resources.Pommel_Bash_png
             Mainfrm.PictureBox12.Image = My.Resources.Unknown
             Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox40, "Skull Crack")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox9, "Mace Smash")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox30, "Mace Bash")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox31, "Pulverize")
@@ -886,6 +959,7 @@
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox11, "Pommel Bash")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox12, "")
             Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox13, "")
+            Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox9, Mainfrm.PictureBox9.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox30, Mainfrm.PictureBox30.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox31, Mainfrm.PictureBox31.Image)
@@ -893,6 +967,9 @@
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox11, Mainfrm.PictureBox11.Image)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox12, My.Resources.null)
             Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox13, My.Resources.null)
+            Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox40, "Stun your foe with a skull crack. Effect increases with adrenaline level." _
+                                & vbCrLf & "Damage: 533" & vbCrLf & "Level 1 Stun(2s): Unable to move" & vbCrLf & "Level 2 Stun(3s): Unable to move" _
+                                & vbCrLf & "Level 3 Stun(4s): Unable to move" & vbCrLf & "Range: 130")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox9, "Chain. Smash your foe." & vbCrLf & "Damage: 448" & vbCrLf & "Range: 130" & vbCrLf & _
                                 "Skill Chain:" & vbCrLf & "Mace Smash > Mace Bash > Pulverize")
             Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox30, "Chain. Bash your foe." & vbCrLf & "Damage: 426" & vbCrLf & "Range: 130")

@@ -77,6 +77,16 @@
         Label17.Visible = True
         Label18.Visible = True
         Label19.Visible = True
+        Label20.Visible = True
+        Label21.Visible = True
+        Label22.Visible = True
+        Label23.Visible = True
+        Label24.Visible = True
+        Label25.Visible = True
+        Label26.Visible = True
+        Label27.Visible = True
+        Label28.Visible = True
+        Label29.Visible = True
 
         PictureBox40.Visible = True
         PictureBox41.Visible = True
