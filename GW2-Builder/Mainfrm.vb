@@ -192,6 +192,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases critical damage by 1")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Virtues Recharge rate by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " & Label21.Text & "%")
@@ -376,6 +378,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases Burst Skill damage by 1")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases Burst Skill damage by 1")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -566,6 +570,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases recharge rate of Tool Belt skills by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -740,6 +746,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox58, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases healing by 10" & vbCrLf & "Decreases Pet Attributes by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -925,6 +933,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
         ToolTip2.SetToolTip(PictureBox55, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Steal recharge rate by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition damage by " + Label21.Text + "%")
@@ -1128,6 +1138,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox58, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases boon duration by 1%" & vbCrLf & "Decreases Attunement recharge rate by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -1305,6 +1317,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases the recharge rate of Shatter skills by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -1488,6 +1502,8 @@
         ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
         ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
         ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
+        ToolTip2.SetToolTip(PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases the size of your Life Force pool by 1")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -1585,5 +1601,13 @@
 
     Private Sub PictureBox55_Click(sender As Object, e As EventArgs) Handles PictureBox55.Click
         cls.RmvPnt4()
+    End Sub
+
+    Private Sub PictureBox58_Click(sender As Object, e As EventArgs) Handles PictureBox58.Click
+        cls.AddPnt5()
+    End Sub
+
+    Private Sub PictureBox57_Click(sender As Object, e As EventArgs) Handles PictureBox57.Click
+        cls.RmvPnt5()
     End Sub
 End Class

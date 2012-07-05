@@ -939,6 +939,190 @@
         End If
     End Sub
 
+    Public Sub AddPnt5()
+        Dim a As Integer
+        Dim b As Integer
+        Dim c As Integer
+
+        If Mainfrm.Label9.Text = "g" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "w" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases Burst Skill damage by 1")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Burst Skill damage by " & Mainfrm.Label29.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Burst Skill damage by " & Mainfrm.Label29.Text)
+            End If
+        ElseIf Mainfrm.Label9.Text = "en" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "r" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 10
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases healing by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases healing by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "t" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "m" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "n" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = maxsingle Then
+                Mainfrm.Label19.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+            ElseIf a <= maxsingle Then
+                a += 1
+                b += 1
+                c += 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
+            End If
+        End If
+    End Sub
+
     Public Sub RmvPnt1()
         Dim a As Integer
         Dim b As Integer
@@ -1799,6 +1983,222 @@
                 Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label27, "Increases healing by " & Mainfrm.Label27.Text)
+            End If
+        End If
+    End Sub
+
+    Public Sub RmvPnt5()
+        Dim a As Integer
+        Dim b As Integer
+        Dim c As Integer
+
+        If Mainfrm.Label9.Text = "g" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 1
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Virtues Recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Burst skill by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "w" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 10" & vbCrLf & "Increases Burst Skill damage by 1")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Burst skill damage by " & Mainfrm.Label29.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Burst Skill damage by " & Mainfrm.Label29.Text)
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 10
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 10" & vbCrLf & "Decreases Burst Skill damage by 1")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Burst skill by " & Mainfrm.Label29.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Burst Skill damage by " & Mainfrm.Label29.Text)
+            End If
+        ElseIf Mainfrm.Label9.Text = "en" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 1
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases recharge rate of Tool Belt skills by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "r" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases healing by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases healing by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 10
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases healing by 10" & vbCrLf & "Decreases Pet Attributes by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases healing by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases healing by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Pet Attributes skills by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "t" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 1
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Steal recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 1
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases boon duration by 1%" & vbCrLf & "Decreases Attunement recharge rate by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "m" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 1
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases the recharge rate of Shatter skills by 1%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
+            End If
+        ElseIf Mainfrm.Label9.Text = "n" Then
+            a = Mainfrm.Label19.Text
+            b = Mainfrm.Label28.Text
+            c = Mainfrm.Label29.Text
+            If a = minsingle Then
+                Mainfrm.Label18.Text = a
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
+            ElseIf a >= minsingle Then
+                a -= 1
+                b -= 1
+                c -= 1
+                Mainfrm.Label19.Text = a
+                Mainfrm.Label28.Text = b
+                Mainfrm.Label29.Text = c
+                Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases the size of your Life Force pool by 1")
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox67, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
+                Mainfrm.ToolTip2.SetToolTip(Mainfrm.Label29, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
             End If
         End If
     End Sub
