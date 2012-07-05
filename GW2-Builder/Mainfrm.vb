@@ -148,6 +148,31 @@
         ToolTip2.SetToolTip(PictureBox42, "Virtue: Grants Aegis every 40 seconds." & vbCrLf & "Activate: Grant Aegis to yourself and nearby allies." _
                             & vbCrLf & "Aegis(5s): Block the next incoming attack")
 
+        ToolTip2.SetToolTip(PictureBox1, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -162,7 +187,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " & Label21.Text & "%")
@@ -303,6 +332,31 @@
         PictureBox68.Image = My.Resources.Prowess
         PictureBox67.Image = My.Resources.Brawn
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -317,7 +371,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -464,6 +522,31 @@
         PictureBox68.Image = My.Resources.Prowess
         PictureBox67.Image = My.Resources.Ingenuity
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -478,7 +561,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -609,6 +696,31 @@
         PictureBox68.Image = My.Resources.Compassion
         PictureBox67.Image = My.Resources.Empathy
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -623,7 +735,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -765,6 +881,31 @@
         PictureBox68.Image = My.Resources.Malice
         PictureBox67.Image = My.Resources.Cunning
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -779,7 +920,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox55, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition damage by " + Label21.Text + "%")
@@ -939,6 +1084,31 @@
         ToolTip2.SetToolTip(PictureBox42, "Attune to air, gaining heavy damage and control abilities.")
         ToolTip2.SetToolTip(PictureBox43, "Attune to earth, gaining superior damage over time and defensive abilities.")
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -953,7 +1123,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -1087,6 +1261,31 @@
         PictureBox68.Image = My.Resources.Malice
         PictureBox67.Image = My.Resources.Guile
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, "Click to reset the traits")
+        ToolTip2.SetToolTip(PictureBox8, vbNullString)
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -1101,7 +1300,11 @@
         ToolTip2.SetToolTip(PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -1241,6 +1444,31 @@
         PictureBox68.Image = My.Resources.Prowess
         PictureBox67.Image = My.Resources.Hunger
 
+        ToolTip2.SetToolTip(PictureBox1, vbNullString)
+        ToolTip2.SetToolTip(PictureBox2, vbNullString)
+        ToolTip2.SetToolTip(PictureBox3, vbNullString)
+        ToolTip2.SetToolTip(PictureBox4, vbNullString)
+        ToolTip2.SetToolTip(PictureBox5, vbNullString)
+        ToolTip2.SetToolTip(PictureBox6, vbNullString)
+        ToolTip2.SetToolTip(PictureBox7, vbNullString)
+        ToolTip2.SetToolTip(PictureBox8, "Click to reset the traits")
+
+        Label15.Text = "0"
+        Label16.Text = "0"
+        Label17.Text = "0"
+        Label18.Text = "0"
+        Label19.Text = "0"
+        Label20.Text = "0"
+        Label21.Text = "0"
+        Label22.Text = "0"
+        Label23.Text = "0"
+        Label24.Text = "0"
+        Label25.Text = "0"
+        Label26.Text = "0"
+        Label27.Text = "0"
+        Label28.Text = "0"
+        Label29.Text = "0"
+
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox54, "Add Point")
@@ -1256,6 +1484,10 @@
         ToolTip2.SetToolTip(PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
         ToolTip2.SetToolTip(PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
         ToolTip2.SetToolTip(PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        ToolTip2.SetToolTip(PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
+        ToolTip2.SetToolTip(PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        ToolTip2.SetToolTip(PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
 
         ToolTip2.SetToolTip(PictureBox59, "Increases power by " & Label20.Text)
         ToolTip2.SetToolTip(PictureBox60, "Increases condition duration by " + Label21.Text + "%")
@@ -1337,5 +1569,21 @@
 
     Private Sub PictureBox51_Click(sender As Object, e As EventArgs) Handles PictureBox51.Click
         cls.RmvPnt2()
+    End Sub
+
+    Private Sub PictureBox54_Click(sender As Object, e As EventArgs) Handles PictureBox54.Click
+        cls.AddPnt3()
+    End Sub
+
+    Private Sub PictureBox53_Click(sender As Object, e As EventArgs) Handles PictureBox53.Click
+        cls.RmvPnt3()
+    End Sub
+
+    Private Sub PictureBox56_Click(sender As Object, e As EventArgs) Handles PictureBox56.Click
+        cls.AddPnt4()
+    End Sub
+
+    Private Sub PictureBox55_Click(sender As Object, e As EventArgs) Handles PictureBox55.Click
+        cls.RmvPnt4()
     End Sub
 End Class
