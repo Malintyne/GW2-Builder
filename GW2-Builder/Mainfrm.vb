@@ -1420,6 +1420,11 @@
         Label28.Visible = True
         Label29.Visible = True
 
+        PictureBox40.Visible = True
+        PictureBox41.Visible = True
+        PictureBox42.Visible = False
+        PictureBox43.Visible = False
+        PictureBox49.Visible = True
         PictureBox49.Visible = True
         PictureBox50.Visible = True
         PictureBox51.Visible = True
@@ -1441,7 +1446,9 @@
         PictureBox67.Visible = True
         PictureBox68.Visible = True
 
-		PictureBox44.Image = My.Resources.Spite___Necromancer
+        PictureBox40.Image = My.Resources.Death_Shroud
+        PictureBox41.Image = My.Resources.End_Death_Shroud
+        PictureBox44.Image = My.Resources.Spite___Necromancer
         PictureBox45.Image = My.Resources.Curses___Necromancer
         PictureBox46.Image = My.Resources.Death___Necromancer
         PictureBox47.Image = My.Resources.Blood___Necromancer
@@ -1482,6 +1489,16 @@
         Label27.Text = "0"
         Label28.Text = "0"
         Label29.Text = "0"
+
+        ToolTip2.SetToolTipTitle(PictureBox40, "Death Shroud")
+        ToolTip2.SetToolTipTitle(PictureBox41, "End Death Shroud")
+
+        ToolTip2.SetToolTipImage(PictureBox40, PictureBox40.Image)
+        ToolTip2.SetToolTipImage(PictureBox41, PictureBox41.Image)
+
+        ToolTip2.SetToolTip(PictureBox40, "Chain: Assume a spectral form and gain new skills, turning your life force into health." & vbCrLf & "Skill Chain:" _
+                            & vbCrLf & "Death Shroud > End Death Shroud")
+        ToolTip2.SetToolTip(PictureBox41, "Chain: Leave Death Shroud and return to your normal form.")
 
         ToolTip2.SetToolTipTitle(PictureBox49, "Add Point")
         ToolTip2.SetToolTipTitle(PictureBox52, "Add Point")

@@ -292,6 +292,8 @@
     <Content Include="Resources\necromancer\Chillblains.png" />
     <Content Include="Resources\necromancer\Dark Pact.png" />
     <Content Include="Resources\necromancer\Deathly Swarm.png" />
+    <Content Include="Resources\necromancer\Death_Shroud.png" />
+    <Content Include="Resources\necromancer\End_Death_Shroud.png" />
     <Content Include="Resources\necromancer\Enfeebling Blood.png" />
     <Content Include="Resources\necromancer\Feast of Corruption.png" />
     <Content Include="Resources\necromancer\Ghastly Claws.png" />

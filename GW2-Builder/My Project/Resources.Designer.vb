@@ -655,6 +655,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Death_Shroud() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Death_Shroud", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Defense___Warrior() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Defense___Warrior", resourceCulture)
@@ -812,6 +819,13 @@ Namespace My.Resources
         Public ReadOnly Property Empathy() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Empathy", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property End_Death_Shroud() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("End_Death_Shroud", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
