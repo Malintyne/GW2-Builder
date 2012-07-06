@@ -20,8 +20,10 @@
     Private Sub About_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ToolTip2.SetToolTip(Label1, "Last compatible game version: June BWE Update")
         ToolTip2.SetToolTip(Label2, "Close")
+        ToolTip2.SetToolTipImage(LinkLabel1, My.Resources.Logo_FA)
         ToolTip2.SetToolTip(LinkLabel1, "Homepage")
         ToolTip2.SetToolTip(LinkLabel2, "Click to view the full license")
+        ToolTip2.SetToolTip(LinkLabel3, "Click to view the full license")
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
@@ -34,5 +36,9 @@
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
         Process.Start("http://en.wikipedia.org/wiki/MIT_License")
+    End Sub
+
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+        Process.Start("http://www.codeproject.com/info/cpol10.aspx")
     End Sub
 End Class

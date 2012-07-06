@@ -260,6 +260,7 @@
     <Content Include="Resources\guardian\Zealot%27s Embrace.png" />
     <Content Include="Resources\guardian\Zealot%27s Flame.png.jpg" />
     <Content Include="Resources\guardian\Zealot_s_Fire.png" />
+    <Content Include="Resources\Logo FA.png" />
     <Content Include="Resources\mesmer\Blurred Frenzy.png" />
     <Content Include="Resources\mesmer\Chaos Armor.png" />
     <Content Include="Resources\mesmer\Chaos Storm.png" />

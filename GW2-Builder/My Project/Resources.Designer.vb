@@ -1481,6 +1481,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Logo_FA() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Logo_FA", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Long_Range_Shot() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Long_Range_Shot", resourceCulture)
