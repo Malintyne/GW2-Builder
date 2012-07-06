@@ -127,6 +127,7 @@ Partial Class Mainfrm
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -1304,6 +1305,15 @@ Partial Class Mainfrm
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(404, 580)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(45, 13)
+        Me.Label30.TabIndex = 14
+        Me.Label30.Text = "Label30"
+        '
         'ToolTip2
         '
         Me.ToolTip2.AnimationSpeed = 0
@@ -1314,6 +1324,7 @@ Partial Class Mainfrm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(892, 545)
+        Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label6)
@@ -1516,5 +1527,6 @@ Partial Class Mainfrm
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents Label30 As System.Windows.Forms.Label
 
 End Class
