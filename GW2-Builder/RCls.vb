@@ -1,6 +1,6 @@
 ﻿Public Class RCls
 #Region "Main Form"
-    Dim ver As String = "GW2 Builder - " + Application.ProductVersion
+    Dim ver As String = "GW2 Builder - " + Application.ProductVersion + "-1"
 
     Public Sub MfrmLoad()
         ResetImage()

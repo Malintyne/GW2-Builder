@@ -133,6 +133,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Changelog.txt" />
     <Content Include="Licenses\COPYING.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

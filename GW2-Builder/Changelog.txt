@@ -1,23 +1,29 @@
-Version - 0.0.1.5-1
-$ Added "Special Thanks" tabs on About window
-
 Version - 0.0.1.5
 ! Changed order of the classes (only visual, code untouched)
 # Fixed flikering tooltip bug on Windows Vista, Seven and 8 (XP don't have this bug)
 $ Added single row reset for trait
 
+
+
 Version - 0.0.1.4
 $ Added cap for all traits to 70 points
 
+
+
 Version - 0.0.0.1 to 0.0.1.3
 Never went public
+
+
 
 Legend:
 ! Important Changes
 # Fix
 $ Add/Remove
 
+
+
 About news and information about the project, goes here:
 http://www.guildwars2guru.com/topic/41553-gw2-offline-builder/
+
 For the source code, goes here:
 https://github.com/miracle091/GW2-Builder
