@@ -1228,7 +1228,7 @@ Partial Class Mainfrm
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.GW2_Builder.My.Resources.Resources.necromancer_off
-        Me.PictureBox8.Location = New System.Drawing.Point(785, 36)
+        Me.PictureBox8.Location = New System.Drawing.Point(573, 36)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1238,7 +1238,7 @@ Partial Class Mainfrm
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.GW2_Builder.My.Resources.Resources.mesmer_off
-        Me.PictureBox7.Location = New System.Drawing.Point(679, 36)
+        Me.PictureBox7.Location = New System.Drawing.Point(785, 36)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1248,7 +1248,7 @@ Partial Class Mainfrm
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.GW2_Builder.My.Resources.Resources.elementalist_off
-        Me.PictureBox6.Location = New System.Drawing.Point(573, 36)
+        Me.PictureBox6.Location = New System.Drawing.Point(43, 36)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1258,7 +1258,7 @@ Partial Class Mainfrm
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.GW2_Builder.My.Resources.Resources.thief_off
-        Me.PictureBox5.Location = New System.Drawing.Point(467, 36)
+        Me.PictureBox5.Location = New System.Drawing.Point(679, 36)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1268,7 +1268,7 @@ Partial Class Mainfrm
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.GW2_Builder.My.Resources.Resources.ranger_off
-        Me.PictureBox4.Location = New System.Drawing.Point(361, 36)
+        Me.PictureBox4.Location = New System.Drawing.Point(467, 36)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1278,7 +1278,7 @@ Partial Class Mainfrm
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.GW2_Builder.My.Resources.Resources.engineer_off
-        Me.PictureBox3.Location = New System.Drawing.Point(255, 36)
+        Me.PictureBox3.Location = New System.Drawing.Point(361, 36)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1298,7 +1298,7 @@ Partial Class Mainfrm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(43, 36)
+        Me.PictureBox1.Location = New System.Drawing.Point(255, 36)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1316,7 +1316,7 @@ Partial Class Mainfrm
         '
         'ToolTip2
         '
-        Me.ToolTip2.AnimationSpeed = 0
+        Me.ToolTip2.AnimationSpeed = 5
         Me.ToolTip2.EnableAutoClose = False
         '
         'Mainfrm

@@ -1627,4 +1627,39 @@
     Private Sub PictureBox57_Click(sender As Object, e As EventArgs) Handles PictureBox57.Click
         cls.RmvPnt5()
     End Sub
+
+    Private Sub Label15_DoubleClick(sender As Object, e As EventArgs) Handles Label15.DoubleClick
+        If Label15.Text > 0 Then
+            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            cls.SingleReset1()
+        End If
+    End Sub
+
+    Private Sub Label16_DoubleClick(sender As Object, e As EventArgs) Handles Label16.DoubleClick
+        If Label16.Text > 0 Then
+            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            cls.SingleReset2()
+        End If
+    End Sub
+
+    Private Sub Label17_DoubleClick(sender As Object, e As EventArgs) Handles Label17.DoubleClick
+        If Label17.Text > 0 Then
+            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            cls.SingleReset3()
+        End If
+    End Sub
+
+    Private Sub Label18_DoubleClick(sender As Object, e As EventArgs) Handles Label18.DoubleClick
+        If Label18.Text > 0 Then
+            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            cls.SingleReset4()
+        End If
+    End Sub
+
+    Private Sub Label19_DoubleClick(sender As Object, e As EventArgs) Handles Label19.DoubleClick
+        If Label19.Text > 0 Then
+            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            cls.SingleReset5()
+        End If
+    End Sub
 End Class
