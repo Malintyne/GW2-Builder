@@ -1,6 +1,6 @@
 ﻿Public Class RCls
 #Region "Main Form"
-    Dim ver As String = "GW2 Builder - " + Application.ProductVersion + "-1"
+    Dim ver As String = "GW2 Builder - " + Application.ProductVersion
 
     Public Sub MfrmLoad()
         ResetImage()
@@ -184,6 +184,9 @@
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox27, "Select a one hand or a two hand weapon first")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox26, "Select a one hand or a two hand weapon first")
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox25, "Select a one hand or a two hand weapon first")
+
+        Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox14, "Select a class first")
+        Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox24, "Select a class first")
     End Sub
 
     Public Sub LblClick()
@@ -5117,6 +5120,276 @@
                 Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox27, "Blast your foe repeatedly with both pistols." _
                                 & vbCrLf & "Damage: 148" & vbCrLf & "Combo Finisher: Physical Projectile (20% chance)")
             End If
+        End If
+    End Sub
+#End Region
+
+#Region "Healing"
+    Public Sub Heal1()
+        If Mainfrm.Label9.Text = "Label9" Then
+        ElseIf Mainfrm.Label9.Text = "g" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Shelter
+            Selectfrm1.PictureBox2.Image = My.Resources.Signet_of_Resolve
+            Selectfrm1.PictureBox3.Image = My.Resources.Healing_Breeze
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Shelter")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Signet of Resolve")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Healing Breeze")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Block attack while healing." & vbCrLf & "Healing: 2485" & vbCrLf & "Block duration: 2 seconds")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Passive. Removes a condition every ten seconds." & vbCrLf & "Active. Heal yourself." _
+                                          & vbCrLf & "Healing: 7225")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Heal your self and allies in a cone in front of you." & vbCrLf & "Self Heal: 7020" _
+                                          & vbCrLf & "Allied Heal: 3820" & vbCrLf & "Healing Breeze duration: 3 seconds" & vbCrLf & "Range: 600")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "w" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Healing_Surge
+            Selectfrm1.PictureBox2.Image = My.Resources.Mending
+            Selectfrm1.PictureBox3.Image = My.Resources.Healing_Signet
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Healing Surge")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Mending")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Healing Signet")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Heal yourself and build adrenaline." & vbCrLf & "Healing: 6620" & vbCrLf & "Block duration: 2 seconds")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Heal yourself and remove two conditions." & vbCrLf & "Healing: 5660")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Passive. Gain Regeneration." & vbCrLf & "Active. Heal yourself." & vbCrLf & "Healing: 7580")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "en" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Elixir_H
+            Selectfrm1.PictureBox2.Image = My.Resources.Med_Kit
+            Selectfrm1.PictureBox3.Image = My.Resources.Healing_Turret
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Elixir H")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Med Kit")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Healing Turret")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Drink Elixir H, healing yourself and randomly giving Protection, Regeneration or Swiftness." _
+                                           & vbCrLf & "Healing: 761" & vbCrLf & "Regen(10s): +900 health regen" & vbCrLf & "Protection(5s): 33% damage reduction" _
+                                           & vbCrLf & "Swiftness(10s): +33% movement speed")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Equip a kit that replaces your weapon with healing skills.")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Deploy a turret that heals you briefly, then continues to apply Regeneration to you and nearby allies.")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "r" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Elixir_H
+            Selectfrm1.PictureBox2.Image = My.Resources.Med_Kit
+            Selectfrm1.PictureBox3.Image = My.Resources.Healing_Turret
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Heal as One")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Healing Spring")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Troll Unguent")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Heal yourself and your pet." & vbCrLf & "Healing: 6620")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Create a healing spring that heals you and your pet. Once placed, the spring applies" _
+                                           & vbCrLf & "constant regeneration and also periodically removes conditions from allies within its vicinity." _
+                                           & vbCrLf & "Healing: 5020" & vbCrLf & "Regen(3s): +693 health regen" & vbCrLf & "Combo Field: Water" & vbCrLf & "Range: 240")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "You and your pet regenerate health over time." & vbCrLf & "Health per second: 868" _
+                                           & vbCrLf & "Duration: 10 seconds")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "t" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Hide_in_Shadows
+            Selectfrm1.PictureBox2.Image = My.Resources.Withdraw
+            Selectfrm1.PictureBox3.Image = My.Resources.Signet_of_Malice
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Hide in Shadows")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Withdraw")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Signet of Malice")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Vanish in Stealth and gain Regeneration." & vbCrLf & "Healing: 0" _
+                                           & vbCrLf & "Regen(4s): +312 health regen" & vbCrLf & "Stealth Duration: 3 seconds")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Roll backward while healing and Evade attacks." & vbCrLf & "Healing: 160")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Passive. Grants health when you attack." & vbCrLf & "Active. Gain health." _
+                                           & vbCrLf & "Healing: 200")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "el" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Glyph_of_Elemental_Harmony
+            Selectfrm1.PictureBox2.Image = My.Resources.Ether_Renewal
+            Selectfrm1.PictureBox3.Image = My.Resources.Signet_of_Restoration
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Glyph of Elemental Harmony")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Ether Renewal")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Signet of Restoration")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Heal yourself and gain a boon based on your attunement." & vbCrLf & "Fire. Gain might." _
+                                           & vbCrLf & "Air. Gain swiftness." & vbCrLf & "Water. Gain regeneration." & vbCrLf & "Earth. Gain protection." _
+                                           & vbCrLf & "Healing: 4894" & vbCrLf & "Might(20s): +5-35 Power" & vbCrLf & "Swiftness(10s): +33% movement speed" _
+                                           & vbCrLf & "Regen(10s): +750 health regen" & vbCrLf & "Protection(10s): 33% damage redution")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Heal yourself and lose a condition with every pulse." & vbCrLf & "Healing: 420")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Passive. Grants health every time you cast a spell." & vbCrLf & "Active. Heal yourself." _
+                                           & vbCrLf & "Air. Gain swiftness." & vbCrLf & "Water. Gain regeneration." & vbCrLf & "Earth. Gain protection." _
+                                           & vbCrLf & "Healing: 6630")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "m" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Ether_Feast
+            Selectfrm1.PictureBox2.Image = My.Resources.Mirror
+            Selectfrm1.PictureBox3.Image = My.Resources.Mantra_of_Recovery
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Ether Feast")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Mirror")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Mantra of Recovery")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Heal yourself. Gain additional health for each active illusion." & vbCrLf & "Healing: 5660" _
+                                           & vbCrLf & "Heal per illusion: 2232")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Reflect incoming projectiles and heal yourself." & vbCrLf & "Healing: 220")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Meditate to charge a spell that will instantly heal you when activated.")
+            Selectfrm1.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "n" Then
+            Selectfrm1.PictureBox1.Image = My.Resources.Summon_Blood_Fiend
+            Selectfrm1.PictureBox2.Image = My.Resources.Consume_Conditions
+            Selectfrm1.PictureBox3.Image = My.Resources.Well_of_Blood
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox1, Selectfrm1.PictureBox1.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox2, Selectfrm1.PictureBox2.Image)
+            Selectfrm1.ToolTip1.SetToolTipImage(Selectfrm1.PictureBox3, Selectfrm1.PictureBox3.Image)
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox1, "Summon Blood Fiend")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox2, "Consume Conditions")
+            Selectfrm1.ToolTip1.SetToolTipTitle(Selectfrm1.PictureBox3, "Well of Blood")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox1, "Summon a blood fiend that transfers health to you on each attack." & vbCrLf & "Healing: 30")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox2, "Feast on your conditions, gaining health for each one consumed." & vbCrLf & "Healing: 120" _
+                                           & vbCrLf & "Heal per conditions: 20")
+            Selectfrm1.ToolTip1.SetToolTip(Selectfrm1.PictureBox3, "Conjure a well of blood to heal nearby allies." & vbCrLf & "Initial Self Heal: 120" _
+                                           & vbCrLf & "Duration: 10 seconds" & vbCrLf & "Health per second: 24" & vbCrLf & "Combo Field: Light")
+            Selectfrm1.ShowDialog()
+        End If
+    End Sub
+
+    Public Sub Heal2()
+        If Mainfrm.Label9.Text = "Label9" Then
+        ElseIf Mainfrm.Label9.Text = "g" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Shelter
+            Selectfrm2.PictureBox2.Image = My.Resources.Signet_of_Resolve
+            Selectfrm2.PictureBox3.Image = My.Resources.Healing_Breeze
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Shelter")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Signet of Resolve")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Healing Breeze")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Block attack while healing." & vbCrLf & "Healing: 2485" & vbCrLf & "Block duration: 2 seconds")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Passive. Removes a condition every ten seconds." & vbCrLf & "Active. Heal yourself." _
+                                          & vbCrLf & "Healing: 7225")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Heal your self and allies in a cone in front of you." & vbCrLf & "Self Heal: 7020" _
+                                          & vbCrLf & "Allied Heal: 3820" & vbCrLf & "Healing Breeze duration: 3 seconds" & vbCrLf & "Range: 600")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "w" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Healing_Surge
+            Selectfrm2.PictureBox2.Image = My.Resources.Mending
+            Selectfrm2.PictureBox3.Image = My.Resources.Healing_Signet
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Healing Surge")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Mending")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Healing Signet")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Heal yourself and build adrenaline." & vbCrLf & "Healing: 6620" & vbCrLf & "Block duration: 2 seconds")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Heal yourself and remove two conditions." & vbCrLf & "Healing: 5660")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Passive. Gain Regeneration." & vbCrLf & "Active. Heal yourself." & vbCrLf & "Healing: 7580")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "en" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Elixir_H
+            Selectfrm2.PictureBox2.Image = My.Resources.Med_Kit
+            Selectfrm2.PictureBox3.Image = My.Resources.Healing_Turret
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Elixir H")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Med Kit")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Healing Turret")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Drink Elixir H, healing yourself and randomly giving Protection, Regeneration or Swiftness." _
+                                           & vbCrLf & "Healing: 761" & vbCrLf & "Regen(10s): +900 health regen" & vbCrLf & "Protection(5s): 33% damage reduction" _
+                                           & vbCrLf & "Swiftness(10s): +33% movement speed")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Equip a kit that replaces your weapon with healing skills.")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Deploy a turret that heals you briefly, then continues to apply Regeneration to you and nearby allies.")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "r" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Elixir_H
+            Selectfrm2.PictureBox2.Image = My.Resources.Med_Kit
+            Selectfrm2.PictureBox3.Image = My.Resources.Healing_Turret
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Heal as One")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Healing Spring")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Troll Unguent")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Heal yourself and your pet." & vbCrLf & "Healing: 6620")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Create a healing spring that heals you and your pet. Once placed, the spring applies" _
+                                           & vbCrLf & "constant regeneration and also periodically removes conditions from allies within its vicinity." _
+                                           & vbCrLf & "Healing: 5020" & vbCrLf & "Regen(3s): +693 health regen" & vbCrLf & "Combo Field: Water" & vbCrLf & "Range: 240")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "You and your pet regenerate health over time." & vbCrLf & "Health per second: 868" _
+                                           & vbCrLf & "Duration: 10 seconds")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "t" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Hide_in_Shadows
+            Selectfrm2.PictureBox2.Image = My.Resources.Withdraw
+            Selectfrm2.PictureBox3.Image = My.Resources.Signet_of_Malice
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Hide in Shadows")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Withdraw")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Signet of Malice")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Vanish in Stealth and gain Regeneration." & vbCrLf & "Healing: 0" _
+                                           & vbCrLf & "Regen(4s): +312 health regen" & vbCrLf & "Stealth Duration: 3 seconds")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Roll backward while healing and Evade attacks." & vbCrLf & "Healing: 160")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Passive. Grants health when you attack." & vbCrLf & "Active. Gain health." _
+                                           & vbCrLf & "Healing: 200")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "el" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Glyph_of_Elemental_Harmony
+            Selectfrm2.PictureBox2.Image = My.Resources.Ether_Renewal
+            Selectfrm2.PictureBox3.Image = My.Resources.Signet_of_Restoration
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Glyph of Elemental Harmony")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Ether Renewal")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Signet of Restoration")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Heal yourself and gain a boon based on your attunement." & vbCrLf & "Fire. Gain might." _
+                                           & vbCrLf & "Air. Gain swiftness." & vbCrLf & "Water. Gain regeneration." & vbCrLf & "Earth. Gain protection." _
+                                           & vbCrLf & "Healing: 4894" & vbCrLf & "Might(20s): +5-35 Power" & vbCrLf & "Swiftness(10s): +33% movement speed" _
+                                           & vbCrLf & "Regen(10s): +750 health regen" & vbCrLf & "Protection(10s): 33% damage redution")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Heal yourself and lose a condition with every pulse." & vbCrLf & "Healing: 420")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Passive. Grants health every time you cast a spell." & vbCrLf & "Active. Heal yourself." _
+                                           & vbCrLf & "Air. Gain swiftness." & vbCrLf & "Water. Gain regeneration." & vbCrLf & "Earth. Gain protection." _
+                                           & vbCrLf & "Healing: 6630")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "m" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Ether_Feast
+            Selectfrm2.PictureBox2.Image = My.Resources.Mirror
+            Selectfrm2.PictureBox3.Image = My.Resources.Mantra_of_Recovery
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Ether Feast")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Mirror")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Mantra of Recovery")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Heal yourself. Gain additional health for each active illusion." & vbCrLf & "Healing: 5660" _
+                                           & vbCrLf & "Heal per illusion: 2232")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Reflect incoming projectiles and heal yourself." & vbCrLf & "Healing: 220")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Meditate to charge a spell that will instantly heal you when activated.")
+            Selectfrm2.ShowDialog()
+        ElseIf Mainfrm.Label9.Text = "n" Then
+            Selectfrm2.PictureBox1.Image = My.Resources.Summon_Blood_Fiend
+            Selectfrm2.PictureBox2.Image = My.Resources.Consume_Conditions
+            Selectfrm2.PictureBox3.Image = My.Resources.Well_of_Blood
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox1, Selectfrm2.PictureBox1.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox2, Selectfrm2.PictureBox2.Image)
+            Selectfrm2.ToolTip1.SetToolTipImage(Selectfrm2.PictureBox3, Selectfrm2.PictureBox3.Image)
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox1, "Summon Blood Fiend")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox2, "Consume Conditions")
+            Selectfrm2.ToolTip1.SetToolTipTitle(Selectfrm2.PictureBox3, "Well of Blood")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox1, "Summon a blood fiend that transfers health to you on each attack." & vbCrLf & "Healing: 30")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox2, "Feast on your conditions, gaining health for each one consumed." & vbCrLf & "Healing: 120" _
+                                           & vbCrLf & "Heal per conditions: 20")
+            Selectfrm2.ToolTip1.SetToolTip(Selectfrm2.PictureBox3, "Conjure a well of blood to heal nearby allies." & vbCrLf & "Initial Self Heal: 120" _
+                                           & vbCrLf & "Duration: 10 seconds" & vbCrLf & "Health per second: 24" & vbCrLf & "Combo Field: Light")
+            Selectfrm2.ShowDialog()
         End If
     End Sub
 #End Region

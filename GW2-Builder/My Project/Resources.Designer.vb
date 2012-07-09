@@ -536,6 +536,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Consume_Conditions() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Consume_Conditions", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Counter_Blow_png() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Counter_Blow_png", resourceCulture)
@@ -816,6 +823,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Elixir_H() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Elixir_H", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Empathy() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Empathy", resourceCulture)
@@ -868,6 +882,20 @@ Namespace My.Resources
         Public ReadOnly Property Ether_Clone() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Ether_Clone", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Ether_Feast() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ether_Feast", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Ether_Renewal() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ether_Renewal", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1082,6 +1110,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Glyph_of_Elemental_Harmony() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Glyph_of_Elemental_Harmony", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Greatsword_Slice() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Greatsword_Slice", resourceCulture)
@@ -1180,6 +1215,20 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Heal_as_One() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Heal_as_One", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Healing_Breeze() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Healing_Breeze", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Healing_Rain() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Healing_Rain", resourceCulture)
@@ -1187,9 +1236,44 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Healing_Signet() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Healing_Signet", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Healing_Spring() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Healing_Spring", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Healing_Surge() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Healing_Surge", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Healing_Turret() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Healing_Turret", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Heartseeker() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Heartseeker", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Hide_in_Shadows() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Hide_in_Shadows", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1551,6 +1635,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Mantra_of_Recovery() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mantra_of_Recovery", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Markmanship___Ranger() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Markmanship___Ranger", resourceCulture)
@@ -1568,6 +1659,20 @@ Namespace My.Resources
         Public ReadOnly Property Maul() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Maul", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Med_Kit() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Med_Kit", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Mending() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mending", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1631,6 +1736,13 @@ Namespace My.Resources
         Public ReadOnly Property minus() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("minus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Mirror() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mirror", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2020,6 +2132,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Shelter() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Shelter", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Shield_Bash_png() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Shield_Bash_png", resourceCulture)
@@ -2065,6 +2184,27 @@ Namespace My.Resources
         Public ReadOnly Property Shockwave() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Shockwave", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Signet_of_Malice() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Signet_of_Malice", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Signet_of_Resolve() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Signet_of_Resolve", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Signet_of_Restoration() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Signet_of_Restoration", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2233,6 +2373,13 @@ Namespace My.Resources
         Public ReadOnly Property Strike() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Strike", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Summon_Blood_Fiend() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Summon_Blood_Fiend", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2433,6 +2580,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Troll_Unguent() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Troll_Unguent", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property True_Strike() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("True_Strike", resourceCulture)
@@ -2608,6 +2762,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Well_of_Blood() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Well_of_Blood", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Whirling_Axe_png() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Whirling_Axe_png", resourceCulture)
@@ -2674,6 +2835,13 @@ Namespace My.Resources
         Public ReadOnly Property Winter_s_Bite() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Winter_s_Bite", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Withdraw() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Withdraw", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

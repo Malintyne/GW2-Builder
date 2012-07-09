@@ -119,6 +119,8 @@ Partial Class Mainfrm
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -127,8 +129,6 @@ Partial Class Mainfrm
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1225,6 +1225,20 @@ Partial Class Mainfrm
         Me.Label9.TabIndex = 13
         Me.Label9.Text = "Label9"
         '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(404, 580)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(45, 13)
+        Me.Label30.TabIndex = 14
+        Me.Label30.Text = "Label30"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.AnimationSpeed = 1
+        Me.ToolTip2.EnableAutoClose = False
+        '
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.GW2_Builder.My.Resources.Resources.necromancer_off
@@ -1304,20 +1318,6 @@ Partial Class Mainfrm
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(404, 580)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(45, 13)
-        Me.Label30.TabIndex = 14
-        Me.Label30.Text = "Label30"
-        '
-        'ToolTip2
-        '
-        Me.ToolTip2.AnimationSpeed = 5
-        Me.ToolTip2.EnableAutoClose = False
         '
         'Mainfrm
         '

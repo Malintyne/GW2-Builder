@@ -1662,4 +1662,12 @@
             cls.SingleReset5()
         End If
     End Sub
+
+    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
+        cls.Heal1()
+    End Sub
+
+    Private Sub PictureBox24_Click(sender As Object, e As EventArgs) Handles PictureBox24.Click
+        cls.Heal2()
+    End Sub
 End Class

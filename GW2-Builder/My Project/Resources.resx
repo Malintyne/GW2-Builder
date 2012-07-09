@@ -1258,8 +1258,80 @@
   <data name="End_Death_Shroud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\necromancer\end_death_shroud.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Logo_FA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\logo fa.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healing_Breeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\healing_breeze.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shelter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\shelter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Signet_of_Resolve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\signet_of_resolve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Consume_Conditions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\consume_conditions.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elixir_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\elixir_h.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ether_Feast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\ether_feast.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ether_Renewal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\ether_renewal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Glyph_of_Elemental_Harmony" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\glyph_of_elemental_harmony.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healing_Signet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\healing_signet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healing_Spring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\healing_spring.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healing_Surge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\healing_surge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healing_Turret" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\healing_turret.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Heal_as_One" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\heal_as_one.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hide_in_Shadows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\hide_in_shadows.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mantra_of_Recovery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\mantra_of_recovery.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Med_Kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\med_kit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\mending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\mirror.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Signet_of_Malice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\signet_of_malice.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Signet_of_Restoration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\signet_of_restoration.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Summon_Blood_Fiend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\summon_blood_fiend.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Troll_Unguent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\troll_unguent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Well_of_Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\well_of_blood.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Withdraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing\withdraw.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

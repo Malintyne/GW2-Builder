@@ -82,6 +82,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Selectfrm2.Designer.vb">
+      <DependentUpon>Selectfrm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selectfrm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RCls.vb" />
     <Compile Include="Mainfrm.vb">
       <SubType>Form</SubType>
@@ -105,10 +111,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Selectfrm1.Designer.vb">
+      <DependentUpon>Selectfrm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selectfrm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectfrm2.resx">
+      <DependentUpon>Selectfrm2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainfrm.resx">
       <DependentUpon>Mainfrm.vb</DependentUpon>
@@ -118,6 +133,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectfrm1.resx">
+      <DependentUpon>Selectfrm1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -133,7 +151,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Changelog.txt" />
+    <Content Include="Changelog.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Licenses\COPYING.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -261,6 +281,30 @@
     <Content Include="Resources\guardian\Zealot%27s Embrace.png" />
     <Content Include="Resources\guardian\Zealot%27s Flame.png.jpg" />
     <Content Include="Resources\guardian\Zealot_s_Fire.png" />
+    <Content Include="Resources\healing\Consume_Conditions.png" />
+    <Content Include="Resources\healing\Elixir_H.png" />
+    <Content Include="Resources\healing\Ether_Feast.png" />
+    <Content Include="Resources\healing\Ether_Renewal.png" />
+    <Content Include="Resources\healing\Glyph_of_Elemental_Harmony.png" />
+    <Content Include="Resources\healing\Healing_Breeze.png" />
+    <Content Include="Resources\healing\Healing_Signet.png" />
+    <Content Include="Resources\healing\Healing_Spring.png" />
+    <Content Include="Resources\healing\Healing_Surge.png" />
+    <Content Include="Resources\healing\Healing_Turret.png" />
+    <Content Include="Resources\healing\Heal_as_One.png" />
+    <Content Include="Resources\healing\Hide_in_Shadows.png" />
+    <Content Include="Resources\healing\Mantra_of_Recovery.png" />
+    <Content Include="Resources\healing\Med_Kit.png" />
+    <Content Include="Resources\healing\Mending.png" />
+    <Content Include="Resources\healing\Mirror.png" />
+    <Content Include="Resources\healing\Shelter.png" />
+    <Content Include="Resources\healing\Signet_of_Malice.png" />
+    <Content Include="Resources\healing\Signet_of_Resolve.png" />
+    <Content Include="Resources\healing\Signet_of_Restoration.png" />
+    <Content Include="Resources\healing\Summon_Blood_Fiend.png" />
+    <Content Include="Resources\healing\Troll_Unguent.png" />
+    <Content Include="Resources\healing\Well_of_Blood.png" />
+    <Content Include="Resources\healing\Withdraw.png" />
     <Content Include="Resources\Logo FA.png" />
     <Content Include="Resources\mesmer\Blurred Frenzy.png" />
     <Content Include="Resources\mesmer\Chaos Armor.png" />
