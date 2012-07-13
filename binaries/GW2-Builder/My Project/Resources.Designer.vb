@@ -1236,6 +1236,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property healing() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("healing", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Healing_Breeze() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Healing_Breeze", resourceCulture)

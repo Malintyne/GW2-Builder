@@ -111,6 +111,7 @@
     <Compile Include="Selectfrm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SkillInfo.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
@@ -273,6 +274,7 @@
     <Content Include="Resources\guardian\Zealot%27s Defense.png" />
     <Content Include="Resources\guardian\Zealot%27s Embrace.png" />
     <Content Include="Resources\guardian\Zealot%27s Flame.png.jpg" />
+    <Content Include="Resources\healing.png" />
     <Content Include="Resources\healing\Consume_Conditions.png" />
     <Content Include="Resources\healing\Elixir_H.png" />
     <Content Include="Resources\healing\Ether_Feast.png" />

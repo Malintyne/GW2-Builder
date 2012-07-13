@@ -1,5 +1,6 @@
 ﻿Public Class Mainfrm
     Dim cls As New RCls
+    Dim sinfo As New SkillInfo
     Dim x, y As Integer
     Dim newPoint As New Point()
 
@@ -169,10 +170,10 @@
     End Sub
 
     Private Sub PictureBox9_MouseHover(sender As Object, e As EventArgs) Handles PictureBox9.MouseHover
-        cls.SkillInfo1()
+        sinfo.SkillInfo1()
     End Sub
 
     Private Sub PictureBox10_MouseHover(sender As Object, e As EventArgs) Handles PictureBox10.MouseHover
-        cls.SkillInfo2()
+        sinfo.SkillInfo2()
     End Sub
 End Class
