@@ -1,4 +1,5 @@
 Version - 0.0.1.9
+$ Added all remains weapons skills (Mesmer, Necromancer & Elementalist)
 $ Removed all tooltips from all weapons skills, cause is obsolete thanks to Skill Info angle
 
 Version - 0.0.1.8

@@ -270,7 +270,9 @@
             Mainfrm.Label6.Text = ver + " - On Top"
         End If
     End Sub
+#End Region
 
+#Region "Class Choise"
     Public Sub Guardian()
         Mainfrm.Label9.Text = "g"
 
@@ -1307,11 +1309,6 @@
         Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox42, "Air Attunement")
         Mainfrm.ToolTip2.SetToolTipTitle(Mainfrm.PictureBox43, "Earth Attunement")
 
-        Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox40, Mainfrm.PictureBox40.Image)
-        Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox41, Mainfrm.PictureBox41.Image)
-        Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox42, Mainfrm.PictureBox42.Image)
-        Mainfrm.ToolTip2.SetToolTipImage(Mainfrm.PictureBox43, Mainfrm.PictureBox43.Image)
-
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox1, vbNullString)
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox2, vbNullString)
         Mainfrm.ToolTip2.SetToolTip(Mainfrm.PictureBox3, vbNullString)
@@ -1386,8 +1383,8 @@
         Mainfrm.ComboBox3.Items.Clear()
         Mainfrm.ComboBox4.Items.Clear()
 
-        Mainfrm.ComboBox1.Enabled = True
-        Mainfrm.ComboBox2.Enabled = True
+        Mainfrm.ComboBox1.Enabled = False
+        Mainfrm.ComboBox2.Enabled = False
         Mainfrm.ComboBox3.Enabled = False
         Mainfrm.ComboBox4.Enabled = False
 
@@ -4296,6 +4293,47 @@
             Mainfrm.PictureBox11.Image = My.Resources.Disabling_Shot
             Mainfrm.PictureBox12.Image = My.Resources.Choking_Gas
             Mainfrm.PictureBox13.Image = My.Resources.Concussion_Shot
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox1.Text = "Staff" Then '#two hand
+            Mainfrm.ComboBox3.Enabled = False
+            Mainfrm.ComboBox3.Text = "Off Hand"
+            Mainfrm.PictureBox30.Visible = False
+            Mainfrm.PictureBox31.Visible = False
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = False
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = True
+            Mainfrm.PictureBox42.Visible = True
+            Mainfrm.PictureBox43.Visible = True
+            Mainfrm.PictureBox40.Image = My.Resources.Fire
+            Mainfrm.PictureBox41.Image = My.Resources.Water
+            Mainfrm.PictureBox42.Image = My.Resources.Air
+            Mainfrm.PictureBox43.Image = My.Resources.Earth
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Fireball
+                Mainfrm.PictureBox10.Image = My.Resources.Lava_Font
+                Mainfrm.PictureBox11.Image = My.Resources.Flame_Burst
+                Mainfrm.PictureBox12.Image = My.Resources.Burning_Retreat
+                Mainfrm.PictureBox13.Image = My.Resources.Meteor_Shower
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Water_Blast
+                Mainfrm.PictureBox10.Image = My.Resources.Ice_Spike
+                Mainfrm.PictureBox11.Image = My.Resources.Geyser
+                Mainfrm.PictureBox12.Image = My.Resources.Frozen_Ground
+                Mainfrm.PictureBox13.Image = My.Resources.Healing_Rain
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Chain_Lightning
+                Mainfrm.PictureBox10.Image = My.Resources.Lightning_Surge
+                Mainfrm.PictureBox11.Image = My.Resources.Gust
+                Mainfrm.PictureBox12.Image = My.Resources.Windborne_Speed
+                Mainfrm.PictureBox13.Image = My.Resources.Static_Field
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Stoning
+                Mainfrm.PictureBox10.Image = My.Resources.Eruption
+                Mainfrm.PictureBox11.Image = My.Resources.Magnetic_Aura
+                Mainfrm.PictureBox12.Image = My.Resources.Unsteady_Ground
+                Mainfrm.PictureBox13.Image = My.Resources.Shockwave
+            End If
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox1.Text = "Greatsword" Then '#two hand
             Mainfrm.ComboBox3.Enabled = False
             Mainfrm.ComboBox3.Text = "Off Hand"
@@ -4518,6 +4556,90 @@
             Mainfrm.PictureBox11.Image = My.Resources.Repeater
             Mainfrm.PictureBox12.Image = My.Resources.Unknown
             Mainfrm.PictureBox13.Image = My.Resources.Unknown
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox1.Text = "Dagger" Then '#one hand
+            Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
+            Mainfrm.PictureBox30.Visible = False
+            Mainfrm.PictureBox31.Visible = False
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = False
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = True
+            Mainfrm.PictureBox42.Visible = True
+            Mainfrm.PictureBox43.Visible = True
+            Mainfrm.PictureBox40.Image = My.Resources.Fire
+            Mainfrm.PictureBox41.Image = My.Resources.Water
+            Mainfrm.PictureBox42.Image = My.Resources.Air
+            Mainfrm.PictureBox43.Image = My.Resources.Earth
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Dragon_s_Claw
+                Mainfrm.PictureBox10.Image = My.Resources.Drake_s_Breath
+                Mainfrm.PictureBox11.Image = My.Resources.Burning_Speed
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Vapor_Blade
+                Mainfrm.PictureBox10.Image = My.Resources.Cone_of_Cold
+                Mainfrm.PictureBox11.Image = My.Resources.Frozen_Burst
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Lightning_Whip
+                Mainfrm.PictureBox10.Image = My.Resources.Lightning_Touch
+                Mainfrm.PictureBox11.Image = My.Resources.Shocking_Aura
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Impale
+                Mainfrm.PictureBox10.Image = My.Resources.Ring_of_Earth
+                Mainfrm.PictureBox11.Image = My.Resources.Magnetic_Grasp
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox1.Text = "Scepter" Then '#one hand
+            Mainfrm.ComboBox3.Enabled = True
+            Mainfrm.ComboBox3.Text = "Off Hand"
+            Mainfrm.PictureBox30.Visible = False
+            Mainfrm.PictureBox31.Visible = False
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox36.Visible = False
+            Mainfrm.PictureBox38.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = True
+            Mainfrm.PictureBox42.Visible = True
+            Mainfrm.PictureBox43.Visible = True
+            Mainfrm.PictureBox40.Image = My.Resources.Fire
+            Mainfrm.PictureBox41.Image = My.Resources.Water
+            Mainfrm.PictureBox42.Image = My.Resources.Air
+            Mainfrm.PictureBox43.Image = My.Resources.Earth
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Flamestrike
+                Mainfrm.PictureBox10.Image = My.Resources.Dragon_s_Tooth
+                Mainfrm.PictureBox11.Image = My.Resources.Phoenix
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Ice_Shards
+                Mainfrm.PictureBox10.Image = My.Resources.Shatterstone
+                Mainfrm.PictureBox11.Image = My.Resources.Water_Trident
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Arc_Lightning
+                Mainfrm.PictureBox10.Image = My.Resources.Lightning_Strike
+                Mainfrm.PictureBox11.Image = My.Resources.Blinding_Flash
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox36.Visible = True
+                Mainfrm.PictureBox9.Image = My.Resources.Stone_Shards
+                Mainfrm.PictureBox10.Image = My.Resources.Rock_Barrier
+                Mainfrm.PictureBox36.Image = My.Resources.Hurl
+                Mainfrm.PictureBox11.Image = My.Resources.Dust_Devil
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            End If
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox1.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox3.Enabled = True
             Mainfrm.ComboBox3.Text = "Off Hand"
@@ -4782,6 +4904,47 @@
             Mainfrm.PictureBox27.Image = My.Resources.Disabling_Shot
             Mainfrm.PictureBox26.Image = My.Resources.Choking_Gas
             Mainfrm.PictureBox25.Image = My.Resources.Concussion_Shot
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox2.Text = "Staff" Then '#two hand
+            Mainfrm.ComboBox4.Enabled = False
+            Mainfrm.ComboBox4.Text = "Off Hand"
+            Mainfrm.PictureBox32.Visible = False
+            Mainfrm.PictureBox33.Visible = False
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = False
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = True
+            Mainfrm.PictureBox42.Visible = True
+            Mainfrm.PictureBox43.Visible = True
+            Mainfrm.PictureBox40.Image = My.Resources.Fire
+            Mainfrm.PictureBox41.Image = My.Resources.Water
+            Mainfrm.PictureBox42.Image = My.Resources.Air
+            Mainfrm.PictureBox43.Image = My.Resources.Earth
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Fireball
+                Mainfrm.PictureBox28.Image = My.Resources.Lava_Font
+                Mainfrm.PictureBox27.Image = My.Resources.Flame_Burst
+                Mainfrm.PictureBox26.Image = My.Resources.Burning_Retreat
+                Mainfrm.PictureBox25.Image = My.Resources.Meteor_Shower
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Water_Blast
+                Mainfrm.PictureBox28.Image = My.Resources.Ice_Spike
+                Mainfrm.PictureBox27.Image = My.Resources.Geyser
+                Mainfrm.PictureBox26.Image = My.Resources.Frozen_Ground
+                Mainfrm.PictureBox25.Image = My.Resources.Healing_Rain
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Chain_Lightning
+                Mainfrm.PictureBox28.Image = My.Resources.Lightning_Surge
+                Mainfrm.PictureBox27.Image = My.Resources.Gust
+                Mainfrm.PictureBox26.Image = My.Resources.Windborne_Speed
+                Mainfrm.PictureBox25.Image = My.Resources.Static_Field
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Stoning
+                Mainfrm.PictureBox28.Image = My.Resources.Eruption
+                Mainfrm.PictureBox27.Image = My.Resources.Magnetic_Aura
+                Mainfrm.PictureBox26.Image = My.Resources.Unsteady_Ground
+                Mainfrm.PictureBox25.Image = My.Resources.Shockwave
+            End If
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox2.Text = "Greatsword" Then '#two hand
             Mainfrm.ComboBox4.Enabled = False
             Mainfrm.ComboBox4.Text = "Off Hand"
@@ -4995,6 +5158,90 @@
             Mainfrm.PictureBox27.Image = My.Resources.Repeater
             Mainfrm.PictureBox26.Image = My.Resources.Unknown
             Mainfrm.PictureBox25.Image = My.Resources.Unknown
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox2.Text = "Dagger" Then '#one hand
+            Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
+            Mainfrm.PictureBox32.Visible = False
+            Mainfrm.PictureBox33.Visible = False
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = False
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = True
+            Mainfrm.PictureBox42.Visible = True
+            Mainfrm.PictureBox43.Visible = True
+            Mainfrm.PictureBox40.Image = My.Resources.Fire
+            Mainfrm.PictureBox41.Image = My.Resources.Water
+            Mainfrm.PictureBox42.Image = My.Resources.Air
+            Mainfrm.PictureBox43.Image = My.Resources.Earth
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Dragon_s_Claw
+                Mainfrm.PictureBox10.Image = My.Resources.Drake_s_Breath
+                Mainfrm.PictureBox11.Image = My.Resources.Burning_Speed
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Vapor_Blade
+                Mainfrm.PictureBox10.Image = My.Resources.Cone_of_Cold
+                Mainfrm.PictureBox11.Image = My.Resources.Frozen_Burst
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Lightning_Whip
+                Mainfrm.PictureBox10.Image = My.Resources.Lightning_Touch
+                Mainfrm.PictureBox11.Image = My.Resources.Shocking_Aura
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox9.Image = My.Resources.Impale
+                Mainfrm.PictureBox10.Image = My.Resources.Ring_of_Earth
+                Mainfrm.PictureBox11.Image = My.Resources.Magnetic_Grasp
+                Mainfrm.PictureBox12.Image = My.Resources.Unknown
+                Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox2.Text = "Scepter" Then '#one hand
+            Mainfrm.ComboBox4.Enabled = True
+            Mainfrm.ComboBox4.Text = "Off Hand"
+            Mainfrm.PictureBox32.Visible = False
+            Mainfrm.PictureBox33.Visible = False
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox37.Visible = False
+            Mainfrm.PictureBox39.Visible = False
+            Mainfrm.PictureBox40.Visible = True
+            Mainfrm.PictureBox41.Visible = True
+            Mainfrm.PictureBox42.Visible = True
+            Mainfrm.PictureBox43.Visible = True
+            Mainfrm.PictureBox40.Image = My.Resources.Fire
+            Mainfrm.PictureBox41.Image = My.Resources.Water
+            Mainfrm.PictureBox42.Image = My.Resources.Air
+            Mainfrm.PictureBox43.Image = My.Resources.Earth
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Flamestrike
+                Mainfrm.PictureBox28.Image = My.Resources.Dragon_s_Tooth
+                Mainfrm.PictureBox27.Image = My.Resources.Phoenix
+                Mainfrm.PictureBox26.Image = My.Resources.Unknown
+                Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Ice_Shards
+                Mainfrm.PictureBox28.Image = My.Resources.Shatterstone
+                Mainfrm.PictureBox27.Image = My.Resources.Water_Trident
+                Mainfrm.PictureBox26.Image = My.Resources.Unknown
+                Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox29.Image = My.Resources.Arc_Lightning
+                Mainfrm.PictureBox28.Image = My.Resources.Lightning_Strike
+                Mainfrm.PictureBox27.Image = My.Resources.Blinding_Flash
+                Mainfrm.PictureBox26.Image = My.Resources.Unknown
+                Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox37.Visible = True
+                Mainfrm.PictureBox29.Image = My.Resources.Stone_Shards
+                Mainfrm.PictureBox28.Image = My.Resources.Rock_Barrier
+                Mainfrm.PictureBox36.Image = My.Resources.Hurl
+                Mainfrm.PictureBox27.Image = My.Resources.Dust_Devil
+                Mainfrm.PictureBox26.Image = My.Resources.Unknown
+                Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            End If
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox2.Text = "Sword" Then '#one hand
             Mainfrm.ComboBox4.Enabled = True
             Mainfrm.ComboBox4.Text = "Off Hand"
@@ -5154,6 +5401,36 @@
             ElseIf Mainfrm.ComboBox1.Text = "Pistol" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Unload
             End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox3.Text = "Dagger" Then
+            Mainfrm.PictureBox34.Visible = False
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Ring_of_Fire
+                Mainfrm.PictureBox13.Image = My.Resources.Fire_Grab
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Frost_Aura
+                Mainfrm.PictureBox13.Image = My.Resources.Cleansing_Wave
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Ride_the_Lightning
+                Mainfrm.PictureBox13.Image = My.Resources.Updraft
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Earthquake
+                Mainfrm.PictureBox13.Image = My.Resources.Churning_Earth
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox3.Text = "Focus" Then
+            Mainfrm.PictureBox34.Visible = False
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Flamewall
+                Mainfrm.PictureBox13.Image = My.Resources.Fire_Shield
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Freezing_Gust
+                Mainfrm.PictureBox13.Image = My.Resources.Comet
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Swirling_Winds
+                Mainfrm.PictureBox13.Image = My.Resources.Gale
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox12.Image = My.Resources.Magnetic_Wave
+                Mainfrm.PictureBox13.Image = My.Resources.Obsidian_Flesh
+            End If
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox3.Text = "Sword" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Illusionary_Riposte
@@ -5255,6 +5532,36 @@
                 Mainfrm.PictureBox27.Image = My.Resources.Shadow_Shot
             ElseIf Mainfrm.ComboBox2.Text = "Pistol" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Unload
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox4.Text = "Dagger" Then
+            Mainfrm.PictureBox35.Visible = False
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Ring_of_Fire
+                Mainfrm.PictureBox25.Image = My.Resources.Fire_Grab
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Frost_Aura
+                Mainfrm.PictureBox25.Image = My.Resources.Cleansing_Wave
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Ride_the_Lightning
+                Mainfrm.PictureBox25.Image = My.Resources.Updraft
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Earthquake
+                Mainfrm.PictureBox25.Image = My.Resources.Churning_Earth
+            End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox4.Text = "Focus" Then
+            Mainfrm.PictureBox35.Visible = False
+            If Mainfrm.Label41.Text = "f" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Flamewall
+                Mainfrm.PictureBox25.Image = My.Resources.Fire_Shield
+            ElseIf Mainfrm.Label41.Text = "w" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Freezing_Gust
+                Mainfrm.PictureBox25.Image = My.Resources.Comet
+            ElseIf Mainfrm.Label41.Text = "a" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Swirling_Winds
+                Mainfrm.PictureBox25.Image = My.Resources.Gale
+            ElseIf Mainfrm.Label41.Text = "e" Then
+                Mainfrm.PictureBox26.Image = My.Resources.Magnetic_Wave
+                Mainfrm.PictureBox25.Image = My.Resources.Obsidian_Flesh
             End If
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox4.Text = "Sword" Then
             Mainfrm.PictureBox35.Visible = False

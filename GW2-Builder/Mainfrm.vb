@@ -176,4 +176,28 @@
     Private Sub PictureBox10_MouseHover(sender As Object, e As EventArgs) Handles PictureBox10.MouseHover
         sinfo.SkillInfo2()
     End Sub
+
+    Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
+        ComboBox1.Enabled = True
+        ComboBox2.Enabled = True
+        Label41.Text = "f"
+    End Sub
+
+    Private Sub PictureBox41_Click(sender As Object, e As EventArgs) Handles PictureBox41.Click
+        ComboBox1.Enabled = True
+        ComboBox2.Enabled = True
+        Label41.Text = "w"
+    End Sub
+
+    Private Sub PictureBox42_Click(sender As Object, e As EventArgs) Handles PictureBox42.Click
+        ComboBox1.Enabled = True
+        ComboBox2.Enabled = True
+        Label41.Text = "a"
+    End Sub
+
+    Private Sub PictureBox43_Click(sender As Object, e As EventArgs) Handles PictureBox43.Click
+        ComboBox1.Enabled = True
+        ComboBox2.Enabled = True
+        Label41.Text = "e"
+    End Sub
 End Class
