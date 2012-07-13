@@ -4,6 +4,7 @@ Imports System.Windows.Forms
 Imports System.Drawing
 Imports System.Drawing.Design
 Imports System.Windows.Forms.Design
+
 ''' <summary>
 ''' Custom tooltip.
 ''' </summary>

@@ -1,3 +1,16 @@
+Version - 0.0.1.9
+$ Removed all tooltips from all weapons skills, cause is obsolete thanks to Skill Info angle
+
+Version - 0.0.1.8
+! Revamp interface
+! General memory optimization
+! Switched font to Segoe UI
+# Fixed (again and maybe forever!) the flikering bug of the tooltips
+$ Added Initial support for skill information
+$ Removed Swap skill button & image
+
+Note: Windows XP users need to download the Segoe UI font pack, i can't redistribuite it cause the license infragement.
+
 Version - 0.0.1.6
 $ Added Healing skills for all classes
 

@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("GW2-Builder")> 
-<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyDescription("Simple Guild Wars 2 Offline Builder")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("GW2-Builder")> 
 <Assembly: AssemblyCopyright("Copyright © I Falchi Bianchi 2012")> 
@@ -32,4 +32,4 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 <Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("0.0.1.6")> 
+<Assembly: AssemblyFileVersion("0.0.1.8")> 

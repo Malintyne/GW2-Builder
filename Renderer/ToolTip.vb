@@ -1,6 +1,7 @@
 Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Windows.Forms
+
 Public Class ToolTip
     Public Shared TitleFont As Font = New Font("Segoe UI", 9, FontStyle.Bold Or FontStyle.Italic)
     Public Shared TextFont As Font = New Font("Segoe UI", 8, FontStyle.Bold)

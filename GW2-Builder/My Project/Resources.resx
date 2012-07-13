@@ -268,9 +268,6 @@
   <data name="Strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\guardian\strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Switch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\switch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sword_Arc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\guardian\sword arc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -327,9 +324,6 @@
   </data>
   <data name="Zealot_s_Embrace" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\guardian\zealot's embrace.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Zealot_s_Fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\guardian\zealot_s_fire.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Zealot_s_Flame_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\guardian\zealot's flame.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1096,9 +1090,6 @@
   <data name="Expertise" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\traits\Expertise.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Feigned_Escape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mesmer\Feigned Escape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Guile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\traits\Guile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1270,7 +1261,6 @@
   <data name="Signet_of_Resolve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\healing\signet_of_resolve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Consume_Conditions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\healing\consume_conditions.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1333,5 +1323,102 @@
   </data>
   <data name="Withdraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\healing\withdraw.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zealot_s_Fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\guardian\zealot's_fire.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vulnerability" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\vulnerability.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bleeding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bleeding.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="combo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\combo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Blood_Curse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\blood curse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chillblains" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\chillblains.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark_Pact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\dark pact.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deathly_Swarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\deathly swarm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Death_Shroud1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\death_shroud.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="End_Death_Shroud1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\end_death_shroud.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enfeebling_Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\enfeebling blood.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Feast_of_Corruption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\feast of corruption.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghastly_Claws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\ghastly claws.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grasping_Dead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\grasping dead.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="healing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\healing.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Life_Siphon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\life siphon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Locust_Swarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\locust swarm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mark_of_Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\mark of blood.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Necrotic_Bite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\necrotic bite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Necrotic_Grasp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\necrotic grasp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Necrotic_Slash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\necrotic slash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Necrotic_Stab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\necrotic stab.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phase_Retreat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mesmer\phase retreat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Putrid_Curse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\putrid curse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Putrid_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\putrid mark.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reaper_s_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\reaper's mark.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reaper_s_Touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\reaper's touch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rending_Claws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\rending claws.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rending_Curse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\rending curse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spinal_Shivers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\spinal shivers.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unholy_Feast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\unholy feast.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wail_of_Doom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\necromancer\wail of doom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -34,13 +34,13 @@ Partial Class About
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -162,6 +162,31 @@ Partial Class About
         Me.TextBox2.TabIndex = 6
         Me.TextBox2.Text = resources.GetString("TextBox2.Text")
         '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.TextBox3)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(372, 169)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Special Thanks"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox3.Location = New System.Drawing.Point(3, 3)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBox3.Size = New System.Drawing.Size(366, 163)
+        Me.TextBox3.TabIndex = 6
+        Me.TextBox3.Text = "Special thanks goes to:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Angelus - Official Debugger" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Imaginos - For the interf" & _
+    "ace suggestions and found some bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "EnyaRaven - For found some bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "And all ot" & _
+    "hers peoples for the help."
+        '
         'ToolTip2
         '
         Me.ToolTip2.AnimationSpeed = 0
@@ -203,30 +228,6 @@ Partial Class About
         Me.Label7.Size = New System.Drawing.Size(135, 13)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = " goes to the original author."
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.TextBox3)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(372, 169)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Special Thanks"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox3.Location = New System.Drawing.Point(3, 3)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox3.Size = New System.Drawing.Size(366, 163)
-        Me.TextBox3.TabIndex = 6
-        Me.TextBox3.Text = "Special thanks goes to:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Imaginos - For suggestions and found some bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "EnyaRav" & _
-    "en - For suggestions and ideas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "And all others peoples for help me!!!"
         '
         'About
         '

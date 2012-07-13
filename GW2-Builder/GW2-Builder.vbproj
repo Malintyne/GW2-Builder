@@ -18,7 +18,7 @@
     </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -32,7 +32,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>false</DefineTrace>
@@ -82,12 +82,6 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Selectfrm2.Designer.vb">
-      <DependentUpon>Selectfrm2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Selectfrm2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="RCls.vb" />
     <Compile Include="Mainfrm.vb">
       <SubType>Form</SubType>
@@ -111,19 +105,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Selectfrm1.Designer.vb">
-      <DependentUpon>Selectfrm1.vb</DependentUpon>
+    <Compile Include="Selectfrm.Designer.vb">
+      <DependentUpon>Selectfrm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Selectfrm1.vb">
+    <Compile Include="Selectfrm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SkillInfo.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Selectfrm2.resx">
-      <DependentUpon>Selectfrm2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainfrm.resx">
       <DependentUpon>Mainfrm.vb</DependentUpon>
@@ -134,8 +126,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Selectfrm1.resx">
-      <DependentUpon>Selectfrm1.vb</DependentUpon>
+    <EmbeddedResource Include="Selectfrm.resx">
+      <DependentUpon>Selectfrm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -226,6 +218,8 @@
     <None Include="Resources\elementalist\Earth.png" />
     <None Include="Resources\elementalist\Fire.png" />
     <None Include="Resources\elementalist\Water.png" />
+    <Content Include="Resources\bleeding.png" />
+    <Content Include="Resources\combo.png" />
     <Content Include="Resources\engineer\Blowtorch.png" />
     <Content Include="Resources\engineer\Blunderbuss.png" />
     <Content Include="Resources\engineer\Explosive Shot.png" />
@@ -280,7 +274,7 @@
     <Content Include="Resources\guardian\Zealot%27s Defense.png" />
     <Content Include="Resources\guardian\Zealot%27s Embrace.png" />
     <Content Include="Resources\guardian\Zealot%27s Flame.png.jpg" />
-    <Content Include="Resources\guardian\Zealot_s_Fire.png" />
+    <Content Include="Resources\healing.png" />
     <Content Include="Resources\healing\Consume_Conditions.png" />
     <Content Include="Resources\healing\Elixir_H.png" />
     <Content Include="Resources\healing\Ether_Feast.png" />
@@ -305,6 +299,7 @@
     <Content Include="Resources\healing\Troll_Unguent.png" />
     <Content Include="Resources\healing\Well_of_Blood.png" />
     <Content Include="Resources\healing\Withdraw.png" />
+    <Content Include="Resources\guardian\Zealot%27s_Fire.png" />
     <Content Include="Resources\Logo FA.png" />
     <Content Include="Resources\mesmer\Blurred Frenzy.png" />
     <Content Include="Resources\mesmer\Chaos Armor.png" />
@@ -313,7 +308,7 @@
     <Content Include="Resources\mesmer\Ether Blast.png" />
     <Content Include="Resources\mesmer\Ether Bolt.png" />
     <Content Include="Resources\mesmer\Ether Clone.png" />
-    <Content Include="Resources\mesmer\Feigned Escape.png" />
+    <Content Include="Resources\mesmer\Phase Retreat.png" />
     <Content Include="Resources\mesmer\Illusionary Counter.png" />
     <Content Include="Resources\mesmer\Illusionary Duelist.png" />
     <Content Include="Resources\mesmer\Illusionary Leap.png" />
@@ -501,6 +496,7 @@
     <Content Include="Resources\traits\Wildnerness - Ranger.png" />
     <None Include="Resources\traits\Willpower.png" />
     <Content Include="Resources\traits\Zeal - Guardian.png" />
+    <Content Include="Resources\vulnerability.png" />
     <Content Include="Resources\warrior\Aimed Shot.png.jpg" />
     <Content Include="Resources\warrior\Arcing Arrow.png.jpg" />
     <Content Include="Resources\warrior\Arcing Slice.png" />
@@ -562,7 +558,6 @@
     <None Include="Resources\Unknown.png" />
     <None Include="Resources\thief_off.png" />
     <None Include="Resources\thief.png" />
-    <None Include="Resources\Switch.png" />
     <None Include="Resources\ranger_off.png" />
     <None Include="Resources\ranger.png" />
     <None Include="Resources\range.png" />
