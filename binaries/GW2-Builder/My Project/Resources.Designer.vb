@@ -312,6 +312,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Blood_Curse() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Blood_Curse", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Blowtorch() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Blowtorch", resourceCulture)
@@ -434,6 +441,13 @@ Namespace My.Resources
         Public ReadOnly Property Charge_png() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Charge_png", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Chillblains() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Chillblains", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -655,6 +669,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Dark_Pact() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Dark_Pact", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Deadly___Thief() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Deadly___Thief", resourceCulture)
@@ -679,6 +700,20 @@ Namespace My.Resources
         Public ReadOnly Property Death_Shroud() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Death_Shroud", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Death_Shroud1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Death_Shroud1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Deathly_Swarm() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Deathly_Swarm", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -858,6 +893,20 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property End_Death_Shroud1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("End_Death_Shroud1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Enfeebling_Blood() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Enfeebling_Blood", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property engineer() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("engineer", resourceCulture)
@@ -956,9 +1005,9 @@ Namespace My.Resources
             End Get
         End Property
         
-        Public ReadOnly Property Feigned_Escape() As System.Drawing.Bitmap
+        Public ReadOnly Property Feast_of_Corruption() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Feigned_Escape", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Feast_of_Corruption", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1117,6 +1166,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Ghastly_Claws() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ghastly_Claws", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Glue_Shot() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Glue_Shot", resourceCulture)
@@ -1127,6 +1183,13 @@ Namespace My.Resources
         Public ReadOnly Property Glyph_of_Elemental_Harmony() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Glyph_of_Elemental_Harmony", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Grasping_Dead() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Grasping_Dead", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1544,6 +1607,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Life_Siphon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Life_Siphon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Lightning_Strike() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Lightning_Strike", resourceCulture)
@@ -1582,6 +1652,13 @@ Namespace My.Resources
         Public ReadOnly Property locked() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("locked", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Locust_Swarm() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Locust_Swarm", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1659,6 +1736,13 @@ Namespace My.Resources
         Public ReadOnly Property Mantra_of_Recovery() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Mantra_of_Recovery", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Mark_of_Blood() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mark_of_Blood", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1803,6 +1887,34 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Necrotic_Bite() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Necrotic_Bite", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Necrotic_Grasp() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Necrotic_Grasp", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Necrotic_Slash() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Necrotic_Slash", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Necrotic_Stab() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Necrotic_Stab", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Net_Shot() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Net_Shot", resourceCulture)
@@ -1855,6 +1967,13 @@ Namespace My.Resources
         Public ReadOnly Property Phantasmal_Berserker() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Phantasmal_Berserker", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Phase_Retreat() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Phase_Retreat", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1971,6 +2090,20 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Putrid_Curse() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Putrid_Curse", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Putrid_Mark() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Putrid_Mark", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Quick_Shot() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Quick_Shot", resourceCulture)
@@ -2023,6 +2156,34 @@ Namespace My.Resources
         Public ReadOnly Property Ray_of_Judgment() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Ray_of_Judgment", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Reaper_s_Mark() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Reaper_s_Mark", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Reaper_s_Touch() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Reaper_s_Touch", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Rending_Claws() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Rending_Claws", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Rending_Curse() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Rending_Curse", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2303,6 +2464,13 @@ Namespace My.Resources
         Public ReadOnly Property Spatial_Surge() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Spatial_Surge", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Spinal_Shivers() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Spinal_Shivers", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2615,6 +2783,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Unholy_Feast() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Unholy_Feast", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Unknown() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Unknown", resourceCulture)
@@ -2730,6 +2905,13 @@ Namespace My.Resources
         Public ReadOnly Property vulnerability() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("vulnerability", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Wail_of_Doom() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Wail_of_Doom", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

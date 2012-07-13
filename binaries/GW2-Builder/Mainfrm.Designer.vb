@@ -27,6 +27,7 @@ Partial Class Mainfrm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label40 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
@@ -71,8 +72,6 @@ Partial Class Mainfrm
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ToolTip2 = New Ai.Control.ToolTip()
-        Me.Label40 = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -151,6 +150,8 @@ Partial Class Mainfrm
         Me.PictureBox46 = New System.Windows.Forms.PictureBox()
         Me.PictureBox45 = New System.Windows.Forms.PictureBox()
         Me.PictureBox44 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip2 = New Ai.Control.ToolTip()
+        Me.ToolTip3 = New Ai.Control.ToolTip()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -338,6 +339,17 @@ Partial Class Mainfrm
         Me.TabPage1.Size = New System.Drawing.Size(860, 447)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Abilities"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(136, 423)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(91, 15)
+        Me.Label40.TabIndex = 66
+        Me.Label40.Text = "Skill Description"
+        Me.Label40.Visible = False
         '
         'Label39
         '
@@ -822,22 +834,6 @@ Partial Class Mainfrm
         Me.ComboBox5.Size = New System.Drawing.Size(108, 21)
         Me.ComboBox5.TabIndex = 55
         Me.ComboBox5.Text = "Choose Race"
-        '
-        'ToolTip2
-        '
-        Me.ToolTip2.AnimationSpeed = 0
-        Me.ToolTip2.EnableAutoClose = False
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(136, 423)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(91, 15)
-        Me.Label40.TabIndex = 66
-        Me.Label40.Text = "Skill Description"
-        Me.Label40.Visible = False
         '
         'PictureBox8
         '
@@ -1600,6 +1596,16 @@ Partial Class Mainfrm
         Me.PictureBox44.TabIndex = 45
         Me.PictureBox44.TabStop = False
         '
+        'ToolTip2
+        '
+        Me.ToolTip2.AnimationSpeed = 0
+        Me.ToolTip2.EnableAutoClose = False
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.AnimationSpeed = 0
+        Me.ToolTip3.EnableAutoClose = False
+        '
         'Mainfrm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1843,5 +1849,6 @@ Partial Class Mainfrm
     Friend WithEvents PictureBox75 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox78 As System.Windows.Forms.PictureBox
     Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents ToolTip3 As Ai.Control.ToolTip
 
 End Class

@@ -1,3 +1,6 @@
+Version - 0.0.1.9
+$ Removed all tooltips from all weapons skills, cause is obsolete thanks to Skill Info angle
+
 Version - 0.0.1.8
 ! Revamp interface
 ! General memory optimization
