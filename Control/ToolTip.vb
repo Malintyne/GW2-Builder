@@ -713,7 +713,7 @@ Public Class ToolTip
         Protected Overrides ReadOnly Property CreateParams() As System.Windows.Forms.CreateParams
             Get
                 Dim cp As CreateParams = MyBase.CreateParams
-                cp.ExStyle = cp.ExStyle Or WS_EX_LAYERED
+                cp.ExStyle = cp.ExStyle Or WS_EX_LAYERED And Not &H2000000 ' #Turn off WS_CLIPCHILDREN
                 Return cp
             End Get
         End Property

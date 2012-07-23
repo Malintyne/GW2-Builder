@@ -27,6 +27,10 @@ Partial Class Mainfrm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.PictureBox81 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox80 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox79 = New System.Windows.Forms.PictureBox()
+        Me.Label42 = New System.Windows.Forms.Label()
         Me.PictureBox78 = New System.Windows.Forms.PictureBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.PictureBox77 = New System.Windows.Forms.PictureBox()
@@ -142,6 +146,9 @@ Partial Class Mainfrm
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New Ai.Control.ToolTip()
+        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -150,11 +157,11 @@ Partial Class Mainfrm
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.ToolTip2 = New Ai.Control.ToolTip()
-        Me.ToolTip3 = New Ai.Control.ToolTip()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox80, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox79, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox78, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox77, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox76, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -239,6 +246,7 @@ Partial Class Mainfrm
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(868, 5)
         Me.Label1.Name = "Label1"
@@ -249,6 +257,7 @@ Partial Class Mainfrm
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(851, 3)
         Me.Label2.Name = "Label2"
@@ -269,7 +278,11 @@ Partial Class Mainfrm
         '
         'TabPage1
         '
-        Me.TabPage1.BackColor = System.Drawing.SystemColors.Control
+        Me.TabPage1.BackColor = System.Drawing.Color.Transparent
+        Me.TabPage1.Controls.Add(Me.PictureBox81)
+        Me.TabPage1.Controls.Add(Me.PictureBox80)
+        Me.TabPage1.Controls.Add(Me.PictureBox79)
+        Me.TabPage1.Controls.Add(Me.Label42)
         Me.TabPage1.Controls.Add(Me.PictureBox78)
         Me.TabPage1.Controls.Add(Me.Label40)
         Me.TabPage1.Controls.Add(Me.PictureBox77)
@@ -341,10 +354,56 @@ Partial Class Mainfrm
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Abilities"
         '
+        'PictureBox81
+        '
+        Me.PictureBox81.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox81.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox81.Location = New System.Drawing.Point(285, 231)
+        Me.PictureBox81.Name = "PictureBox81"
+        Me.PictureBox81.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox81.TabIndex = 71
+        Me.PictureBox81.TabStop = False
+        '
+        'PictureBox80
+        '
+        Me.PictureBox80.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox80.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox80.Location = New System.Drawing.Point(285, 100)
+        Me.PictureBox80.Name = "PictureBox80"
+        Me.PictureBox80.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox80.TabIndex = 70
+        Me.PictureBox80.TabStop = False
+        '
+        'PictureBox79
+        '
+        Me.PictureBox79.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox79.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
+        Me.PictureBox79.Location = New System.Drawing.Point(478, 334)
+        Me.PictureBox79.Name = "PictureBox79"
+        Me.PictureBox79.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox79.TabIndex = 69
+        Me.PictureBox79.TabStop = False
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.Transparent
+        Me.Label42.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(500, 334)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(21, 15)
+        Me.Label42.TabIndex = 68
+        Me.Label42.Text = "42"
+        Me.Label42.Visible = False
+        '
         'PictureBox78
         '
+        Me.PictureBox78.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox78.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox78.Location = New System.Drawing.Point(119, 423)
+        Me.PictureBox78.Location = New System.Drawing.Point(122, 423)
         Me.PictureBox78.Name = "PictureBox78"
         Me.PictureBox78.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -354,18 +413,20 @@ Partial Class Mainfrm
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(141, 423)
+        Me.Label40.BackColor = System.Drawing.Color.Transparent
+        Me.Label40.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(144, 423)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(91, 15)
+        Me.Label40.Size = New System.Drawing.Size(93, 15)
         Me.Label40.TabIndex = 66
         Me.Label40.Text = "Skill Description"
         Me.Label40.Visible = False
         '
         'PictureBox77
         '
+        Me.PictureBox77.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox77.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox77.Location = New System.Drawing.Point(119, 401)
+        Me.PictureBox77.Location = New System.Drawing.Point(122, 401)
         Me.PictureBox77.Name = "PictureBox77"
         Me.PictureBox77.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -374,8 +435,9 @@ Partial Class Mainfrm
         '
         'PictureBox76
         '
+        Me.PictureBox76.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox76.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox76.Location = New System.Drawing.Point(119, 379)
+        Me.PictureBox76.Location = New System.Drawing.Point(122, 379)
         Me.PictureBox76.Name = "PictureBox76"
         Me.PictureBox76.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -384,8 +446,9 @@ Partial Class Mainfrm
         '
         'PictureBox75
         '
+        Me.PictureBox75.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox75.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox75.Location = New System.Drawing.Point(119, 357)
+        Me.PictureBox75.Location = New System.Drawing.Point(122, 357)
         Me.PictureBox75.Name = "PictureBox75"
         Me.PictureBox75.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -394,8 +457,9 @@ Partial Class Mainfrm
         '
         'PictureBox74
         '
+        Me.PictureBox74.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox74.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox74.Location = New System.Drawing.Point(119, 334)
+        Me.PictureBox74.Location = New System.Drawing.Point(122, 334)
         Me.PictureBox74.Name = "PictureBox74"
         Me.PictureBox74.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -405,10 +469,11 @@ Partial Class Mainfrm
         'Label39
         '
         Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(141, 402)
+        Me.Label39.BackColor = System.Drawing.Color.Transparent
+        Me.Label39.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(144, 402)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(91, 15)
+        Me.Label39.Size = New System.Drawing.Size(93, 15)
         Me.Label39.TabIndex = 61
         Me.Label39.Text = "Skill Description"
         Me.Label39.Visible = False
@@ -416,10 +481,11 @@ Partial Class Mainfrm
         'Label38
         '
         Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(141, 380)
+        Me.Label38.BackColor = System.Drawing.Color.Transparent
+        Me.Label38.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Location = New System.Drawing.Point(144, 380)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(91, 15)
+        Me.Label38.Size = New System.Drawing.Size(93, 15)
         Me.Label38.TabIndex = 60
         Me.Label38.Text = "Skill Description"
         Me.Label38.Visible = False
@@ -427,10 +493,11 @@ Partial Class Mainfrm
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(141, 358)
+        Me.Label37.BackColor = System.Drawing.Color.Transparent
+        Me.Label37.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(144, 358)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(91, 15)
+        Me.Label37.Size = New System.Drawing.Size(93, 15)
         Me.Label37.TabIndex = 59
         Me.Label37.Text = "Skill Description"
         Me.Label37.Visible = False
@@ -438,10 +505,11 @@ Partial Class Mainfrm
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(141, 335)
+        Me.Label36.BackColor = System.Drawing.Color.Transparent
+        Me.Label36.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Location = New System.Drawing.Point(144, 335)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(91, 15)
+        Me.Label36.Size = New System.Drawing.Size(93, 15)
         Me.Label36.TabIndex = 58
         Me.Label36.Text = "Skill Description"
         Me.Label36.Visible = False
@@ -449,10 +517,11 @@ Partial Class Mainfrm
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.BackColor = System.Drawing.Color.Transparent
+        Me.Label35.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.Location = New System.Drawing.Point(7, 310)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(91, 15)
+        Me.Label35.Size = New System.Drawing.Size(93, 15)
         Me.Label35.TabIndex = 57
         Me.Label35.Text = "Skill Description"
         Me.Label35.Visible = False
@@ -460,16 +529,18 @@ Partial Class Mainfrm
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.BackColor = System.Drawing.Color.Transparent
+        Me.Label34.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.Location = New System.Drawing.Point(7, 289)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(53, 15)
+        Me.Label34.Size = New System.Drawing.Size(55, 15)
         Me.Label34.TabIndex = 56
         Me.Label34.Text = "Skill Title"
         Me.Label34.Visible = False
         '
         'PictureBox19
         '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox19.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox19.Location = New System.Drawing.Point(8, 334)
         Me.PictureBox19.Name = "PictureBox19"
@@ -481,6 +552,7 @@ Partial Class Mainfrm
         '
         'PictureBox69
         '
+        Me.PictureBox69.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox69.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox69.Location = New System.Drawing.Point(788, 371)
         Me.PictureBox69.Name = "PictureBox69"
@@ -491,6 +563,7 @@ Partial Class Mainfrm
         '
         'PictureBox70
         '
+        Me.PictureBox70.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox70.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox70.Location = New System.Drawing.Point(722, 371)
         Me.PictureBox70.Name = "PictureBox70"
@@ -501,6 +574,7 @@ Partial Class Mainfrm
         '
         'PictureBox71
         '
+        Me.PictureBox71.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox71.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox71.Location = New System.Drawing.Point(656, 371)
         Me.PictureBox71.Name = "PictureBox71"
@@ -511,6 +585,7 @@ Partial Class Mainfrm
         '
         'PictureBox72
         '
+        Me.PictureBox72.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox72.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox72.Location = New System.Drawing.Point(590, 371)
         Me.PictureBox72.Name = "PictureBox72"
@@ -521,6 +596,7 @@ Partial Class Mainfrm
         '
         'PictureBox73
         '
+        Me.PictureBox73.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox73.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox73.Location = New System.Drawing.Point(524, 371)
         Me.PictureBox73.Name = "PictureBox73"
@@ -532,6 +608,7 @@ Partial Class Mainfrm
         'Label33
         '
         Me.Label33.AutoSize = True
+        Me.Label33.BackColor = System.Drawing.Color.Transparent
         Me.Label33.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.Location = New System.Drawing.Point(521, 354)
         Me.Label33.Name = "Label33"
@@ -542,8 +619,9 @@ Partial Class Mainfrm
         'Label32
         '
         Me.Label32.AutoSize = True
+        Me.Label32.BackColor = System.Drawing.Color.Transparent
         Me.Label32.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(702, 284)
+        Me.Label32.Location = New System.Drawing.Point(702, 286)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(100, 15)
         Me.Label32.TabIndex = 48
@@ -551,8 +629,9 @@ Partial Class Mainfrm
         '
         'PictureBox43
         '
+        Me.PictureBox43.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox43.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox43.Location = New System.Drawing.Point(819, 300)
+        Me.PictureBox43.Location = New System.Drawing.Point(819, 302)
         Me.PictureBox43.Name = "PictureBox43"
         Me.PictureBox43.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -562,6 +641,7 @@ Partial Class Mainfrm
         'Label31
         '
         Me.Label31.AutoSize = True
+        Me.Label31.BackColor = System.Drawing.Color.Transparent
         Me.Label31.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.Location = New System.Drawing.Point(6, 268)
         Me.Label31.Name = "Label31"
@@ -571,6 +651,7 @@ Partial Class Mainfrm
         '
         'PictureBox39
         '
+        Me.PictureBox39.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox39.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox39.Location = New System.Drawing.Point(351, 231)
         Me.PictureBox39.Name = "PictureBox39"
@@ -581,8 +662,9 @@ Partial Class Mainfrm
         '
         'PictureBox42
         '
+        Me.PictureBox42.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox42.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox42.Location = New System.Drawing.Point(781, 300)
+        Me.PictureBox42.Location = New System.Drawing.Point(781, 302)
         Me.PictureBox42.Name = "PictureBox42"
         Me.PictureBox42.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -591,6 +673,7 @@ Partial Class Mainfrm
         '
         'PictureBox38
         '
+        Me.PictureBox38.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox38.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox38.Location = New System.Drawing.Point(351, 100)
         Me.PictureBox38.Name = "PictureBox38"
@@ -601,6 +684,7 @@ Partial Class Mainfrm
         '
         'PictureBox37
         '
+        Me.PictureBox37.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox37.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox37.Location = New System.Drawing.Point(219, 231)
         Me.PictureBox37.Name = "PictureBox37"
@@ -611,8 +695,9 @@ Partial Class Mainfrm
         '
         'PictureBox41
         '
+        Me.PictureBox41.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox41.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox41.Location = New System.Drawing.Point(743, 300)
+        Me.PictureBox41.Location = New System.Drawing.Point(743, 302)
         Me.PictureBox41.Name = "PictureBox41"
         Me.PictureBox41.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -621,6 +706,7 @@ Partial Class Mainfrm
         '
         'PictureBox36
         '
+        Me.PictureBox36.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox36.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox36.Location = New System.Drawing.Point(219, 100)
         Me.PictureBox36.Name = "PictureBox36"
@@ -631,6 +717,7 @@ Partial Class Mainfrm
         '
         'PictureBox35
         '
+        Me.PictureBox35.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox35.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox35.Location = New System.Drawing.Point(417, 231)
         Me.PictureBox35.Name = "PictureBox35"
@@ -641,8 +728,9 @@ Partial Class Mainfrm
         '
         'PictureBox40
         '
+        Me.PictureBox40.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox40.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
-        Me.PictureBox40.Location = New System.Drawing.Point(705, 300)
+        Me.PictureBox40.Location = New System.Drawing.Point(705, 302)
         Me.PictureBox40.Name = "PictureBox40"
         Me.PictureBox40.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -651,6 +739,7 @@ Partial Class Mainfrm
         '
         'PictureBox34
         '
+        Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox34.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox34.Location = New System.Drawing.Point(417, 100)
         Me.PictureBox34.Name = "PictureBox34"
@@ -661,6 +750,7 @@ Partial Class Mainfrm
         '
         'PictureBox32
         '
+        Me.PictureBox32.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox32.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox32.Location = New System.Drawing.Point(153, 231)
         Me.PictureBox32.Name = "PictureBox32"
@@ -671,6 +761,7 @@ Partial Class Mainfrm
         '
         'PictureBox33
         '
+        Me.PictureBox33.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox33.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox33.Location = New System.Drawing.Point(187, 231)
         Me.PictureBox33.Name = "PictureBox33"
@@ -681,6 +772,7 @@ Partial Class Mainfrm
         '
         'PictureBox31
         '
+        Me.PictureBox31.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox31.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox31.Location = New System.Drawing.Point(187, 100)
         Me.PictureBox31.Name = "PictureBox31"
@@ -691,6 +783,7 @@ Partial Class Mainfrm
         '
         'PictureBox30
         '
+        Me.PictureBox30.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox30.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox30.Location = New System.Drawing.Point(153, 100)
         Me.PictureBox30.Name = "PictureBox30"
@@ -702,8 +795,9 @@ Partial Class Mainfrm
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(151, 147)
+        Me.Label7.Location = New System.Drawing.Point(151, 145)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(109, 15)
         Me.Label7.TabIndex = 33
@@ -711,6 +805,7 @@ Partial Class Mainfrm
         '
         'PictureBox20
         '
+        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox20.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox20.Location = New System.Drawing.Point(788, 163)
         Me.PictureBox20.Name = "PictureBox20"
@@ -721,6 +816,7 @@ Partial Class Mainfrm
         '
         'PictureBox21
         '
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox21.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox21.Location = New System.Drawing.Point(707, 163)
         Me.PictureBox21.Name = "PictureBox21"
@@ -731,6 +827,7 @@ Partial Class Mainfrm
         '
         'PictureBox22
         '
+        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox22.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox22.Location = New System.Drawing.Point(641, 163)
         Me.PictureBox22.Name = "PictureBox22"
@@ -741,6 +838,7 @@ Partial Class Mainfrm
         '
         'PictureBox23
         '
+        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox23.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox23.Location = New System.Drawing.Point(575, 163)
         Me.PictureBox23.Name = "PictureBox23"
@@ -751,6 +849,7 @@ Partial Class Mainfrm
         '
         'PictureBox24
         '
+        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox24.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox24.Location = New System.Drawing.Point(496, 163)
         Me.PictureBox24.Name = "PictureBox24"
@@ -761,6 +860,7 @@ Partial Class Mainfrm
         '
         'PictureBox25
         '
+        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox25.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox25.Location = New System.Drawing.Point(417, 163)
         Me.PictureBox25.Name = "PictureBox25"
@@ -771,6 +871,7 @@ Partial Class Mainfrm
         '
         'PictureBox26
         '
+        Me.PictureBox26.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox26.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox26.Location = New System.Drawing.Point(351, 163)
         Me.PictureBox26.Name = "PictureBox26"
@@ -781,6 +882,7 @@ Partial Class Mainfrm
         '
         'PictureBox27
         '
+        Me.PictureBox27.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox27.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox27.Location = New System.Drawing.Point(285, 163)
         Me.PictureBox27.Name = "PictureBox27"
@@ -791,6 +893,7 @@ Partial Class Mainfrm
         '
         'PictureBox28
         '
+        Me.PictureBox28.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox28.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox28.Location = New System.Drawing.Point(219, 163)
         Me.PictureBox28.Name = "PictureBox28"
@@ -801,6 +904,7 @@ Partial Class Mainfrm
         '
         'PictureBox29
         '
+        Me.PictureBox29.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox29.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox29.Location = New System.Drawing.Point(153, 163)
         Me.PictureBox29.Name = "PictureBox29"
@@ -811,6 +915,7 @@ Partial Class Mainfrm
         '
         'PictureBox18
         '
+        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox18.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox18.Location = New System.Drawing.Point(788, 33)
         Me.PictureBox18.Name = "PictureBox18"
@@ -821,6 +926,7 @@ Partial Class Mainfrm
         '
         'PictureBox17
         '
+        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox17.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox17.Location = New System.Drawing.Point(707, 33)
         Me.PictureBox17.Name = "PictureBox17"
@@ -831,6 +937,7 @@ Partial Class Mainfrm
         '
         'PictureBox16
         '
+        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox16.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox16.Location = New System.Drawing.Point(641, 33)
         Me.PictureBox16.Name = "PictureBox16"
@@ -841,6 +948,7 @@ Partial Class Mainfrm
         '
         'PictureBox15
         '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox15.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox15.Location = New System.Drawing.Point(575, 33)
         Me.PictureBox15.Name = "PictureBox15"
@@ -851,6 +959,7 @@ Partial Class Mainfrm
         '
         'PictureBox14
         '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox14.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox14.Location = New System.Drawing.Point(496, 33)
         Me.PictureBox14.Name = "PictureBox14"
@@ -861,6 +970,7 @@ Partial Class Mainfrm
         '
         'PictureBox13
         '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox13.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox13.Location = New System.Drawing.Point(417, 33)
         Me.PictureBox13.Name = "PictureBox13"
@@ -871,6 +981,7 @@ Partial Class Mainfrm
         '
         'PictureBox12
         '
+        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox12.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox12.Location = New System.Drawing.Point(351, 33)
         Me.PictureBox12.Name = "PictureBox12"
@@ -881,6 +992,7 @@ Partial Class Mainfrm
         '
         'PictureBox11
         '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox11.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox11.Location = New System.Drawing.Point(285, 33)
         Me.PictureBox11.Name = "PictureBox11"
@@ -891,6 +1003,7 @@ Partial Class Mainfrm
         '
         'PictureBox10
         '
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox10.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox10.Location = New System.Drawing.Point(219, 33)
         Me.PictureBox10.Name = "PictureBox10"
@@ -901,6 +1014,7 @@ Partial Class Mainfrm
         '
         'PictureBox9
         '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox9.Image = Global.GW2_Builder.My.Resources.Resources.Unknown
         Me.PictureBox9.Location = New System.Drawing.Point(153, 33)
         Me.PictureBox9.Name = "PictureBox9"
@@ -912,8 +1026,9 @@ Partial Class Mainfrm
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(149, 17)
+        Me.Label5.Location = New System.Drawing.Point(149, 15)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(95, 15)
         Me.Label5.TabIndex = 7
@@ -940,8 +1055,9 @@ Partial Class Mainfrm
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 147)
+        Me.Label4.Location = New System.Drawing.Point(5, 145)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(119, 15)
         Me.Label4.TabIndex = 3
@@ -950,8 +1066,9 @@ Partial Class Mainfrm
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(5, 17)
+        Me.Label3.Location = New System.Drawing.Point(5, 15)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(105, 15)
         Me.Label3.TabIndex = 2
@@ -1042,8 +1159,9 @@ Partial Class Mainfrm
         'Label29
         '
         Me.Label29.AutoSize = True
+        Me.Label29.BackColor = System.Drawing.Color.Transparent
         Me.Label29.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(137, 389)
+        Me.Label29.Location = New System.Drawing.Point(137, 413)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(50, 15)
         Me.Label29.TabIndex = 87
@@ -1052,8 +1170,9 @@ Partial Class Mainfrm
         'Label28
         '
         Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.Transparent
         Me.Label28.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(137, 359)
+        Me.Label28.Location = New System.Drawing.Point(137, 383)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(50, 15)
         Me.Label28.TabIndex = 86
@@ -1062,8 +1181,9 @@ Partial Class Mainfrm
         'Label27
         '
         Me.Label27.AutoSize = True
+        Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label27.Location = New System.Drawing.Point(134, 303)
+        Me.Label27.Location = New System.Drawing.Point(134, 325)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(50, 15)
         Me.Label27.TabIndex = 85
@@ -1072,8 +1192,9 @@ Partial Class Mainfrm
         'Label26
         '
         Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.Color.Transparent
         Me.Label26.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label26.Location = New System.Drawing.Point(134, 273)
+        Me.Label26.Location = New System.Drawing.Point(134, 295)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(50, 15)
         Me.Label26.TabIndex = 84
@@ -1082,8 +1203,9 @@ Partial Class Mainfrm
         'Label25
         '
         Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
         Me.Label25.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label25.Location = New System.Drawing.Point(137, 220)
+        Me.Label25.Location = New System.Drawing.Point(137, 236)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(50, 15)
         Me.Label25.TabIndex = 83
@@ -1092,8 +1214,9 @@ Partial Class Mainfrm
         'Label24
         '
         Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.Color.Transparent
         Me.Label24.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label24.Location = New System.Drawing.Point(137, 190)
+        Me.Label24.Location = New System.Drawing.Point(137, 206)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(50, 15)
         Me.Label24.TabIndex = 82
@@ -1102,8 +1225,9 @@ Partial Class Mainfrm
         'Label23
         '
         Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.Color.Transparent
         Me.Label23.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label23.Location = New System.Drawing.Point(137, 137)
+        Me.Label23.Location = New System.Drawing.Point(137, 147)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(50, 15)
         Me.Label23.TabIndex = 81
@@ -1112,8 +1236,9 @@ Partial Class Mainfrm
         'Label22
         '
         Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label22.Location = New System.Drawing.Point(137, 107)
+        Me.Label22.Location = New System.Drawing.Point(137, 117)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(50, 15)
         Me.Label22.TabIndex = 80
@@ -1122,8 +1247,9 @@ Partial Class Mainfrm
         'Label21
         '
         Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
         Me.Label21.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label21.Location = New System.Drawing.Point(137, 55)
+        Me.Label21.Location = New System.Drawing.Point(137, 59)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(50, 15)
         Me.Label21.TabIndex = 79
@@ -1132,8 +1258,9 @@ Partial Class Mainfrm
         'Label20
         '
         Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
         Me.Label20.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label20.Location = New System.Drawing.Point(137, 26)
+        Me.Label20.Location = New System.Drawing.Point(137, 30)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(50, 15)
         Me.Label20.TabIndex = 14
@@ -1142,8 +1269,9 @@ Partial Class Mainfrm
         'Label19
         '
         Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(4, 362)
+        Me.Label19.Location = New System.Drawing.Point(4, 386)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(36, 37)
         Me.Label19.TabIndex = 56
@@ -1152,8 +1280,9 @@ Partial Class Mainfrm
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(4, 278)
+        Me.Label18.Location = New System.Drawing.Point(4, 300)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(36, 37)
         Me.Label18.TabIndex = 58
@@ -1162,8 +1291,9 @@ Partial Class Mainfrm
         'Label17
         '
         Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(4, 195)
+        Me.Label17.Location = New System.Drawing.Point(4, 211)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(36, 37)
         Me.Label17.TabIndex = 57
@@ -1172,8 +1302,9 @@ Partial Class Mainfrm
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(4, 111)
+        Me.Label16.Location = New System.Drawing.Point(4, 121)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(36, 37)
         Me.Label16.TabIndex = 56
@@ -1182,8 +1313,9 @@ Partial Class Mainfrm
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(4, 29)
+        Me.Label15.Location = New System.Drawing.Point(4, 33)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(36, 37)
         Me.Label15.TabIndex = 55
@@ -1192,8 +1324,9 @@ Partial Class Mainfrm
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(5, 334)
+        Me.Label14.Location = New System.Drawing.Point(5, 357)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(50, 15)
         Me.Label14.TabIndex = 54
@@ -1202,8 +1335,9 @@ Partial Class Mainfrm
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(5, 252)
+        Me.Label13.Location = New System.Drawing.Point(5, 272)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(50, 15)
         Me.Label13.TabIndex = 53
@@ -1212,8 +1346,9 @@ Partial Class Mainfrm
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(5, 168)
+        Me.Label12.Location = New System.Drawing.Point(5, 180)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(50, 15)
         Me.Label12.TabIndex = 52
@@ -1222,8 +1357,9 @@ Partial Class Mainfrm
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(5, 84)
+        Me.Label11.Location = New System.Drawing.Point(5, 92)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(50, 15)
         Me.Label11.TabIndex = 51
@@ -1232,6 +1368,7 @@ Partial Class Mainfrm
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(5, 5)
         Me.Label10.Name = "Label10"
@@ -1241,7 +1378,8 @@ Partial Class Mainfrm
         '
         'PictureBox67
         '
-        Me.PictureBox67.Location = New System.Drawing.Point(105, 382)
+        Me.PictureBox67.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox67.Location = New System.Drawing.Point(105, 406)
         Me.PictureBox67.Name = "PictureBox67"
         Me.PictureBox67.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1250,7 +1388,8 @@ Partial Class Mainfrm
         '
         'PictureBox68
         '
-        Me.PictureBox68.Location = New System.Drawing.Point(105, 352)
+        Me.PictureBox68.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox68.Location = New System.Drawing.Point(105, 376)
         Me.PictureBox68.Name = "PictureBox68"
         Me.PictureBox68.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1259,7 +1398,8 @@ Partial Class Mainfrm
         '
         'PictureBox65
         '
-        Me.PictureBox65.Location = New System.Drawing.Point(105, 298)
+        Me.PictureBox65.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox65.Location = New System.Drawing.Point(105, 320)
         Me.PictureBox65.Name = "PictureBox65"
         Me.PictureBox65.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1268,7 +1408,8 @@ Partial Class Mainfrm
         '
         'PictureBox66
         '
-        Me.PictureBox66.Location = New System.Drawing.Point(105, 268)
+        Me.PictureBox66.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox66.Location = New System.Drawing.Point(105, 290)
         Me.PictureBox66.Name = "PictureBox66"
         Me.PictureBox66.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1277,7 +1418,8 @@ Partial Class Mainfrm
         '
         'PictureBox63
         '
-        Me.PictureBox63.Location = New System.Drawing.Point(105, 213)
+        Me.PictureBox63.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox63.Location = New System.Drawing.Point(105, 229)
         Me.PictureBox63.Name = "PictureBox63"
         Me.PictureBox63.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1286,7 +1428,8 @@ Partial Class Mainfrm
         '
         'PictureBox64
         '
-        Me.PictureBox64.Location = New System.Drawing.Point(105, 183)
+        Me.PictureBox64.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox64.Location = New System.Drawing.Point(105, 199)
         Me.PictureBox64.Name = "PictureBox64"
         Me.PictureBox64.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1295,7 +1438,8 @@ Partial Class Mainfrm
         '
         'PictureBox61
         '
-        Me.PictureBox61.Location = New System.Drawing.Point(105, 130)
+        Me.PictureBox61.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox61.Location = New System.Drawing.Point(105, 140)
         Me.PictureBox61.Name = "PictureBox61"
         Me.PictureBox61.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1304,7 +1448,8 @@ Partial Class Mainfrm
         '
         'PictureBox62
         '
-        Me.PictureBox62.Location = New System.Drawing.Point(105, 100)
+        Me.PictureBox62.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox62.Location = New System.Drawing.Point(105, 110)
         Me.PictureBox62.Name = "PictureBox62"
         Me.PictureBox62.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1313,7 +1458,8 @@ Partial Class Mainfrm
         '
         'PictureBox60
         '
-        Me.PictureBox60.Location = New System.Drawing.Point(105, 49)
+        Me.PictureBox60.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox60.Location = New System.Drawing.Point(105, 53)
         Me.PictureBox60.Name = "PictureBox60"
         Me.PictureBox60.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1322,7 +1468,8 @@ Partial Class Mainfrm
         '
         'PictureBox59
         '
-        Me.PictureBox59.Location = New System.Drawing.Point(105, 19)
+        Me.PictureBox59.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox59.Location = New System.Drawing.Point(105, 23)
         Me.PictureBox59.Name = "PictureBox59"
         Me.PictureBox59.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1331,8 +1478,8 @@ Partial Class Mainfrm
         '
         'PictureBox57
         '
-        Me.PictureBox57.Image = Global.GW2_Builder.My.Resources.Resources.minus
-        Me.PictureBox57.Location = New System.Drawing.Point(61, 382)
+        Me.PictureBox57.Image = Global.GW2_Builder.My.Resources.Resources.Minus_Icon
+        Me.PictureBox57.Location = New System.Drawing.Point(61, 406)
         Me.PictureBox57.Name = "PictureBox57"
         Me.PictureBox57.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1341,8 +1488,8 @@ Partial Class Mainfrm
         '
         'PictureBox58
         '
-        Me.PictureBox58.Image = Global.GW2_Builder.My.Resources.Resources.plus
-        Me.PictureBox58.Location = New System.Drawing.Point(61, 352)
+        Me.PictureBox58.Image = Global.GW2_Builder.My.Resources.Resources.Plus_Icon
+        Me.PictureBox58.Location = New System.Drawing.Point(61, 376)
         Me.PictureBox58.Name = "PictureBox58"
         Me.PictureBox58.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1351,8 +1498,8 @@ Partial Class Mainfrm
         '
         'PictureBox55
         '
-        Me.PictureBox55.Image = Global.GW2_Builder.My.Resources.Resources.minus
-        Me.PictureBox55.Location = New System.Drawing.Point(61, 298)
+        Me.PictureBox55.Image = Global.GW2_Builder.My.Resources.Resources.Minus_Icon
+        Me.PictureBox55.Location = New System.Drawing.Point(61, 320)
         Me.PictureBox55.Name = "PictureBox55"
         Me.PictureBox55.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1361,8 +1508,8 @@ Partial Class Mainfrm
         '
         'PictureBox56
         '
-        Me.PictureBox56.Image = Global.GW2_Builder.My.Resources.Resources.plus
-        Me.PictureBox56.Location = New System.Drawing.Point(61, 268)
+        Me.PictureBox56.Image = Global.GW2_Builder.My.Resources.Resources.Plus_Icon
+        Me.PictureBox56.Location = New System.Drawing.Point(61, 290)
         Me.PictureBox56.Name = "PictureBox56"
         Me.PictureBox56.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1371,8 +1518,8 @@ Partial Class Mainfrm
         '
         'PictureBox53
         '
-        Me.PictureBox53.Image = Global.GW2_Builder.My.Resources.Resources.minus
-        Me.PictureBox53.Location = New System.Drawing.Point(61, 213)
+        Me.PictureBox53.Image = Global.GW2_Builder.My.Resources.Resources.Minus_Icon
+        Me.PictureBox53.Location = New System.Drawing.Point(61, 229)
         Me.PictureBox53.Name = "PictureBox53"
         Me.PictureBox53.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1381,8 +1528,8 @@ Partial Class Mainfrm
         '
         'PictureBox54
         '
-        Me.PictureBox54.Image = Global.GW2_Builder.My.Resources.Resources.plus
-        Me.PictureBox54.Location = New System.Drawing.Point(61, 183)
+        Me.PictureBox54.Image = Global.GW2_Builder.My.Resources.Resources.Plus_Icon
+        Me.PictureBox54.Location = New System.Drawing.Point(61, 199)
         Me.PictureBox54.Name = "PictureBox54"
         Me.PictureBox54.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1391,8 +1538,8 @@ Partial Class Mainfrm
         '
         'PictureBox51
         '
-        Me.PictureBox51.Image = Global.GW2_Builder.My.Resources.Resources.minus
-        Me.PictureBox51.Location = New System.Drawing.Point(61, 130)
+        Me.PictureBox51.Image = Global.GW2_Builder.My.Resources.Resources.Minus_Icon
+        Me.PictureBox51.Location = New System.Drawing.Point(61, 140)
         Me.PictureBox51.Name = "PictureBox51"
         Me.PictureBox51.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1401,8 +1548,8 @@ Partial Class Mainfrm
         '
         'PictureBox52
         '
-        Me.PictureBox52.Image = Global.GW2_Builder.My.Resources.Resources.plus
-        Me.PictureBox52.Location = New System.Drawing.Point(61, 100)
+        Me.PictureBox52.Image = Global.GW2_Builder.My.Resources.Resources.Plus_Icon
+        Me.PictureBox52.Location = New System.Drawing.Point(61, 110)
         Me.PictureBox52.Name = "PictureBox52"
         Me.PictureBox52.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1411,8 +1558,8 @@ Partial Class Mainfrm
         '
         'PictureBox50
         '
-        Me.PictureBox50.Image = Global.GW2_Builder.My.Resources.Resources.minus
-        Me.PictureBox50.Location = New System.Drawing.Point(61, 49)
+        Me.PictureBox50.Image = Global.GW2_Builder.My.Resources.Resources.Minus_Icon
+        Me.PictureBox50.Location = New System.Drawing.Point(61, 53)
         Me.PictureBox50.Name = "PictureBox50"
         Me.PictureBox50.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1421,8 +1568,8 @@ Partial Class Mainfrm
         '
         'PictureBox49
         '
-        Me.PictureBox49.Image = Global.GW2_Builder.My.Resources.Resources.plus
-        Me.PictureBox49.Location = New System.Drawing.Point(61, 19)
+        Me.PictureBox49.Image = Global.GW2_Builder.My.Resources.Resources.Plus_Icon
+        Me.PictureBox49.Location = New System.Drawing.Point(61, 23)
         Me.PictureBox49.Name = "PictureBox49"
         Me.PictureBox49.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1431,7 +1578,8 @@ Partial Class Mainfrm
         '
         'PictureBox48
         '
-        Me.PictureBox48.Location = New System.Drawing.Point(190, 344)
+        Me.PictureBox48.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox48.Location = New System.Drawing.Point(190, 368)
         Me.PictureBox48.Name = "PictureBox48"
         Me.PictureBox48.Size = New System.Drawing.Size(664, 70)
         Me.PictureBox48.TabIndex = 49
@@ -1439,7 +1587,8 @@ Partial Class Mainfrm
         '
         'PictureBox47
         '
-        Me.PictureBox47.Location = New System.Drawing.Point(190, 261)
+        Me.PictureBox47.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox47.Location = New System.Drawing.Point(190, 283)
         Me.PictureBox47.Name = "PictureBox47"
         Me.PictureBox47.Size = New System.Drawing.Size(664, 70)
         Me.PictureBox47.TabIndex = 48
@@ -1447,7 +1596,8 @@ Partial Class Mainfrm
         '
         'PictureBox46
         '
-        Me.PictureBox46.Location = New System.Drawing.Point(190, 178)
+        Me.PictureBox46.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox46.Location = New System.Drawing.Point(190, 194)
         Me.PictureBox46.Name = "PictureBox46"
         Me.PictureBox46.Size = New System.Drawing.Size(664, 70)
         Me.PictureBox46.TabIndex = 47
@@ -1455,7 +1605,8 @@ Partial Class Mainfrm
         '
         'PictureBox45
         '
-        Me.PictureBox45.Location = New System.Drawing.Point(190, 95)
+        Me.PictureBox45.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox45.Location = New System.Drawing.Point(190, 105)
         Me.PictureBox45.Name = "PictureBox45"
         Me.PictureBox45.Size = New System.Drawing.Size(664, 70)
         Me.PictureBox45.TabIndex = 46
@@ -1463,7 +1614,8 @@ Partial Class Mainfrm
         '
         'PictureBox44
         '
-        Me.PictureBox44.Location = New System.Drawing.Point(190, 12)
+        Me.PictureBox44.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox44.Location = New System.Drawing.Point(190, 16)
         Me.PictureBox44.Name = "PictureBox44"
         Me.PictureBox44.Size = New System.Drawing.Size(664, 70)
         Me.PictureBox44.TabIndex = 45
@@ -1472,6 +1624,7 @@ Partial Class Mainfrm
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(832, 4)
         Me.Label8.Name = "Label8"
@@ -1482,6 +1635,7 @@ Partial Class Mainfrm
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(12, 9)
         Me.Label6.Name = "Label6"
@@ -1517,86 +1671,6 @@ Partial Class Mainfrm
         Me.ComboBox5.TabIndex = 55
         Me.ComboBox5.Text = "Choose Race"
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.GW2_Builder.My.Resources.Resources.necromancer_off
-        Me.PictureBox8.Location = New System.Drawing.Point(573, 36)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox8.TabIndex = 10
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.GW2_Builder.My.Resources.Resources.mesmer_off
-        Me.PictureBox7.Location = New System.Drawing.Point(785, 36)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox7.TabIndex = 9
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.GW2_Builder.My.Resources.Resources.elementalist_off
-        Me.PictureBox6.Location = New System.Drawing.Point(43, 36)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox6.TabIndex = 8
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.GW2_Builder.My.Resources.Resources.thief_off
-        Me.PictureBox5.Location = New System.Drawing.Point(679, 36)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox5.TabIndex = 7
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.GW2_Builder.My.Resources.Resources.ranger_off
-        Me.PictureBox4.Location = New System.Drawing.Point(467, 36)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox4.TabIndex = 6
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.GW2_Builder.My.Resources.Resources.engineer_off
-        Me.PictureBox3.Location = New System.Drawing.Point(361, 36)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox3.TabIndex = 5
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.GW2_Builder.My.Resources.Resources.warrior_off
-        Me.PictureBox2.Location = New System.Drawing.Point(149, 36)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(255, 36)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'Label41
         '
         Me.Label41.AutoSize = True
@@ -1606,15 +1680,101 @@ Partial Class Mainfrm
         Me.Label41.TabIndex = 56
         Me.Label41.Text = "Label41"
         '
+        'ToolTip1
+        '
+        Me.ToolTip1.AnimationSpeed = 0
+        '
         'ToolTip2
         '
         Me.ToolTip2.AnimationSpeed = 0
-        Me.ToolTip2.EnableAutoClose = False
         '
-        'ToolTip3
+        'PictureBox8
         '
-        Me.ToolTip3.AnimationSpeed = 0
-        Me.ToolTip3.EnableAutoClose = False
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Image = Global.GW2_Builder.My.Resources.Resources.Necromancer_off
+        Me.PictureBox8.Location = New System.Drawing.Point(573, 36)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox8.TabIndex = 10
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Image = Global.GW2_Builder.My.Resources.Resources.Mesmer_off
+        Me.PictureBox7.Location = New System.Drawing.Point(785, 36)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox7.TabIndex = 9
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = Global.GW2_Builder.My.Resources.Resources.Elementalist_off
+        Me.PictureBox6.Location = New System.Drawing.Point(43, 36)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox6.TabIndex = 8
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = Global.GW2_Builder.My.Resources.Resources.Thief_off
+        Me.PictureBox5.Location = New System.Drawing.Point(679, 36)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox5.TabIndex = 7
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Image = Global.GW2_Builder.My.Resources.Resources.Ranger_off
+        Me.PictureBox4.Location = New System.Drawing.Point(467, 36)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox4.TabIndex = 6
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = Global.GW2_Builder.My.Resources.Resources.Engineer_off
+        Me.PictureBox3.Location = New System.Drawing.Point(361, 36)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox3.TabIndex = 5
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.GW2_Builder.My.Resources.Resources.Warrior_off
+        Me.PictureBox2.Location = New System.Drawing.Point(149, 36)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(255, 36)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'Mainfrm
         '
@@ -1638,6 +1798,7 @@ Partial Class Mainfrm
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -1647,6 +1808,9 @@ Partial Class Mainfrm
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox80, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox79, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox78, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox77, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox76, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1783,10 +1947,8 @@ Partial Class Mainfrm
     Friend WithEvents PictureBox34 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox36 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox37 As System.Windows.Forms.PictureBox
-    Friend WithEvents ToolTip1 As Ai.Control.ToolTip
     Friend WithEvents PictureBox39 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox38 As System.Windows.Forms.PictureBox
-    Friend WithEvents ToolTip2 As Ai.Control.ToolTip
     Friend WithEvents PictureBox43 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox42 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox41 As System.Windows.Forms.PictureBox
@@ -1860,7 +2022,12 @@ Partial Class Mainfrm
     Friend WithEvents PictureBox75 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox78 As System.Windows.Forms.PictureBox
     Friend WithEvents Label40 As System.Windows.Forms.Label
-    Friend WithEvents ToolTip3 As Ai.Control.ToolTip
     Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents ToolTip1 As Ai.Control.ToolTip
+    Friend WithEvents ToolTip2 As Ai.Control.ToolTip
+    Friend WithEvents PictureBox79 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox81 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox80 As System.Windows.Forms.PictureBox
 
 End Class

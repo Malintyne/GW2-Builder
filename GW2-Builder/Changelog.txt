@@ -1,3 +1,10 @@
+Version - 0.0.2.1
+! Changed all skill images with the wiki one
+$ Added the descriptions of the first and second slot for all classes
+$ Added right links in the code for all images
+$ Added background images for the main form and tabs (thanks Imaginos for created it)
+# A lot of bugs fixed (thanks again Imaginos for find a lot of it)
+
 Version - 0.0.1.9
 $ Added all remains weapons skills (Mesmer, Necromancer & Elementalist)
 $ Removed all tooltips from all weapons skills, cause is obsolete thanks to Skill Info angle

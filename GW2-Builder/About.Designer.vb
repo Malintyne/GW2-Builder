@@ -36,11 +36,11 @@ Partial Class About
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New Ai.Control.ToolTip()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -184,13 +184,8 @@ Partial Class About
         Me.TextBox3.Size = New System.Drawing.Size(366, 163)
         Me.TextBox3.TabIndex = 6
         Me.TextBox3.Text = "Special thanks goes to:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Angelus - Official Debugger" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Imaginos - For the interf" & _
-    "ace suggestions and found some bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "EnyaRaven - For found some bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "And all ot" & _
-    "hers peoples for the help."
-        '
-        'ToolTip2
-        '
-        Me.ToolTip2.AnimationSpeed = 0
-        Me.ToolTip2.EnableAutoClose = False
+    "ace suggestions and found a lot of bugs" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "EnyaRaven - For found some bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "And a" & _
+    "ll others peoples for the help."
         '
         'LinkLabel3
         '
@@ -267,8 +262,6 @@ Partial Class About
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
-    Friend WithEvents ToolTip1 As Ai.Control.ToolTip
-    Friend WithEvents ToolTip2 As Ai.Control.ToolTip
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
@@ -279,4 +272,5 @@ Partial Class About
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents ToolTip1 As Ai.Control.ToolTip
 End Class

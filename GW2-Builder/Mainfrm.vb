@@ -128,74 +128,86 @@
 
     Private Sub Label15_DoubleClick(sender As Object, e As EventArgs) Handles Label15.DoubleClick
         If Label15.Text > 0 Then
-            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            ToolTip1.SetToolTip(Label15, "Double Click for reset only this row")
             cls.SingleReset1()
         End If
     End Sub
 
     Private Sub Label16_DoubleClick(sender As Object, e As EventArgs) Handles Label16.DoubleClick
         If Label16.Text > 0 Then
-            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            ToolTip1.SetToolTip(Label15, "Double Click for reset only this row")
             cls.SingleReset2()
         End If
     End Sub
 
     Private Sub Label17_DoubleClick(sender As Object, e As EventArgs) Handles Label17.DoubleClick
         If Label17.Text > 0 Then
-            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            ToolTip1.SetToolTip(Label15, "Double Click for reset only this row")
             cls.SingleReset3()
         End If
     End Sub
 
     Private Sub Label18_DoubleClick(sender As Object, e As EventArgs) Handles Label18.DoubleClick
         If Label18.Text > 0 Then
-            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            ToolTip1.SetToolTip(Label15, "Double Click for reset only this row")
             cls.SingleReset4()
         End If
     End Sub
 
     Private Sub Label19_DoubleClick(sender As Object, e As EventArgs) Handles Label19.DoubleClick
         If Label19.Text > 0 Then
-            ToolTip2.SetToolTip(Label15, "Double Click for reset only this row")
+            ToolTip1.SetToolTip(Label15, "Double Click for reset only this row")
             cls.SingleReset5()
         End If
     End Sub
 
     Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
-        cls.Heal()
+        cls.Heal1()
     End Sub
 
     Private Sub PictureBox24_Click(sender As Object, e As EventArgs) Handles PictureBox24.Click
-        cls.Heal()
+        cls.Heal2()
     End Sub
 
     Private Sub PictureBox9_MouseHover(sender As Object, e As EventArgs) Handles PictureBox9.MouseHover
-        sinfo.SkillInfo1()
+        sinfo.SkillInfo9()
     End Sub
 
     Private Sub PictureBox10_MouseHover(sender As Object, e As EventArgs) Handles PictureBox10.MouseHover
-        sinfo.SkillInfo2()
+        sinfo.SkillInfo10()
+    End Sub
+
+    Private Sub PictureBox29_MouseHover(sender As Object, e As EventArgs) Handles PictureBox29.MouseHover
+        sinfo.SkillInfo29()
+    End Sub
+
+    Private Sub PictureBox28_MouseHover(sender As Object, e As EventArgs) Handles PictureBox28.MouseHover
+        sinfo.SkillInfo28()
     End Sub
 
     Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
+        cls.ResetAttunementChange()
         ComboBox1.Enabled = True
         ComboBox2.Enabled = True
         Label41.Text = "f"
     End Sub
 
     Private Sub PictureBox41_Click(sender As Object, e As EventArgs) Handles PictureBox41.Click
+        cls.ResetAttunementChange()
         ComboBox1.Enabled = True
         ComboBox2.Enabled = True
         Label41.Text = "w"
     End Sub
 
     Private Sub PictureBox42_Click(sender As Object, e As EventArgs) Handles PictureBox42.Click
+        cls.ResetAttunementChange()
         ComboBox1.Enabled = True
         ComboBox2.Enabled = True
         Label41.Text = "a"
     End Sub
 
     Private Sub PictureBox43_Click(sender As Object, e As EventArgs) Handles PictureBox43.Click
+        cls.ResetAttunementChange()
         ComboBox1.Enabled = True
         ComboBox2.Enabled = True
         Label41.Text = "e"
