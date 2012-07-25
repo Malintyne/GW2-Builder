@@ -1,3 +1,7 @@
+Version - 0.0.2.2
+# Fixed some bugs & crashs (thanks Imaginos for find it)
+$ Added first Fkeys info
+
 Version - 0.0.2.1
 ! Changed all skill images with the wiki one
 $ Added the descriptions of the first and second slot for all classes

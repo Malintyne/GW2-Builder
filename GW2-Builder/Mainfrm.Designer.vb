@@ -147,8 +147,6 @@ Partial Class Mainfrm
         Me.Label30 = New System.Windows.Forms.Label()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.Label41 = New System.Windows.Forms.Label()
-        Me.ToolTip1 = New Ai.Control.ToolTip()
-        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -157,6 +155,8 @@ Partial Class Mainfrm
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New Ai.Control.ToolTip()
+        Me.ToolTip2 = New Ai.Control.ToolTip()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1680,14 +1680,6 @@ Partial Class Mainfrm
         Me.Label41.TabIndex = 56
         Me.Label41.Text = "Label41"
         '
-        'ToolTip1
-        '
-        Me.ToolTip1.AnimationSpeed = 0
-        '
-        'ToolTip2
-        '
-        Me.ToolTip2.AnimationSpeed = 0
-        '
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
@@ -1775,6 +1767,14 @@ Partial Class Mainfrm
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.AnimationSpeed = 0
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.AnimationSpeed = 0
         '
         'Mainfrm
         '

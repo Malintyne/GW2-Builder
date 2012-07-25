@@ -3,12 +3,12 @@
     Dim x, y As Integer
     Dim newPoint As New Point()
 
-    Private Sub xy_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+    Private Sub MyBase_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
         x = Control.MousePosition.X - Me.Location.X
         y = Control.MousePosition.Y - Me.Location.Y
     End Sub
 
-    Private Sub xy_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
+    Private Sub MyBase_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
         If e.Button = MouseButtons.Left Then
             newPoint = Control.MousePosition
             newPoint.X = newPoint.X - x

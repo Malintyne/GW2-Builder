@@ -8,17 +8,20 @@
         cls.MfrmLoad()
     End Sub
 
-    Private Sub xy_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+    Private Sub MyBase_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
         x = Control.MousePosition.X - Me.Location.X
         y = Control.MousePosition.Y - Me.Location.Y
     End Sub
 
-    Private Sub xy_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
+    Private Sub MyBase_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
         If e.Button = MouseButtons.Left Then
             newPoint = Control.MousePosition
             newPoint.X = newPoint.X - x
             newPoint.Y = newPoint.Y - y
             Me.Location = newPoint
+            Me.Cursor = Cursors.SizeAll
+        Else
+            Me.Cursor = Cursors.Default
         End If
     End Sub
 
@@ -185,31 +188,35 @@
         sinfo.SkillInfo28()
     End Sub
 
+    Private Sub PictureBox40_MouseHover(sender As Object, e As EventArgs) Handles PictureBox40.MouseHover
+        sinfo.SkillInfo40()
+    End Sub
+
     Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
-        cls.ResetAttunementChange()
-        ComboBox1.Enabled = True
-        ComboBox2.Enabled = True
-        Label41.Text = "f"
+        If Label9.Text = "el" Then
+            cls.ResetAttunementChange()
+            Label41.Text = "f"
+        End If
     End Sub
 
     Private Sub PictureBox41_Click(sender As Object, e As EventArgs) Handles PictureBox41.Click
-        cls.ResetAttunementChange()
-        ComboBox1.Enabled = True
-        ComboBox2.Enabled = True
-        Label41.Text = "w"
+        If Label9.Text = "el" Then
+            cls.ResetAttunementChange()
+            Label41.Text = "w"
+        End If
     End Sub
 
     Private Sub PictureBox42_Click(sender As Object, e As EventArgs) Handles PictureBox42.Click
-        cls.ResetAttunementChange()
-        ComboBox1.Enabled = True
-        ComboBox2.Enabled = True
-        Label41.Text = "a"
+        If Label9.Text = "el" Then
+            cls.ResetAttunementChange()
+            Label41.Text = "a"
+        End If
     End Sub
 
     Private Sub PictureBox43_Click(sender As Object, e As EventArgs) Handles PictureBox43.Click
-        cls.ResetAttunementChange()
-        ComboBox1.Enabled = True
-        ComboBox2.Enabled = True
-        Label41.Text = "e"
+        If Label9.Text = "el" Then
+            cls.ResetAttunementChange()
+            Label41.Text = "e"
+        End If
     End Sub
 End Class

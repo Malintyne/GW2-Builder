@@ -386,6 +386,9 @@
     <Content Include="Resources\mesmer\Confusing_Images.png" />
     <Content Include="Resources\mesmer\Counter_Blade.png" />
     <Content Include="Resources\mesmer\Counter_Spell.png" />
+    <Content Include="Resources\mesmer\Cry_of_Frustration.png" />
+    <Content Include="Resources\mesmer\Distortion.png" />
+    <Content Include="Resources\mesmer\Diversion.png" />
     <Content Include="Resources\mesmer\Ether_Blast.png" />
     <Content Include="Resources\mesmer\Ether_Bolt.png" />
     <Content Include="Resources\mesmer\Ether_Clone.png" />
@@ -409,6 +412,7 @@
     <Content Include="Resources\mesmer\Mind_Slash.png" />
     <Content Include="Resources\mesmer\Mind_Stab_%28greatsword%29.png" />
     <Content Include="Resources\mesmer\Mind_Stab_%28sword%29.png" />
+    <Content Include="Resources\mesmer\Mind_Wrack.png" />
     <Content Include="Resources\mesmer\Mirror_Blade.png" />
     <Content Include="Resources\mesmer\Phantasmal_Berserker.png" />
     <Content Include="Resources\mesmer\Phase_Retreat.png" />
@@ -523,6 +527,7 @@
     <Content Include="Resources\Recharge_Icon.png" />
     <Content Include="Resources\Regeneration_Icon.png" />
     <Content Include="Resources\Retaliation_Icon.png" />
+    <Content Include="Resources\Stun_Icon.png" />
     <Content Include="Resources\Thief off.png" />
     <Content Include="Resources\Thief.png" />
     <Content Include="Resources\thief\Backstab.png" />
@@ -565,6 +570,7 @@
     <Content Include="Resources\thief\Sneak_Attack.png" />
     <Content Include="Resources\thief\Stab_%28thief_spear_skill%29.png" />
     <Content Include="Resources\thief\Stab_%28thief_sword_skill%29.png" />
+    <Content Include="Resources\thief\Steal.png" />
     <Content Include="Resources\thief\Surprise_Shot.png" />
     <Content Include="Resources\thief\Tactical_Strike.png" />
     <Content Include="Resources\thief\The_Ripper.png" />

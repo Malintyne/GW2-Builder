@@ -199,6 +199,14 @@
     End Sub
 
     Public Sub ResetAttunementChange()
+        Mainfrm.ComboBox1.Enabled = True
+        Mainfrm.ComboBox2.Enabled = True
+        Mainfrm.ComboBox3.Enabled = True
+        Mainfrm.ComboBox4.Enabled = True
+        Mainfrm.ComboBox1.Text = "Main Hand"
+        Mainfrm.ComboBox2.Text = "Main Hand"
+        Mainfrm.ComboBox3.Text = "Off Hand"
+        Mainfrm.ComboBox4.Text = "Off Hand"
         Mainfrm.PictureBox9.Image = My.Resources.Unknown
         Mainfrm.PictureBox10.Image = My.Resources.Unknown
         Mainfrm.PictureBox11.Image = My.Resources.Unknown
@@ -338,7 +346,7 @@
         Mainfrm.Label27.Visible = True
         Mainfrm.Label28.Visible = True
         Mainfrm.Label29.Visible = True
-
+        Mainfrm.Label32.Visible = True
         Mainfrm.Label34.Visible = False
         Mainfrm.Label35.Visible = False
         Mainfrm.Label36.Visible = False
@@ -399,11 +407,6 @@
         Mainfrm.PictureBox65.Image = My.Resources.Compassion_Icon
         Mainfrm.PictureBox68.Image = My.Resources.Malice_Icon
         Mainfrm.PictureBox67.Image = My.Resources.Willpower_Icon
-
-        Mainfrm.Label32.Visible = True
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox40, "Virtue of Justice")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox41, "Virtue of Resolve")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox42, "Virtue of Courage")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox1, "Click to reset the traits")
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox2, vbNullString)
@@ -503,13 +506,15 @@
         Mainfrm.ComboBox2.Items.Insert(4, "Scepter") 'Scepter - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(5, "Mace") 'Mace - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Shield") 'Shield - Off Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Focus") 'Focus - Off Hand #3
-        Mainfrm.ComboBox3.Items.Insert(2, "Torch") 'Torch - Off Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Shield") 'Shield - Off Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Focus") 'Focus - Off Hand #3
+        Mainfrm.ComboBox3.Items.Insert(3, "Torch") 'Torch - Off Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Shield") 'Shield - Off Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Focus") 'Focus - Off Hand #4
-        Mainfrm.ComboBox4.Items.Insert(2, "Torch") 'Torch - Off Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Shield") 'Shield - Off Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Focus") 'Focus - Off Hand #4
+        Mainfrm.ComboBox4.Items.Insert(3, "Torch") 'Torch - Off Hand #4
 
         Mainfrm.Label10.Text = "Zeal"
         Mainfrm.Label11.Text = "Radiance"
@@ -711,17 +716,19 @@
         Mainfrm.ComboBox2.Items.Insert(5, "Axe") 'Axe - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(6, "Mace") 'Mace - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Sword") 'Sword - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Shield") 'Shield - Off Hand #3
-        Mainfrm.ComboBox3.Items.Insert(2, "Axe") 'Axe - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(3, "Warhorn") 'Warhorn - Off Hand #3
-        Mainfrm.ComboBox3.Items.Insert(4, "Mace") 'Mace - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Sword") 'Sword - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Shield") 'Shield - Off Hand #3
+        Mainfrm.ComboBox3.Items.Insert(3, "Axe") 'Axe - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(4, "Warhorn") 'Warhorn - Off Hand #3
+        Mainfrm.ComboBox3.Items.Insert(5, "Mace") 'Mace - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Sword") 'Sword - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Shield") 'Shield - Off Hand #4
-        Mainfrm.ComboBox4.Items.Insert(2, "Axe") 'Axe - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(3, "Warhorn") 'Warhorn - Off Hand #4
-        Mainfrm.ComboBox4.Items.Insert(4, "Mace") 'Mace - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Sword") 'Sword - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Shield") 'Shield - Off Hand #4
+        Mainfrm.ComboBox4.Items.Insert(3, "Axe") 'Axe - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(4, "Warhorn") 'Warhorn - Off Hand #4
+        Mainfrm.ComboBox4.Items.Insert(5, "Mace") 'Mace - One Hand #4
 
         Mainfrm.Label10.Text = "Strength"
         Mainfrm.Label11.Text = "Arms"
@@ -913,11 +920,13 @@
         Mainfrm.ComboBox2.Items.Insert(0, "Rifle") 'Rifle - Two Hand #2
         Mainfrm.ComboBox2.Items.Insert(1, "Pistol") 'Pistol - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Shield") 'Shield - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Pistol") 'Pistol - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Shield") 'Shield - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Pistol") 'Pistol - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Shield") 'Shield - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Pistol") 'Pistol - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Shield") 'Shield - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Pistol") 'Pistol - One Hand #4
 
         Mainfrm.Label10.Text = "Explosives"
         Mainfrm.Label11.Text = "Firearms"
@@ -1115,15 +1124,17 @@
         Mainfrm.ComboBox2.Items.Insert(3, "Sword") 'Sword - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(4, "Axe") 'Axe - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Dagger") 'Dagger - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Axe") 'Axe - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(3, "Torch") 'Torch - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Dagger") 'Dagger - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Axe") 'Axe - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(3, "Warhorn") 'Warhorn - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(4, "Torch") 'Torch - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Axe") 'Axe - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(3, "Torch") 'Torch - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Dagger") 'Dagger - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Axe") 'Axe - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(3, "Warhorn") 'Warhorn - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(4, "Torch") 'Torch - One Hand #4
 
         Mainfrm.Label10.Text = "Marksmanship"
         Mainfrm.Label11.Text = "Skirmishing"
@@ -1207,6 +1218,8 @@
         Mainfrm.PictureBox66.Visible = True
         Mainfrm.PictureBox67.Visible = True
         Mainfrm.PictureBox68.Visible = True
+
+        Mainfrm.PictureBox40.Image = My.Resources.steal
 
         Mainfrm.PictureBox44.Image = My.Resources.Resources.Deadly___Thief
         Mainfrm.PictureBox45.Image = My.Resources.Resources.Critical___Thief
@@ -1319,11 +1332,13 @@
         Mainfrm.ComboBox2.Items.Insert(2, "Dagger") 'Dagger - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(3, "Pistol") 'Pistol - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Dagger") 'Dagger - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Pistol") 'Pistol - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Dagger") 'Dagger - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Pistol") 'Pistol - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Pistol") 'Pistol - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Dagger") 'Dagger - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Pistol") 'Pistol - One Hand #4
 
         Mainfrm.Label10.Text = "Deadly Arts"
         Mainfrm.Label11.Text = "Critical Strikes"
@@ -1431,10 +1446,6 @@
         Mainfrm.PictureBox67.Image = My.Resources.Resources.Intelligence_Icon
 
         Mainfrm.Label32.Visible = True
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox40, "Fire Attunement")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox41, "Water Attunement")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox42, "Air Attunement")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox43, "Earth Attunement")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox1, vbNullString)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox2, vbNullString)
@@ -1528,11 +1539,13 @@
         Mainfrm.ComboBox2.Items.Insert(1, "Dagger") 'Dagger - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(2, "Scepter") 'Scepter - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Dagger") 'Dagger - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Focus") 'Focus - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Dagger") 'Dagger - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Focus") 'Focus - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Dagger") 'Dagger - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Focus") 'Focus - One Hand #4
 
         Mainfrm.Label10.Text = "Fire Magic"
         Mainfrm.Label11.Text = "Air Magic"
@@ -1616,6 +1629,11 @@
         Mainfrm.PictureBox66.Visible = True
         Mainfrm.PictureBox67.Visible = True
         Mainfrm.PictureBox68.Visible = True
+
+        Mainfrm.PictureBox40.Image = My.Resources.Mind_Wrack
+        Mainfrm.PictureBox41.Image = My.Resources.Cry_of_Frustration
+        Mainfrm.PictureBox42.Image = My.Resources.Diversion
+        Mainfrm.PictureBox43.Image = My.Resources.Distortion
 
         Mainfrm.PictureBox44.Image = My.Resources.Domination___Mesmer
         Mainfrm.PictureBox45.Image = My.Resources.Dueling___Mesmer
@@ -1728,15 +1746,17 @@
         Mainfrm.ComboBox2.Items.Insert(2, "Sword") 'Sword - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(3, "Scepter") 'Scepter - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Sword") 'Sword - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Focus") 'Focus - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(2, "Pistol") 'Pistol - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(3, "Torch") 'Torch - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Sword") 'Sword - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Focus") 'Focus - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(3, "Pistol") 'Pistol - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(4, "Torch") 'Torch - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Sword") 'Sword - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(2, "Pistol") 'Pistol - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(3, "Torch") 'Torch - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Sword") 'Sword - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Focus") 'Focus - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(3, "Pistol") 'Pistol - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(4, "Torch") 'Torch - One Hand #4
 
         Mainfrm.Label10.Text = "Domination"
         Mainfrm.Label11.Text = "Dueling"
@@ -1867,8 +1887,6 @@
         Mainfrm.Label29.Text = "0"
 
         Mainfrm.Label32.Visible = True
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox40, "Death Shroud")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox41, "End Death Shroud")
 
         Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
         Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
@@ -1939,13 +1957,15 @@
         Mainfrm.ComboBox2.Items.Insert(2, "Axe") 'Axe - One Hand #2
         Mainfrm.ComboBox2.Items.Insert(3, "Scepter") 'Scepter - One Hand #2
 
-        Mainfrm.ComboBox3.Items.Insert(0, "Dagger") 'Dagger - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(1, "Focus") 'Focus - One Hand #3
-        Mainfrm.ComboBox3.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox3.Items.Insert(1, "Dagger") 'Dagger - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(2, "Focus") 'Focus - One Hand #3
+        Mainfrm.ComboBox3.Items.Insert(3, "Warhorn") 'Warhorn - One Hand #3
 
-        Mainfrm.ComboBox4.Items.Insert(0, "Dagger") 'Dagger - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(1, "Focus") 'Focus - One Hand #4
-        Mainfrm.ComboBox4.Items.Insert(2, "Warhorn") 'Warhorn - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(0, "") 'None Selection
+        Mainfrm.ComboBox4.Items.Insert(1, "Dagger") 'Dagger - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(2, "Focus") 'Focus - One Hand #4
+        Mainfrm.ComboBox4.Items.Insert(3, "Warhorn") 'Warhorn - One Hand #4
 
         Mainfrm.Label10.Text = "Spite"
         Mainfrm.Label11.Text = "Curses"
@@ -5494,6 +5514,10 @@
             Mainfrm.PictureBox12.Image = My.Resources.Cleansing_Flame
             Mainfrm.PictureBox13.Image = My.Resources.Zealot_s_Flame
             Mainfrm.PictureBox34.Image = My.Resources.Zealot_s_Fire
+        ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox3.Text = "Sword" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Impale__warrior_
@@ -5514,6 +5538,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Crushing_Blow
             Mainfrm.PictureBox13.Image = My.Resources.Tremor
+        ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "en" And Mainfrm.ComboBox3.Text = "Pistol" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Blowtorch
@@ -5522,6 +5550,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Magnetic_Shield__engineer_skill_
             Mainfrm.PictureBox13.Image = My.Resources.Static_Shield
+        ElseIf Mainfrm.Label9.Text = "en" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox3.Text = "Dagger" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Stalker_s_Strike
@@ -5538,27 +5570,42 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Throw_Torch
             Mainfrm.PictureBox13.Image = My.Resources.Bonfire
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox3.Text = "Dagger" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Dancing_Dagger
             Mainfrm.PictureBox13.Image = My.Resources.Cloak_and_Dagger
-            If Mainfrm.ComboBox1.Text = "Sword" Then
+            If Mainfrm.ComboBox1.Text = "Sword" And Not Mainfrm.ComboBox3.Text = "" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Flanking_Strike__dual_skill_
-            ElseIf Mainfrm.ComboBox1.Text = "Dagger" Then
+            ElseIf Mainfrm.ComboBox1.Text = "Dagger" And Not Mainfrm.ComboBox3.Text = "" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Death_Blossom
-            ElseIf Mainfrm.ComboBox1.Text = "Pistol" Then
+            ElseIf Mainfrm.ComboBox1.Text = "Pistol" And Not Mainfrm.ComboBox3.Text = "" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Shadow_Strike
             End If
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox3.Text = "Pistol" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Head_Shot
             Mainfrm.PictureBox13.Image = My.Resources.Black_Powder
-            If Mainfrm.ComboBox1.Text = "Sword" Then
-                Mainfrm.PictureBox11.Image = My.Resources.Pistol_Whip
-            ElseIf Mainfrm.ComboBox1.Text = "Dagger" Then
+            If Mainfrm.ComboBox1.Text = "Sword" And Not Mainfrm.ComboBox3.Text = "" Then
+                Mainfrm.PictureBox11.Image = My.Resources.Stab__thief_sword_skill_
+            ElseIf Mainfrm.ComboBox1.Text = "Dagger" And Not Mainfrm.ComboBox3.Text = "" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Shadow_Shot
-            ElseIf Mainfrm.ComboBox1.Text = "Pistol" Then
+            ElseIf Mainfrm.ComboBox1.Text = "Pistol" And Not Mainfrm.ComboBox3.Text = "" Then
                 Mainfrm.PictureBox11.Image = My.Resources.Unload
+            End If
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
+            If Mainfrm.ComboBox1.Text = "Sword" And Mainfrm.ComboBox3.Text = "" Then
+                Mainfrm.PictureBox11.Image = My.Resources.Pistol_Whip
+            ElseIf Mainfrm.ComboBox1.Text = "Dagger" And Mainfrm.ComboBox3.Text = "" Then
+                Mainfrm.PictureBox11.Image = My.Resources.Twisting_Fangs
+            ElseIf Mainfrm.ComboBox1.Text = "Pistol" And Mainfrm.ComboBox3.Text = "" Then
+                Mainfrm.PictureBox11.Image = My.Resources.Repeater
             End If
         ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox3.Text = "Dagger" Then
             Mainfrm.PictureBox34.Visible = False
@@ -5590,6 +5637,10 @@
                 Mainfrm.PictureBox12.Image = My.Resources.Magnetic_Wave
                 Mainfrm.PictureBox13.Image = My.Resources.Obsidian_Flesh
             End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox3.Text = "Sword" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Illusionary_Riposte
@@ -5606,6 +5657,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.The_Prestige
             Mainfrm.PictureBox13.Image = My.Resources.Illusionary_Mage
+        ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "n" And Mainfrm.ComboBox3.Text = "Dagger" Then
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Deathly_Swarm
@@ -5618,6 +5673,10 @@
             Mainfrm.PictureBox34.Visible = False
             Mainfrm.PictureBox12.Image = My.Resources.Wail_of_Doom
             Mainfrm.PictureBox13.Image = My.Resources.Locust_Swarm
+        ElseIf Mainfrm.Label9.Text = "n" And Mainfrm.ComboBox3.Text = "" Then
+            Mainfrm.PictureBox34.Visible = False
+            Mainfrm.PictureBox12.Image = My.Resources.Unknown
+            Mainfrm.PictureBox13.Image = My.Resources.Unknown
         End If
     End Sub
 #End Region
@@ -5638,6 +5697,10 @@
             Mainfrm.PictureBox26.Image = My.Resources.Cleansing_Flame
             Mainfrm.PictureBox25.Image = My.Resources.Zealot_s_Flame
             Mainfrm.PictureBox35.Image = My.Resources.Zealot_s_Fire
+        ElseIf Mainfrm.Label9.Text = "g" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox4.Text = "Sword" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Impale__warrior_
@@ -5658,6 +5721,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Crushing_Blow
             Mainfrm.PictureBox25.Image = My.Resources.Tremor
+        ElseIf Mainfrm.Label9.Text = "w" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "en" And Mainfrm.ComboBox4.Text = "Pistol" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Blowtorch
@@ -5666,6 +5733,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Magnetic_Shield__engineer_skill_
             Mainfrm.PictureBox25.Image = My.Resources.Static_Shield
+        ElseIf Mainfrm.Label9.Text = "en" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox4.Text = "Dagger" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Stalker_s_Strike
@@ -5682,27 +5753,42 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Throw_Torch
             Mainfrm.PictureBox25.Image = My.Resources.Bonfire
+        ElseIf Mainfrm.Label9.Text = "r" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox4.Text = "Dagger" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Dancing_Dagger
             Mainfrm.PictureBox25.Image = My.Resources.Cloak_and_Dagger
-            If Mainfrm.ComboBox2.Text = "Sword" Then
+            If Mainfrm.ComboBox2.Text = "Sword" And Not Mainfrm.ComboBox4.Text = "" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Flanking_Strike__dual_skill_
-            ElseIf Mainfrm.ComboBox2.Text = "Dagger" Then
+            ElseIf Mainfrm.ComboBox2.Text = "Dagger" And Not Mainfrm.ComboBox4.Text = "" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Death_Blossom
-            ElseIf Mainfrm.ComboBox2.Text = "Pistol" Then
+            ElseIf Mainfrm.ComboBox2.Text = "Pistol" And Not Mainfrm.ComboBox4.Text = "" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Shadow_Strike
             End If
         ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox4.Text = "Pistol" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Head_Shot
             Mainfrm.PictureBox25.Image = My.Resources.Black_Powder
-            If Mainfrm.ComboBox2.Text = "Sword" Then
+            If Mainfrm.ComboBox2.Text = "Sword" And Not Mainfrm.ComboBox4.Text = "" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Pistol_Whip
-            ElseIf Mainfrm.ComboBox2.Text = "Dagger" Then
+            ElseIf Mainfrm.ComboBox2.Text = "Dagger" And Not Mainfrm.ComboBox4.Text = "" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Shadow_Shot
-            ElseIf Mainfrm.ComboBox2.Text = "Pistol" Then
+            ElseIf Mainfrm.ComboBox2.Text = "Pistol" And Not Mainfrm.ComboBox4.Text = "" Then
                 Mainfrm.PictureBox27.Image = My.Resources.Unload
+            End If
+        ElseIf Mainfrm.Label9.Text = "t" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
+            If Mainfrm.ComboBox2.Text = "Sword" And Mainfrm.ComboBox4.Text = "" Then
+                Mainfrm.PictureBox27.Image = My.Resources.Stab__thief_sword_skill_
+            ElseIf Mainfrm.ComboBox2.Text = "Dagger" And Mainfrm.ComboBox4.Text = "" Then
+                Mainfrm.PictureBox27.Image = My.Resources.Twisting_Fangs
+            ElseIf Mainfrm.ComboBox2.Text = "Pistol" And Mainfrm.ComboBox4.Text = "" Then
+                Mainfrm.PictureBox27.Image = My.Resources.Repeater
             End If
         ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox4.Text = "Dagger" Then
             Mainfrm.PictureBox35.Visible = False
@@ -5734,6 +5820,10 @@
                 Mainfrm.PictureBox26.Image = My.Resources.Magnetic_Wave
                 Mainfrm.PictureBox25.Image = My.Resources.Obsidian_Flesh
             End If
+        ElseIf Mainfrm.Label9.Text = "el" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox4.Text = "Sword" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Illusionary_Riposte
@@ -5750,6 +5840,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.The_Prestige
             Mainfrm.PictureBox25.Image = My.Resources.Illusionary_Mage
+        ElseIf Mainfrm.Label9.Text = "m" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         ElseIf Mainfrm.Label9.Text = "n" And Mainfrm.ComboBox4.Text = "Dagger" Then
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Deathly_Swarm
@@ -5762,6 +5856,10 @@
             Mainfrm.PictureBox35.Visible = False
             Mainfrm.PictureBox26.Image = My.Resources.Wail_of_Doom
             Mainfrm.PictureBox25.Image = My.Resources.Locust_Swarm
+        ElseIf Mainfrm.Label9.Text = "n" And Mainfrm.ComboBox4.Text = "" Then
+            Mainfrm.PictureBox35.Visible = False
+            Mainfrm.PictureBox26.Image = My.Resources.Unknown
+            Mainfrm.PictureBox25.Image = My.Resources.Unknown
         End If
     End Sub
 #End Region

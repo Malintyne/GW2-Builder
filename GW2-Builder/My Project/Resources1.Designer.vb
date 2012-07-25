@@ -767,6 +767,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Cry_of_Frustration() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Cry_of_Frustration", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Cunning_Icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Cunning_Icon", resourceCulture)
@@ -928,9 +935,23 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Distortion() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Distortion", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Distortion_Icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Distortion_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Diversion() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Diversion", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2335,6 +2356,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Mind_Wrack() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mind_Wrack", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Minus_Icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Minus_Icon", resourceCulture)
@@ -3315,6 +3343,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Steal() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Steal", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Steam() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Steam", resourceCulture)
@@ -3346,6 +3381,13 @@ Namespace My.Resources
         Public ReadOnly Property Strike() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Strike", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Stun_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stun_Icon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
