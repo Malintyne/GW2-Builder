@@ -10,6 +10,9 @@ The entire project is compatible with Visual Studio 2010 and higher version, Sha
 
 h2. Licenses
 
+The following file are Copyright "Mick Doherty Website":http://dotnetrix.co.uk/controls.htm. You may not reuse that library without the permission:
+* TabControlEX.dll
+
 The following directories and their contents are Copyright "red_moon(Member page on CodeProject.com)":http://www.codeproject.com/Members/red_moon . You may not reuse anything there in without the permission:
 
 * Control/
