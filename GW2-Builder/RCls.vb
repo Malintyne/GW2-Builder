@@ -1,19 +1,52 @@
-﻿Public Class RCls
+﻿Imports Dotnetrix.Controls
+
+Public Class RCls
+#Region "Check Version"
+    Public Sub CheckVer()
+        Try
+            Dim web As New System.Net.WebClient
+            Dim update As String = web.DownloadString("http://covodimatti.altervista.org/update/version.txt")
+            Dim current As String = Application.ProductVersion
+
+            If Not update.Contains(current) Then
+                Mainfrm.PictureBox82.Visible = True
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox82, "Update available")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox82, "Click to download the new version (" & update & ")")
+            Else
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, ex.StackTrace, "Error")
+        End Try
+    End Sub
+#End Region
+
 #Region "Forms"
     Dim ver As String = "GW2 Builder - " + Application.ProductVersion
 
     Public Sub MfrmLoad()
-        Dim main As New System.Drawing.Bitmap(My.Resources.character_builder_main_background)
-        Dim ability As New System.Drawing.Bitmap(My.Resources.character_builder_abilities_background)
-        Dim skill As New System.Drawing.Bitmap(My.Resources.character_builder_skills_background)
-        Dim trait As New System.Drawing.Bitmap(My.Resources.character_builder_traits_background)
+        Dim main As New Bitmap(My.Resources.character_builder_main_background)
+        Dim ability As New Bitmap(My.Resources.character_builder_abilities_background_v2)
+        Dim skill As New Bitmap(My.Resources.character_builder_skills_background_v2)
+        Dim trait As New Bitmap(My.Resources.character_builder_traits_background_v2b)
 
         ResetImage()
 
+        Mainfrm.ComboBox5.BringToFront()
+
         Mainfrm.BackgroundImage = main
-        Mainfrm.TabPage1.BackgroundImage = ability
-        Mainfrm.TabPage2.BackgroundImage = trait
-        Mainfrm.TabPage3.BackgroundImage = skill
+        Mainfrm.TabPageEX1.BackgroundImage = ability
+        Mainfrm.TabPageEX2.BackgroundImage = skill
+        Mainfrm.TabPageEX3.BackgroundImage = trait
+
+        Mainfrm.TabControlEX1.Appearance = TabAppearanceEX.FlatTab
+        Mainfrm.TabControlEX1.FlatBorderColor = Color.Transparent
+        Mainfrm.TabControlEX1.SelectedTabColor = Color.Transparent
+        Mainfrm.TabControlEX1.TabColor = Color.Transparent
+        Mainfrm.TabControlEX1.BackColor = Color.Transparent
+
+        Mainfrm.TabPageEX1.BackColor = Color.Transparent
+        Mainfrm.TabPageEX2.BackColor = Color.Transparent
+        Mainfrm.TabPageEX3.BackColor = Color.Transparent
 
         Mainfrm.Text = ver
         Mainfrm.TopMost = False
@@ -29,6 +62,17 @@
         Mainfrm.ComboBox2.Enabled = False
         Mainfrm.ComboBox3.Enabled = False
         Mainfrm.ComboBox4.Enabled = False
+
+        Mainfrm.Button1.Visible = False
+        Mainfrm.Button2.Visible = False
+        Mainfrm.Button3.Visible = False
+        Mainfrm.Button4.Visible = False
+        Mainfrm.Button5.Visible = False
+        Mainfrm.Button6.Visible = False
+        Mainfrm.Button7.Visible = False
+        Mainfrm.Button8.Visible = False
+        Mainfrm.Button9.Visible = False
+        Mainfrm.Button10.Visible = False
 
         Mainfrm.Label10.Visible = False
         Mainfrm.Label11.Visible = False
@@ -51,6 +95,7 @@
         Mainfrm.Label28.Visible = False
         Mainfrm.Label29.Visible = False
         Mainfrm.Label42.Visible = False
+        Mainfrm.Label43.Visible = False
 
         Mainfrm.PictureBox30.Visible = False
         Mainfrm.PictureBox31.Visible = False
@@ -67,15 +112,7 @@
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
         Mainfrm.PictureBox49.Visible = False
-        Mainfrm.PictureBox50.Visible = False
-        Mainfrm.PictureBox51.Visible = False
-        Mainfrm.PictureBox52.Visible = False
-        Mainfrm.PictureBox53.Visible = False
-        Mainfrm.PictureBox54.Visible = False
-        Mainfrm.PictureBox55.Visible = False
-        Mainfrm.PictureBox56.Visible = False
-        Mainfrm.PictureBox57.Visible = False
-        Mainfrm.PictureBox58.Visible = False
+
         Mainfrm.PictureBox59.Visible = False
         Mainfrm.PictureBox60.Visible = False
         Mainfrm.PictureBox61.Visible = False
@@ -94,6 +131,7 @@
         Mainfrm.PictureBox79.Visible = False
         Mainfrm.PictureBox80.Visible = False
         Mainfrm.PictureBox81.Visible = False
+        Mainfrm.PictureBox82.Visible = False
 
         Mainfrm.Label20.Text = "0"
         Mainfrm.Label21.Text = "0"
@@ -326,6 +364,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -355,6 +404,7 @@
         Mainfrm.Label39.Visible = False
         Mainfrm.Label40.Visible = False
         Mainfrm.Label42.Visible = False
+
         Mainfrm.PictureBox19.Visible = False
         Mainfrm.PictureBox74.Visible = False
         Mainfrm.PictureBox75.Visible = False
@@ -367,16 +417,7 @@
         Mainfrm.PictureBox41.Visible = True
         Mainfrm.PictureBox42.Visible = True
         Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -433,27 +474,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Virtues Recharge rate by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases condition damage by 1%" & vbCrLf & "Decreases Virtues Recharge rate by 1%")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -537,6 +578,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -566,6 +618,7 @@
         Mainfrm.Label39.Visible = False
         Mainfrm.Label40.Visible = False
         Mainfrm.Label42.Visible = False
+
         Mainfrm.PictureBox19.Visible = False
         Mainfrm.PictureBox74.Visible = False
         Mainfrm.PictureBox75.Visible = False
@@ -578,16 +631,7 @@
         Mainfrm.PictureBox41.Visible = False
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -641,27 +685,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases Burst Skill damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases Burst Skill damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases Burst Skill damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases critical damage by 1" & vbCrLf & "Decreases Burst Skill damage by 1")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -751,6 +795,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -772,6 +827,7 @@
         Mainfrm.Label28.Visible = True
         Mainfrm.Label29.Visible = True
 
+        Mainfrm.Label32.Visible = False
         Mainfrm.Label34.Visible = False
         Mainfrm.Label35.Visible = False
         Mainfrm.Label36.Visible = False
@@ -780,6 +836,7 @@
         Mainfrm.Label39.Visible = False
         Mainfrm.Label40.Visible = False
         Mainfrm.Label42.Visible = False
+
         Mainfrm.PictureBox19.Visible = False
         Mainfrm.PictureBox74.Visible = False
         Mainfrm.PictureBox75.Visible = False
@@ -792,16 +849,7 @@
         Mainfrm.PictureBox41.Visible = False
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -855,27 +903,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases recharge rate of Tool Belt skills by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases critical damage by 1" & vbCrLf & "Decreases recharge rate of Tool Belt skills by 1%")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -949,6 +997,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -970,6 +1029,7 @@
         Mainfrm.Label28.Visible = True
         Mainfrm.Label29.Visible = True
 
+        Mainfrm.Label32.Visible = False
         Mainfrm.Label34.Visible = False
         Mainfrm.Label35.Visible = False
         Mainfrm.Label36.Visible = False
@@ -978,6 +1038,7 @@
         Mainfrm.Label39.Visible = False
         Mainfrm.Label40.Visible = False
         Mainfrm.Label42.Visible = False
+
         Mainfrm.PictureBox19.Visible = False
         Mainfrm.PictureBox74.Visible = False
         Mainfrm.PictureBox75.Visible = False
@@ -990,16 +1051,7 @@
         Mainfrm.PictureBox41.Visible = False
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -1053,27 +1105,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases healing by 10" & vbCrLf & "Decreases Pet Attributes by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases healing by 10" & vbCrLf & "Decreases Pet Attributes by 1%")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -1157,6 +1209,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -1178,6 +1241,7 @@
         Mainfrm.Label28.Visible = True
         Mainfrm.Label29.Visible = True
 
+        Mainfrm.Label32.Visible = True
         Mainfrm.Label34.Visible = False
         Mainfrm.Label35.Visible = False
         Mainfrm.Label36.Visible = False
@@ -1194,20 +1258,11 @@
         Mainfrm.PictureBox78.Visible = False
         Mainfrm.PictureBox79.Visible = False
 
-        Mainfrm.PictureBox40.Visible = False
+        Mainfrm.PictureBox40.Visible = True
         Mainfrm.PictureBox41.Visible = False
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -1219,7 +1274,7 @@
         Mainfrm.PictureBox67.Visible = True
         Mainfrm.PictureBox68.Visible = True
 
-        Mainfrm.PictureBox40.Image = My.Resources.steal
+        Mainfrm.PictureBox40.Image = My.Resources.Steal
 
         Mainfrm.PictureBox44.Image = My.Resources.Resources.Deadly___Thief
         Mainfrm.PictureBox45.Image = My.Resources.Resources.Critical___Thief
@@ -1263,27 +1318,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Steal recharge rate by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases condition damage by 1%" & vbCrLf & "Decreases Steal recharge rate by 1%")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition damage by " + Mainfrm.Label21.Text + "%")
@@ -1361,6 +1416,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -1402,16 +1468,7 @@
         Mainfrm.PictureBox41.Visible = True
         Mainfrm.PictureBox42.Visible = True
         Mainfrm.PictureBox43.Visible = True
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -1472,27 +1529,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases boon duration by 1%" & vbCrLf & "Decreases Attunement recharge rate by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases boon duration by 1%" & vbCrLf & "Decreases Attunement recharge rate by 1%")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -1568,6 +1625,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -1589,6 +1657,7 @@
         Mainfrm.Label28.Visible = True
         Mainfrm.Label29.Visible = True
 
+        Mainfrm.Label32.Visible = True
         Mainfrm.Label34.Visible = False
         Mainfrm.Label35.Visible = False
         Mainfrm.Label36.Visible = False
@@ -1605,20 +1674,11 @@
         Mainfrm.PictureBox78.Visible = False
         Mainfrm.PictureBox79.Visible = False
 
-        Mainfrm.PictureBox40.Visible = False
-        Mainfrm.PictureBox41.Visible = False
-        Mainfrm.PictureBox42.Visible = False
-        Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+        Mainfrm.PictureBox40.Visible = True
+        Mainfrm.PictureBox41.Visible = True
+        Mainfrm.PictureBox42.Visible = True
+        Mainfrm.PictureBox43.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -1677,27 +1737,27 @@
         Mainfrm.Label28.Text = "0"
         Mainfrm.Label29.Text = "0"
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases the recharge rate of Shatter skills by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases condition damage by 1%" & vbCrLf & "Decreases the recharge rate of Shatter skills by 1%")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -1779,6 +1839,17 @@
 
         ResetImage()
 
+        Mainfrm.Button1.Visible = True
+        Mainfrm.Button2.Visible = True
+        Mainfrm.Button3.Visible = True
+        Mainfrm.Button4.Visible = True
+        Mainfrm.Button5.Visible = True
+        Mainfrm.Button6.Visible = True
+        Mainfrm.Button7.Visible = True
+        Mainfrm.Button8.Visible = True
+        Mainfrm.Button9.Visible = True
+        Mainfrm.Button10.Visible = True
+
         Mainfrm.Label10.Visible = True
         Mainfrm.Label11.Visible = True
         Mainfrm.Label12.Visible = True
@@ -1800,6 +1871,7 @@
         Mainfrm.Label28.Visible = True
         Mainfrm.Label29.Visible = True
 
+        Mainfrm.Label32.Visible = True
         Mainfrm.Label34.Visible = False
         Mainfrm.Label35.Visible = False
         Mainfrm.Label36.Visible = False
@@ -1820,17 +1892,7 @@
         Mainfrm.PictureBox41.Visible = True
         Mainfrm.PictureBox42.Visible = False
         Mainfrm.PictureBox43.Visible = False
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox49.Visible = True
-        Mainfrm.PictureBox50.Visible = True
-        Mainfrm.PictureBox51.Visible = True
-        Mainfrm.PictureBox52.Visible = True
-        Mainfrm.PictureBox53.Visible = True
-        Mainfrm.PictureBox54.Visible = True
-        Mainfrm.PictureBox55.Visible = True
-        Mainfrm.PictureBox56.Visible = True
-        Mainfrm.PictureBox57.Visible = True
-        Mainfrm.PictureBox58.Visible = True
+
         Mainfrm.PictureBox59.Visible = True
         Mainfrm.PictureBox60.Visible = True
         Mainfrm.PictureBox61.Visible = True
@@ -1888,27 +1950,27 @@
 
         Mainfrm.Label32.Visible = True
 
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox53, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+        Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
 
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Increases condition damage by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox53, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
-        Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases the size of your Life Force pool by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
+        Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases critical damage by 1" & vbCrLf & "Decreases the size of your Life Force pool by 1")
 
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " + Mainfrm.Label20.Text)
         Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " + Mainfrm.Label21.Text + "%")
@@ -2244,8 +2306,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2254,8 +2316,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2267,8 +2329,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2277,8 +2339,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2290,8 +2352,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2300,8 +2362,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2313,8 +2375,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2323,8 +2385,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2336,8 +2398,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2346,8 +2408,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2359,8 +2421,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2369,8 +2431,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2382,8 +2444,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2392,8 +2454,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2405,8 +2467,8 @@
             c = Mainfrm.Label21.Text
             If a = maxsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2415,8 +2477,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -2434,8 +2496,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2444,8 +2506,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2457,8 +2519,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2467,8 +2529,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2480,8 +2542,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2490,8 +2552,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2503,8 +2565,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2513,8 +2575,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2526,8 +2588,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2536,8 +2598,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2549,8 +2611,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2559,8 +2621,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2572,8 +2634,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2582,8 +2644,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2595,8 +2657,8 @@
             c = Mainfrm.Label23.Text
             If a = maxsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2605,8 +2667,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -2624,8 +2686,8 @@
             c = Mainfrm.Label24.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2634,8 +2696,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases critical damage by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2647,8 +2709,8 @@
             c = Mainfrm.Label25.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2657,8 +2719,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2670,8 +2732,8 @@
             c = Mainfrm.Label25.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2680,8 +2742,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2693,8 +2755,8 @@
             c = Mainfrm.Label24.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2703,8 +2765,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases condtion damage by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2716,8 +2778,8 @@
             c = Mainfrm.Label25.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2726,8 +2788,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2739,8 +2801,8 @@
             c = Mainfrm.Label24.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2749,8 +2811,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases condtion damage by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2762,8 +2824,8 @@
             c = Mainfrm.Label24.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2772,8 +2834,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases boon duration by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2785,8 +2847,8 @@
             c = Mainfrm.Label24.Text
             If a = maxsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2795,8 +2857,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases boon duration by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -2814,8 +2876,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2824,8 +2886,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2837,8 +2899,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2847,8 +2909,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2860,8 +2922,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2870,8 +2932,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2883,8 +2945,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2893,8 +2955,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2906,8 +2968,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2916,8 +2978,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2929,8 +2991,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2939,8 +3001,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2952,8 +3014,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2962,8 +3024,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -2975,8 +3037,8 @@
             c = Mainfrm.Label27.Text
             If a = maxsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -2985,8 +3047,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3004,8 +3066,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3014,8 +3076,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -3027,8 +3089,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3037,8 +3099,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases Burst Skill damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases Burst Skill damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Burst Skill damage by " & Mainfrm.Label29.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -3050,8 +3112,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3060,8 +3122,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -3073,8 +3135,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 10
@@ -3083,8 +3145,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases healing by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases healing by " & Mainfrm.Label28.Text)
@@ -3096,8 +3158,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3106,8 +3168,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -3119,8 +3181,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3129,8 +3191,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
@@ -3142,8 +3204,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3152,8 +3214,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -3165,8 +3227,8 @@
             c = Mainfrm.Label29.Text
             If a = maxsingle Then
                 Mainfrm.Label19.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Max points reached")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Max points reached")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Max points reached")
             ElseIf a <= maxsingle Then
                 a += 1
                 b += 1
@@ -3175,8 +3237,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text -= 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -3193,8 +3255,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3207,8 +3269,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3220,8 +3282,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3234,8 +3296,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3247,8 +3309,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3261,8 +3323,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3274,8 +3336,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3288,8 +3350,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3301,8 +3363,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3315,8 +3377,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3328,8 +3390,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3342,8 +3404,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3355,8 +3417,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3369,8 +3431,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3382,8 +3444,8 @@
             c = Mainfrm.Label21.Text
             If a = minsingle Then
                 Mainfrm.Label15.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox49, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox49, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button1, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button1, "Increases power by 10" & vbCrLf & "Increases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3396,8 +3458,8 @@
                 Mainfrm.Label20.Text = b
                 Mainfrm.Label21.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox50, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox50, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button6, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button6, "Decreases power by 10" & vbCrLf & "Decreases condition duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox59, "Increases power by " & Mainfrm.Label20.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox60, "Increases condition duration by " & Mainfrm.Label21.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label20, "Increases power by " & Mainfrm.Label20.Text)
@@ -3414,8 +3476,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label22.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3428,8 +3490,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3441,8 +3503,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label22.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3455,8 +3517,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3468,8 +3530,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label22.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3482,8 +3544,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3495,8 +3557,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3509,8 +3571,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3522,8 +3584,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3536,8 +3598,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3549,8 +3611,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3563,8 +3625,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3576,8 +3638,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3590,8 +3652,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases critical damage by " & Mainfrm.Label23.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3603,8 +3665,8 @@
             c = Mainfrm.Label23.Text
             If a = minsingle Then
                 Mainfrm.Label16.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox52, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox52, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button2, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button2, "Increases precision by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label22.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precisio by " & Mainfrm.Label22.Text)
@@ -3617,8 +3679,8 @@
                 Mainfrm.Label22.Text = b
                 Mainfrm.Label23.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox51, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox51, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button7, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button7, "Decreases precision by 10" & vbCrLf & "Decreases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox62, "Increases precision by " & Mainfrm.Label22.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox61, "Increases condition damage by " & Mainfrm.Label23.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label22, "Increases precision by " & Mainfrm.Label22.Text)
@@ -3635,8 +3697,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases critical damage by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3649,8 +3711,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases critical damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases critical damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases critical damage by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3662,8 +3724,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3676,8 +3738,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3689,8 +3751,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3703,8 +3765,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3716,8 +3778,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases condition damage by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3730,8 +3792,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases condition damage by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3743,8 +3805,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3757,8 +3819,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases healing by " & Mainfrm.Label25.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3770,8 +3832,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases condition damage by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3784,8 +3846,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases condition damage by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases condition damage by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3797,8 +3859,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases boon duration by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3811,8 +3873,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases boon duration by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3824,8 +3886,8 @@
             c = Mainfrm.Label25.Text
             If a = minsingle Then
                 Mainfrm.Label17.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox54, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox54, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button3, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button3, "Increases toughness by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases boon duration by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3838,8 +3900,8 @@
                 Mainfrm.Label24.Text = b
                 Mainfrm.Label25.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button8, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button8, "Decreases toughness by 10" & vbCrLf & "Decreases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox64, "Increases toughness by " & Mainfrm.Label24.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox63, "Increases boon duration by " & Mainfrm.Label25.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label24, "Increases toughness by " & Mainfrm.Label24.Text)
@@ -3856,8 +3918,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3870,8 +3932,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3883,8 +3945,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3897,8 +3959,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3910,8 +3972,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3924,8 +3986,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3937,8 +3999,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3951,8 +4013,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3964,8 +4026,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases boon duration by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3978,8 +4040,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases boon duration by " & Mainfrm.Label27.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -3991,8 +4053,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -4005,8 +4067,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -4018,8 +4080,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -4032,8 +4094,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -4045,8 +4107,8 @@
             c = Mainfrm.Label27.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox56, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox56, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button4, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button4, "Increases vitality by 10" & vbCrLf & "Increases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -4059,8 +4121,8 @@
                 Mainfrm.Label26.Text = b
                 Mainfrm.Label27.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox55, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox55, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button9, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button9, "Decreases vitality by 10" & vbCrLf & "Decreases healing by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox66, "Increases vitality by " & Mainfrm.Label26.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox65, "Increases healing by " & Mainfrm.Label27.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label26, "Increases vitality by " & Mainfrm.Label26.Text)
@@ -4077,8 +4139,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases Virtues Recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Virtues Recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -4091,8 +4153,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Virtues Recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases condition damage by 1%" & vbCrLf & "Decreases Virtues Recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Burst skill by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -4104,8 +4166,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 10" & vbCrLf & "Increases Burst Skill damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 10" & vbCrLf & "Increases Burst Skill damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Burst skill damage by " & Mainfrm.Label29.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -4118,8 +4180,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 10" & vbCrLf & "Decreases Burst Skill damage by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases critical damage by 10" & vbCrLf & "Decreases Burst Skill damage by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Burst skill by " & Mainfrm.Label29.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -4131,8 +4193,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases recharge rate of Tool Belt skills by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -4145,8 +4207,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases recharge rate of Tool Belt skills by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases critical damage by 1" & vbCrLf & "Decreases recharge rate of Tool Belt skills by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases recharge rate of Tool Belt skills by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -4158,8 +4220,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases healing by 10" & vbCrLf & "Increases Pet Attributes by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases healing by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases healing by " & Mainfrm.Label28.Text)
@@ -4172,8 +4234,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases healing by 10" & vbCrLf & "Decreases Pet Attributes by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases healing by 10" & vbCrLf & "Decreases Pet Attributes by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases healing by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Pet Attributes by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases healing by " & Mainfrm.Label28.Text)
@@ -4185,8 +4247,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases Steal recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -4199,8 +4261,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases Steal recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases condition damage by 1%" & vbCrLf & "Decreases Steal recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Steal recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -4212,8 +4274,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases boon duration by 1%" & vbCrLf & "Increases Attunement recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
@@ -4226,8 +4288,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases boon duration by 1%" & vbCrLf & "Decreases Attunement recharge rate by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases boon duration by 1%" & vbCrLf & "Decreases Attunement recharge rate by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases Attunement recharge rate by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases boon duration by " & Mainfrm.Label28.Text & "%")
@@ -4239,8 +4301,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases condition damage by 1%" & vbCrLf & "Increases the recharge rate of Shatter skills by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -4253,8 +4315,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases condition damage by 1%" & vbCrLf & "Decreases the recharge rate of Shatter skills by 1%")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases condition damage by 1%" & vbCrLf & "Decreases the recharge rate of Shatter skills by 1%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases the recharge rate of Shatter skills by " & Mainfrm.Label29.Text & "%")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases condition damage by " & Mainfrm.Label28.Text & "%")
@@ -4266,8 +4328,8 @@
             c = Mainfrm.Label29.Text
             If a = minsingle Then
                 Mainfrm.Label18.Text = a
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox58, "Add Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox58, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button5, "Add Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button5, "Increases critical damage by 1" & vbCrLf & "Increases the size of your Life Force pool by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -4280,8 +4342,8 @@
                 Mainfrm.Label28.Text = b
                 Mainfrm.Label29.Text = c
                 Mainfrm.Label30.Text += 1
-                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.PictureBox57, "Remove Point")
-                Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox57, "Decreases critical damage by 1" & vbCrLf & "Decreases the size of your Life Force pool by 1")
+                Mainfrm.ToolTip1.SetToolTipTitle(Mainfrm.Button10, "Remove Point")
+                Mainfrm.ToolTip1.SetToolTip(Mainfrm.Button10, "Decreases critical damage by 1" & vbCrLf & "Decreases the size of your Life Force pool by 1")
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox68, "Increases critical damage by " & Mainfrm.Label28.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.PictureBox67, "Increases the size of your Life Force pool by " & Mainfrm.Label29.Text)
                 Mainfrm.ToolTip1.SetToolTip(Mainfrm.Label28, "Increases critical damage by " & Mainfrm.Label28.Text)
@@ -5884,9 +5946,9 @@
             Healfrm1.PictureBox3.Image = My.Resources.Healing_Turret
             Healfrm1.ShowDialog()
         ElseIf Mainfrm.Label9.Text = "r" Then
-            Healfrm1.PictureBox1.Image = My.Resources.Elixir_H
-            Healfrm1.PictureBox2.Image = My.Resources.Med_Kit
-            Healfrm1.PictureBox3.Image = My.Resources.Healing_Turret
+            Healfrm1.PictureBox1.Image = My.Resources.Heal_as_One
+            Healfrm1.PictureBox2.Image = My.Resources.Healing_Spring
+            Healfrm1.PictureBox3.Image = My.Resources.Troll_Unguent
             Healfrm1.ShowDialog()
         ElseIf Mainfrm.Label9.Text = "t" Then
             Healfrm1.PictureBox1.Image = My.Resources.Hide_in_Shadows
@@ -5930,9 +5992,9 @@
             Healfrm2.PictureBox3.Image = My.Resources.Healing_Turret
             Healfrm2.ShowDialog()
         ElseIf Mainfrm.Label9.Text = "r" Then
-            Healfrm2.PictureBox1.Image = My.Resources.Elixir_H
-            Healfrm2.PictureBox2.Image = My.Resources.Med_Kit
-            Healfrm2.PictureBox3.Image = My.Resources.Healing_Turret
+            Healfrm2.PictureBox1.Image = My.Resources.Heal_as_One
+            Healfrm2.PictureBox2.Image = My.Resources.Healing_Spring
+            Healfrm2.PictureBox3.Image = My.Resources.Troll_Unguent
             Healfrm2.ShowDialog()
         ElseIf Mainfrm.Label9.Text = "t" Then
             Healfrm2.PictureBox1.Image = My.Resources.Hide_in_Shadows

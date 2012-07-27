@@ -6,6 +6,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cls.MfrmLoad()
+        cls.CheckVer()
     End Sub
 
     Private Sub MyBase_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
@@ -89,44 +90,48 @@
         cls.Necromancer()
     End Sub
 
-    Private Sub PictureBox49_Click(sender As Object, e As EventArgs) Handles PictureBox49.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         cls.AddPnt1()
     End Sub
 
-    Private Sub PictureBox50_Click(sender As Object, e As EventArgs) Handles PictureBox50.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         cls.RmvPnt1()
     End Sub
 
-    Private Sub PictureBox52_Click(sender As Object, e As EventArgs) Handles PictureBox52.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         cls.AddPnt2()
     End Sub
 
-    Private Sub PictureBox51_Click(sender As Object, e As EventArgs) Handles PictureBox51.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         cls.RmvPnt2()
     End Sub
 
-    Private Sub PictureBox54_Click(sender As Object, e As EventArgs) Handles PictureBox54.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         cls.AddPnt3()
     End Sub
 
-    Private Sub PictureBox53_Click(sender As Object, e As EventArgs) Handles PictureBox53.Click
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         cls.RmvPnt3()
     End Sub
 
-    Private Sub PictureBox56_Click(sender As Object, e As EventArgs) Handles PictureBox56.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         cls.AddPnt4()
     End Sub
 
-    Private Sub PictureBox55_Click(sender As Object, e As EventArgs) Handles PictureBox55.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         cls.RmvPnt4()
     End Sub
 
-    Private Sub PictureBox58_Click(sender As Object, e As EventArgs) Handles PictureBox58.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         cls.AddPnt5()
     End Sub
 
-    Private Sub PictureBox57_Click(sender As Object, e As EventArgs) Handles PictureBox57.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         cls.RmvPnt5()
+    End Sub
+
+    Private Sub PictureBox82_Click(sender As Object, e As EventArgs) Handles PictureBox82.Click
+        Updater.ShowDialog()
     End Sub
 
     Private Sub Label15_DoubleClick(sender As Object, e As EventArgs) Handles Label15.DoubleClick
@@ -190,6 +195,14 @@
 
     Private Sub PictureBox40_MouseHover(sender As Object, e As EventArgs) Handles PictureBox40.MouseHover
         sinfo.SkillInfo40()
+    End Sub
+
+    Private Sub PictureBox14_MouseHover(sender As Object, e As EventArgs) Handles PictureBox14.MouseHover
+        sinfo.SkillInfo14()
+    End Sub
+
+    Private Sub PictureBox24_MouseHover(sender As Object, e As EventArgs) Handles PictureBox24.MouseHover
+        sinfo.SkillInfo24()
     End Sub
 
     Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click

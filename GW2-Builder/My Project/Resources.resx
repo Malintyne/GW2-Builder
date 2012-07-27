@@ -1768,17 +1768,8 @@
   <data name="Regeneration_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\regeneration_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="character_builder_abilities_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\character-builder-abilities-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="character_builder_main_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\character-builder-main-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="character_builder_skills_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\character-builder-skills-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="character_builder_traits_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\character-builder-traits-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Brn_Bld_Vln" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\brn-bld-vln.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1798,7 +1789,6 @@
   <data name="Initiative_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\initiative_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Cry_of_Frustration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\mesmer\cry_of_frustration.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1816,5 +1806,36 @@
   </data>
   <data name="Stun_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\stun_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="character_builder_abilities_background_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\character-builder-abilities-background-v2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="character_builder_skills_background_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\character-builder-skills-background-v2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="character_builder_traits_background_v2b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\character-builder-traits-background-v2b.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="character_builder_updater_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\character-builder-updater-background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Adrenaline_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\adrenaline_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Protection_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\protection_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_Point_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\skill_point_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stealth_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\stealth_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Swiftness_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\swiftness_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

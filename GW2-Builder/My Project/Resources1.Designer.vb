@@ -151,6 +151,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Adrenaline_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Adrenaline_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Adrenaline_Rush() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Adrenaline_Rush", resourceCulture)
@@ -231,6 +238,13 @@ Namespace My.Resources
         Public ReadOnly Property Arms___Warrior() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Arms___Warrior", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property asterisk() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("asterisk", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -494,9 +508,9 @@ Namespace My.Resources
             End Get
         End Property
         
-        Public ReadOnly Property character_builder_abilities_background() As System.Drawing.Bitmap
+        Public ReadOnly Property character_builder_abilities_background_v2() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("character_builder_abilities_background", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("character_builder_abilities_background_v2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -508,16 +522,23 @@ Namespace My.Resources
             End Get
         End Property
         
-        Public ReadOnly Property character_builder_skills_background() As System.Drawing.Bitmap
+        Public ReadOnly Property character_builder_skills_background_v2() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("character_builder_skills_background", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("character_builder_skills_background_v2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Public ReadOnly Property character_builder_traits_background() As System.Drawing.Bitmap
+        Public ReadOnly Property character_builder_traits_background_v2b() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("character_builder_traits_background", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("character_builder_traits_background_v2b", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property character_builder_updater_background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("character_builder_updater_background", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2657,6 +2678,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Protection_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Protection_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Protector_s_Strike() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Protector_s_Strike", resourceCulture)
@@ -3119,6 +3147,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Skill_Point_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Skill_Point_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Skirmishing___Ranger() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Skirmishing___Ranger", resourceCulture)
@@ -3350,6 +3385,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Public ReadOnly Property Stealth_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stealth_Icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Public ReadOnly Property Steam() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Steam", resourceCulture)
@@ -3409,6 +3451,13 @@ Namespace My.Resources
         Public ReadOnly Property Swap() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Swap", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Public ReadOnly Property Swiftness_Icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Swiftness_Icon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -1,3 +1,11 @@
+Version - 0.0.2.4
+! Implemented a new tabcontrol with better rendering and more things
+! Implemented an updater for next version
+! Changed controls on traits tab (code only, not visual change)
+# Fixed Fkeys for mesmer and elementalist
+# Fixed Healing skill for ranger
+# Fixed show bug on recharge icon
+
 Version - 0.0.2.2
 # Fixed some bugs & crashs (thanks Imaginos for find it)
 $ Added first Fkeys info

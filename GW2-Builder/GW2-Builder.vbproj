@@ -66,6 +66,9 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="TabControlEX">
+      <HintPath>.\TabControlEX.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -119,6 +122,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SkillInfo.vb" />
+    <Compile Include="Updater.Designer.vb">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
@@ -138,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Healfrm1.resx">
       <DependentUpon>Healfrm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updater.resx">
+      <DependentUpon>Updater.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -163,14 +175,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="main.ico" />
+    <Content Include="Resources\Adrenaline_Icon.png" />
+    <Content Include="Resources\asterisk.png" />
     <Content Include="Resources\Bleeding_Icon.png" />
     <Content Include="Resources\Blind_Icon.png" />
     <Content Include="Resources\Brn-Bld-Vln.gif" />
     <Content Include="Resources\Burning_Icon.png" />
-    <Content Include="Resources\character-builder-abilities-background.png" />
+    <Content Include="Resources\character-builder-abilities-background-v2.png" />
     <Content Include="Resources\character-builder-main-background.png" />
-    <Content Include="Resources\character-builder-skills-background.png" />
-    <Content Include="Resources\character-builder-traits-background.png" />
+    <Content Include="Resources\character-builder-skills-background-v2.png" />
+    <Content Include="Resources\character-builder-traits-background-v2b.png" />
+    <Content Include="Resources\character-builder-updater-background.png" />
     <Content Include="Resources\Combo_Icon.png" />
     <Content Include="Resources\Crippled_Icon.png" />
     <Content Include="Resources\Damage_Icon.png" />
@@ -472,6 +487,7 @@
     <Content Include="Resources\necromancer\Wicked_Strike.png" />
     <Content Include="Resources\Null.png" />
     <Content Include="Resources\Poison_Icon.png" />
+    <Content Include="Resources\Protection_Icon.png" />
     <Content Include="Resources\Radius_Icon.png" />
     <Content Include="Resources\Range Radius_Icon.png" />
     <Content Include="Resources\Ranger off.png" />
@@ -527,7 +543,10 @@
     <Content Include="Resources\Recharge_Icon.png" />
     <Content Include="Resources\Regeneration_Icon.png" />
     <Content Include="Resources\Retaliation_Icon.png" />
+    <Content Include="Resources\Skill_Point_Icon.png" />
+    <Content Include="Resources\Stealth_Icon.png" />
     <Content Include="Resources\Stun_Icon.png" />
+    <Content Include="Resources\Swiftness_Icon.png" />
     <Content Include="Resources\Thief off.png" />
     <Content Include="Resources\Thief.png" />
     <Content Include="Resources\thief\Backstab.png" />
